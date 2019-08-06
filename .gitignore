@@ -1,0 +1,30 @@
+# Ignore some file types
+*.pdf
+*.jpg
+*.png
+*.doc
+*.docx
+*.Rproj.user
+*.RData
+*.Rhistory
+*.httr*
+*.xls
+*.xlsx
+
+# Ignore Davis_files directory
+/NCSS_database/data/SDA_public_db_Master_query.csv
+/NCSS_database/outputs
+/NCSS_database/code/archived
+/NCSS_database/misc
+/NCSS_database/packrat
+
+/long_term_trials/code/archived
+/long_term_trials/misc
+/long_term_trials/outputs
+/long_term_trials/packrat
+
+.Rproj.user
+/misc
+/soil_structure
+/soil_water
+/accounts
