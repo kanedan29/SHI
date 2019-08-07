@@ -16,12 +16,14 @@
 /NCSS_database/outputs
 /NCSS_database/code/archived
 /NCSS_database/misc
-/NCSS_database/packrat
+/NCSS_database/packrat/lib*
+/NCSS_database/packrat/src
 
 /long_term_trials/code/archived
 /long_term_trials/misc
 /long_term_trials/outputs
-/long_term_trials/packrat
+/long_term_trials/packrat/lib*
+/long_term_trials/packrat/src
 
 .Rproj.user
 /misc
