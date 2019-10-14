@@ -4,6 +4,7 @@ load("data/d.carbon.RData")
 load("data/d.yield.RData")
 
 d.yield <- d
+rm(d)
 
 d.yield %>%
   group_by(Paper, Study_name, begin_obs, end_obs) %>%
@@ -141,18 +142,13 @@ yield.climate %>%
   group_by(Paper, Location) %>%
   select(Paper, Location) %>%
   distinct(Paper, Location) -> yield.locations
-  
-carbon.climate %>%
-  group_by(Paper, Location) %>%
-  select(Paper, Location) %>%
-  distinct(Paper, Location) -> carbon.locations
 
 
 yield.locations$lat <- NA
 yield.locations$lon <- NA
 
 
-get_geo = function(study_name){
+get_geo <- function(study_name){
   result <- geocode_OSM(study_name, return.first.only = TRUE, as.data.frame = TRUE)
   return(result)
 }
@@ -160,7 +156,7 @@ get_geo = function(study_name){
 # Takes awhile
 
 for (i in 1:nrow(yield.locations)){
-  geo <- try(get_geo(locations$Location[i]))
+  geo <- try(get_geo(yield.locations$Location[i]))
   if(inherits(geo, "try-error"))
   {
     next
@@ -172,14 +168,9 @@ for (i in 1:nrow(yield.locations)){
   }
 }
 
-yield.locations$lat[which(locations$Location=="Cangwu Agri-ecological Station of the Loess Plateau, China")] <- 35.200
-yield.locations$lon[which(locations$Location=="Cangwu Agri-ecological Station of the Loess Plateau, China")] <- 107.667
+yield.locations$lat[which(yield.locations$Location=="Cangwu Agri-ecological Station of the Loess Plateau, China")] <- 35.200
+yield.locations$lon[which(yield.locations$Location=="Cangwu Agri-ecological Station of the Loess Plateau, China")] <- 107.667
 
-yield.climate <- yield.climate %>%
-  left_join(yield.locations, by = c("Paper", "Location"))
-
-carbon.climate <- carbon.climate %>%
-  left_join(yield.locations, by = c("Paper", "Location"))
 
 ################################################################################
 # Climate data
@@ -187,13 +178,81 @@ carbon.climate <- carbon.climate %>%
 # World Bank Climate Data API
 # River basin ids and polygon mappings from https://github.com/hrbrmstr/basins.git
 
+load("data/basins.RData")
+load("data/climate_data.RData")
 
-layers <- GET("https://landgisapi.opengeohub.org/query/layers")
+
+yield.locations$lat <- as.numeric(as.character(yield.locations$lat))
+yield.locations$lon <- as.numeric(as.character(yield.locations$lon))
+
+
+# Convert lat/lon into spatial points
+library(sp)
+points <- SpatialPointsDataFrame(cbind(yield.locations$lon, yield.locations$lat),
+                                 data = yield.locations,
+                                 proj4string = CRS("+proj=longlat +ellps=WGS84 +towgs84=0,0,0,0,0,0,0 +no_defs"))
+                      
+                     
+
+# With points and basins, need to find which basin each point is in
+yield.locations$wb_basin <- NA
+
+library(rgeos)
+
+for (row in 1:nrow(yield.locations)) {
+  spot <- points[row,]
+  b <- which(sapply(1:468, function(i) gContains(basin_list[[i]], spot)))
+  yield.locations[row, 'wb_basin'] <- b
+}
+
+
+save(yield.locations, file = "data/locations.RData")
+
+################################################################################
+## Add lat/lon and basin data back into climate dataframes
+
+yield.climate <- yield.climate %>%
+  left_join(yield.locations, by = c("Paper", "Location"))
+
+carbon.climate <- carbon.climate %>%
+  left_join(yield.locations, by = "Location") %>%
+  select(-Paper.y) %>%
+  rename(Paper = Paper.x)
+
+### Climate data from APIs ###
+## Before 2000: World Bank Climate Data API
+## Date ranges:
+##   1920-1939; 1940-1959; 1960-1979; 1980-1999
+## 2014-2018: Open Land Maps Precipitation
+## 2000-2018: Open Land Maps Temperature
+
+
+# See how data is returned from API
+prep_test_wb <- fromJSON("http://climatedataapi.worldbank.org/climateweb/rest/v1/basin/annualavg/pr/1980/1999/413")
+prep_test_olm <- fromJSON("http://landgisapi.opengeohub.org/query/point?lat=7.58033&lon=35.6561&coll=layers1km&regex=clm_precipitation_imerge.(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)_m_1km_s0..0cm_.*_v0.1.tif")
+response <- prep_test_olm[['response']]
+
+# Load parsing functions
+source("code/get_climate_functions.R")
+
+# Easier to run function for both datasets than to join due to year mismatches
+
+yield.climate$precipitation <- NA
+yield.climate$temperature <- NA
+carbon.climate$precipitation <- NA
+carbon.climate$temperature <- NA
+
+yield.climate <- getPrecipData(yield.climate)
+yield.climate <- getTempData(yield.climate)
+
+carbon.climate <- getPrecipData(carbon.climate)
+carbon.climate <- getTempData(carbon.climate)
+
+
+save(yield.climate, carbon.climate, file = "data/climate_data.RData")
 
 
 
-path <- "http://landgisapi.opengeohub.org/query/point?"
-test.response <- 
 
 
 
