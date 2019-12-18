@@ -44,8 +44,9 @@ vars <- c("tmin", "tmax", "ppt", "soil", "pet", "aet", "def", "PDSI")
 
 dfList <- list()
 
-# Need to manually enter data for row 91, as either 0 or 2 lon indexes are returned.
-# Used 4344 as manual lon index 
+# Need to manually enter lon index for row 97 (Turley et al. 2003;	ADAS Terrington, Norfolk, England;	Norfolk, England),
+# as either 0 or 2 lon indexes are returned.
+# Used 4344 as manual lon index
 
 for (i in 1:nrow(yield.locations)) {
   df <- merge(yield.locations[i,], timeframe)
@@ -62,8 +63,8 @@ for (i in 1:nrow(yield.locations)) {
     y <- ncvar_get(nc, "lat")
     flat = match(abs(y - lat) < 1/48, 1)
     latindex = which(flat %in% 1)
-    if (i == 91){
-      lonindex = 4344
+    if (i == 97){
+      	lonindex = 4344
     }
     else {
     	flon = match(abs(x - lon) < 1/48, 1)
@@ -75,6 +76,8 @@ for (i in 1:nrow(yield.locations)) {
     data <- as.numeric(ncvar_get(nc, varid = var, start = start, count))
     df <- cbind(df, data)
     df <- df %>% rename(!!var := "data")
+    
+    nc_close(nc)
   }
   
   dfList[[i]] <- df
@@ -85,7 +88,7 @@ full_climate <- bind_rows(dfList)
 
 # Collapse dataset by year
 meanmonthly_climate <- full_climate %>%
-	group_by(Paper, Location, lat, lon, wb_basin, year) %>%
+	group_by(Paper, Study_name, Location, lat, lon, year) %>%
 	summarise(
 		tmin = mean(tmin),
 		tmax = mean(tmax),
