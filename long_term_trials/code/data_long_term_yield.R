@@ -47,7 +47,7 @@ d <- d %>%
         Units == "t DM ha-1"| Units == "t ha-1" | Units == "ton hm-2" ~ Yield * 1000))
 
 paste.drop.NA <- function(x, sep = ", ") {
-  x <- gsub("^\\s+|\\s+$", "", x) 
+  x <- gsub("^\\s+|\\s+$", "", x)  #what is this string?
   ret <- paste(x[!is.na(x) & !(x %in% "")], collapse = sep)
   is.na(ret) <- ret == ""
   return(ret)
@@ -61,12 +61,28 @@ d$`Corresponding soil paper`[grepl(d$`Corresponding soil paper`, pattern = "Tabl
   d$Paper[grepl(d$`Corresponding soil paper`, pattern = "Table|Figure")]
 
 
-d.trts <- read.csv("d.trts.csv")
+d.trts <- read.csv("data/d.trts.csv")
 str(d.trts)
 
 d %>%
   left_join(d.trts[,c(1,11,12,13)]) %>%
   distinct(.) -> d
+
+## Append climate data
+
+
+load("data/meanmonthly_climate.RData")
+d <- d %>%
+  left_join(meanmonthly_climate, by = c("Paper" = "Paper", "Study_name" = "Study_name", "end_obs" = "year"))
+
+d <- d %>%
+  select(Paper, DOI, Study_name, Location, lat, lon, `Corresponding soil paper`, 
+          Year_started, Year_ended, begin_obs, end_obs, obs_length, 
+          Treatment_1, Treatment_2, Treatment_3, Treatment_4, Treatment_5, Treatment_6, Treatment_7, Control, Trt.combo, Trt.code,
+          tmin, tmax, ppt, soil, pet, aet, def, PDSI,
+          Crop, Yield, Units, Yield.kg.per.hectare)
+
+save("d", file = "data/d.yield.RData")
 
 
 ## Export as XLSX, deal with unusal papers manually
