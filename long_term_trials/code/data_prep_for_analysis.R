@@ -5,8 +5,9 @@ load("data/d.yield.stability.RData")
 
 d.yield.stability <- d.yield.stability[d.yield.stability$MYP > -17000,]
 d.yield.stability$Tillage[d.yield.stability$Tillage %in% "t"] <- "y"
+d.yield.stability <- d.yield.stability[!is.na(d.yield.stability$Paper),]
 
-d.carbon.trts <- read.csv("d.carbon.trts.csv")
+d.carbon.trts <- read.csv("data/d.carbon.trts.csv")
 str(d.carbon.trts)
 
 d.carbon.summary %>%
@@ -64,3 +65,52 @@ d %>%
   group_by(Paper, Crop, Units) %>%
   mutate(Paper_crop_mean_yield = mean(Mean.yield),
          MYP_percent= MYP/Paper_crop_mean_yield) -> d
+
+## Climate dimension reduction
+
+# Want to evaluate climate variables for correlation before building LMEs
+clim_vars_carbon <- d[,c(9:11, 13:16)] # excluding soil moisture for now
+corr1 <- cor(clim_vars_carbon)
+ggcorrplot::ggcorrplot(corr1, type = "lower", lab = TRUE)
+
+clim_vars_yield <- d.yield.stability[,c(9:11, 13:16)] # excluding soil moisture again
+corr2 <- cor(clim_vars_yield)
+ggcorrplot::ggcorrplot(corr2, type = "lower", lab = TRUE)
+
+# Lots of correlation between variables, will conduct PCA to reduce and build new climate predictor variables.
+# Excluding soil moisture for now
+
+climate.pca1 <- prcomp(clim_vars_carbon, center = TRUE, scale. = TRUE)
+summary(climate.pca1)
+factoextra::fviz_eig(climate.pca1)
+# Three principal components may be sufficient for C dataset, fourth doesn't add much to variance explanation
+
+climate.pca2 <- prcomp(clim_vars_yield, center = TRUE, scale. = TRUE)
+summary(climate.pca2)
+factoextra::fviz_eig(climate.pca2)
+# Again, three PCs seems good for yield dataset
+
+# Interpretation of principal components:
+
+climate.pca1$rotation
+climate.pca2$rotation
+
+# PC1: temperature (max & min) and potential evapotranspiration
+# PC2: precipitation and actual evapotranspiration
+# PC3: drought severity
+
+new_climate_carbon <- as.data.frame(climate.pca1$x[,1:3])
+names(new_climate_carbon) <- c("clim_PC1", "clim_PC2", "clim_PC3")
+d <- d %>%
+  bind_cols(new_climate_carbon) %>%
+  as.data.frame(.)
+  
+
+new_climate_yield <- as.data.frame(climate.pca2$x[,1:3])
+names(new_climate_yield) <- c("clim_PC1", "clim_PC2", "clim_PC3")
+d.yield.stability <- d.yield.stability %>%
+  bind_cols(new_climate_yield) %>%
+  as.data.frame(.)
+
+save("d", "d.yield.stability", file = "data/d.prepared.RData")
+

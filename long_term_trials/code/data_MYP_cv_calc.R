@@ -3,6 +3,10 @@ source("code/data_long_term_yield.R")
 
 ## MYP analysis
 
+# Calculate environmental index (EI) and add to dataframe
+# EI = annual mean yield per hectare (Williams et al. 2016)
+# calculated by study and crop
+
 d %>%
   group_by(Paper,DOI,Study_name,Crop,end_obs) %>%
   mutate(EI.by.year = mean(Yield.kg.per.hectare)) %>%
@@ -57,9 +61,23 @@ d %>%
 
 d.cv.summary$Paper.crop <- paste(d.cv.summary$Paper, d.cv.summary$Study_name, d.cv.summary$Crop, d.cv.summary$Units, sep = ".")
 
+# Climate summary
+d %>%
+  group_by(Paper, Study_name, Trt.combo, Crop, Units) %>%
+  summarise(Mean.tmin = mean(tmin),
+            Mean.tmax = mean(tmax),
+            Mean.ppt = mean(ppt),
+            Mean.soil = mean(soil),
+            Mean.pet = mean(pet),
+            Mean.aet = mean(aet),
+            Mean.def = mean(def),
+            Mean.PDSI = mean(PDSI)) %>%
+  group_by(Paper, Crop, Units) -> d.climate.summary
+
 ## Join yield stabilty dfs
   
 d.cv.summary %>%
+  left_join(d.climate.summary) %>%
   left_join(d.MYP) -> d.yield.stability
 
 ## Read in treatment codes for analysis
