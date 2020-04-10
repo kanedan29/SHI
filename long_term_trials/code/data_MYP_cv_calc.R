@@ -71,7 +71,11 @@ d %>%
             Mean.pet = mean(pet),
             Mean.aet = mean(aet),
             Mean.def = mean(def),
-            Mean.PDSI = mean(PDSI)) %>%
+            Mean.PDSI = mean(PDSI),
+            Mean.SPEI.3 = mean(SPEI.3),
+            Mean.SPEI.6 = mean(SPEI.6),
+            Mean.SPEI.9 = mean(SPEI.9),
+            Mean.SPEI.12 = mean(SPEI.12)) %>%
   group_by(Paper, Crop, Units) -> d.climate.summary
 
 ## Join yield stabilty dfs

@@ -79,7 +79,7 @@ d <- d %>%
   select(Paper, DOI, Study_name, Location, lat, lon, `Corresponding soil paper`, 
           Year_started, Year_ended, begin_obs, end_obs, obs_length, 
           Treatment_1, Treatment_2, Treatment_3, Treatment_4, Treatment_5, Treatment_6, Treatment_7, Control, Trt.combo, Trt.code,
-          tmin, tmax, ppt, soil, pet, aet, def, PDSI,
+          tmin, tmax, ppt, soil, pet, aet, def, PDSI, SPEI.3, SPEI.6, SPEI.9, SPEI.12,
           Crop, Yield, Units, Yield.kg.per.hectare)
 
 save("d", file = "data/d.yield.RData")
