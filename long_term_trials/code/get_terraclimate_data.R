@@ -86,6 +86,31 @@ for (i in 1:nrow(yield.locations)) {
 # Create one dataset for all monthly variables
 full_climate <- bind_rows(dfList)
 
+add_spei <- function(df) {
+  SPEI.3 <- spei((df$ppt - df$pet), scale = 3)
+  SPEI.6 <- spei((df$ppt - df$pet), scale = 6)
+  SPEI.9 <- spei((df$ppt - df$pet), scale = 9)
+  SPEI.12 <- spei((df$ppt - df$pet), scale = 12)
+  
+  cbind(df, as.numeric(SPEI.3$fitted), as.numeric(SPEI.6$fitted), 
+        as.numeric(SPEI.9$fitted), as.numeric(SPEI.12$fitted))
+}
+
+intermediate <- split(full_climate, full_climate$Paper, drop = FALSE)
+
+intermediate <- lapply(intermediate, add_spei)
+
+full_climate <- bind_rows(intermediate)
+
+full_climate %>%
+  rename("SPEI.3" = "as.numeric(SPEI.3$fitted)",
+         "SPEI.6" = "as.numeric(SPEI.6$fitted)",
+         "SPEI.9" = "as.numeric(SPEI.9$fitted)",
+         "SPEI.12" = "as.numeric(SPEI.12$fitted)") -> full_climate
+
+  
+  
+
 # Collapse dataset by year
 meanmonthly_climate <- full_climate %>%
 	group_by(Paper, Study_name, Location, lat, lon, year) %>%
@@ -97,7 +122,11 @@ meanmonthly_climate <- full_climate %>%
 		pet = mean(pet),
 		aet = mean(aet),
 		def = mean(def),
-		PDSI = mean(PDSI))
+		PDSI = mean(PDSI),
+		SPEI.3 = mean(SPEI.3),
+		SPEI.6 = mean(SPEI.6),
+		SPEI.9 = mean(SPEI.9),
+		SPEI.12 = mean(SPEI.12))
 		
 save("full_climate", file = "data/full_climate.RData")
 save("meanmonthly_climate", file = "data/meanmonthly_climate.RData")
