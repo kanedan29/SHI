@@ -15,110 +15,6 @@ d <- d %>%
 ## MYP ##
 #########
 
-# With tillage and climate variables
-
-till.climpc.soc.myp_sem <- psem(
-  lme(SOC.g.kg.weighted ~ Tillage + Mean.clim_PC1 + Mean.clim_PC2 + Tillage:Mean.clim_PC1 + Tillage:Mean.clim_PC2,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ SOC.g.kg.weighted + Mean.clim_PC2 + SOC.g.kg.weighted:Mean.clim_PC2,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-
-    summary(till.climpc.soc.myp_sem)
-
-    ## Tillage has significant effect on SOC, but not on MYP directly
-    ## SOC does not have significant influence on MYP
-    ## clim_PC2 (precipitation & aet) have significant influence on both SOC and MYP
-
-
-till.climpc.soclrr.myp_sem <- psem(
-  lme(delta.Tillage.SOC.LRR ~ Tillage + Mean.clim_PC1 + Mean.clim_PC2 + Tillage:Mean.clim_PC1 + Tillage:Mean.clim_PC2,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ delta.Tillage.SOC.LRR + Mean.clim_PC2,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-
-    summary(till.climpc.soclrr.myp_sem)
-    ## Tillage has significant effect on SOC LRR, including interactions with both clim PCs
-    ## SOC LRR has significant effect on MYP 
-    ## Tillage does not have significant direct effect on MYP
-    ## clim_PC2 has significant effect on MYP directly, but not clim_PC1
-
-till.spei3.soc.myp_sem <- psem(
-  lme(SOC.g.kg.weighted ~ Tillage + Mean.SPEI.3 + Tillage:Mean.SPEI.3,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ SOC.g.kg.weighted + Mean.SPEI.3 + SOC.g.kg.weighted:Mean.SPEI.3,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-
-    summary(till.spei3.soc.myp_sem)
-    ## 3 month SPEI significant influence on SOC, nothing else new
-
-till.spei3.soclrr.myp_sem <- psem(
-  lme(delta.Tillage.SOC.LRR ~ Tillage + Mean.SPEI.3 + Tillage:Mean.SPEI.3,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ delta.Tillage.SOC.LRR + Mean.SPEI.3,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-
-    summary(till.spei3.soclrr.myp_sem)
-    
-    ## With SPEI, tillage SOC LRR has significant influence on MYP, no interaction with SPEI
-    ## SPEI has significant influence on MYP now?
-    
-    anova(till.climpc.soc.myp_sem, till.climpc.soclrr.myp_sem)
-    anova(till.spei3.soc.myp_sem, till.spei3.soclrr.myp_sem)
-    anova(till.climpc.soclrr.myp_sem, till.spei3.soclrr.myp_sem)
-    
-    ## LRR models fit better overall than baseline SOC models
-    ## Clim PCs and SPEI not significantly different, makes sense
-
-till.spei6.soclrr.myp_sem <- psem(
-  lme(delta.Tillage.SOC.LRR ~ Tillage + Mean.SPEI.6 + Tillage:Mean.SPEI.6,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ delta.Tillage.SOC.LRR + Mean.SPEI.6,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-
-    summary(till.spei6.soclrr.myp_sem)
-    
-till.spei9.soclrr.myp_sem <- psem(
-  lme(delta.Tillage.SOC.LRR ~ Tillage + Mean.SPEI.9 + Tillage:Mean.SPEI.9,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ delta.Tillage.SOC.LRR + Mean.SPEI.9,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-    
-    summary(till.spei9.soclrr.myp_sem)
-
-till.spei12.soclrr.myp_sem <- psem(
-  lme(delta.Tillage.SOC.LRR ~ Tillage + Mean.SPEI.12 + Tillage:Mean.SPEI.12,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ delta.Tillage.SOC.LRR + Mean.SPEI.12,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-
-    summary(till.spei12.soclrr.myp_sem)
-    anova(till.spei3.soclrr.myp_sem, till.spei6.soclrr.myp_sem,
-          till.spei9.soclrr.myp_sem, till.spei12.soclrr.myp_sem,
-          till.climpc.soclrr.myp_sem)
-
-    ## All SPEI scale models are significantly different from one another,
-    ## but not significantly different from clim PC models
-    
-till.trtcode.soclrr.myp_sem <- psem(
-  lme(delta.Tillage.SOC.LRR ~ Tillage + Trt.code + Mean.SPEI.3,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ delta.Tillage.SOC.LRR + Mean.SPEI.3,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-
-    summary(till.trtcode.soclrr.myp_sem)
-    ## Still not sure how to best incorporate treatment codes, interaction non-significant
-    ## but independently both tillage and treatment code are significant. Can that be meaningfully interpreted?
-    
-### No cover crop data for SOC #################################################
-
 ### With fertilizer and climate variables ######################################
 
 fert.climpc.soc.myp_sem <- psem(
@@ -132,94 +28,93 @@ fert.climpc.soc.myp_sem <- psem(
     ## Nothing significant that is new here
     
 fert.climpc.soclrr.myp_sem <- psem(
-  lme(delta.Fertilizer.SOC.LRR ~ Fertilizer,
+  lme(delta.Fertilizer.SOC.LRR ~ Fertilizer*Mean.clim_PC1,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ delta.Fertilizer.SOC.LRR + Fertilizer,
+  lme(MYP_percent ~ delta.Fertilizer.SOC.LRR + Fertilizer,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
 )
 
     summary(fert.climpc.soclrr.myp_sem)
     ## Climate variables insignificant in both paths with fertilizer
     
-
-fert.spei3.soc.myp_sem <- psem(
-  lme(SOC.g.kg.weighted ~ Fertilizer + Mean.SPEI.3 + Fertilizer:Mean.SPEI.3,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ SOC.g.kg.weighted,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-
-    summary(fert.spei3.soc.myp_sem)
-    ## Again, nothing new & significant
-
-fert.spei3.soclrr.myp_sem <- psem(
-  lme(delta.Fertilizer.SOC.LRR ~ Fertilizer + Mean.SPEI.3 + Fertilizer:Mean.SPEI.3,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ delta.Fertilizer.SOC.LRR,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-
-    summary(fert.spei3.soclrr.myp_sem)
-    ## Again, climate not significant in either path of model, but Fertilizer is for both
-
-fert.soclrr.myp_sem <- psem(
+fert.soclrr.myp_sem1 <- psem(
   lme(delta.Fertilizer.SOC.LRR ~ Fertilizer,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ delta.Fertilizer.SOC.LRR + Fertilizer,
+  lme(MYP_percent ~ delta.Fertilizer.SOC.LRR + Fertilizer,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
 )
 
-    summary(fert.soclrr.myp_sem)
-    ## Final fertilizer model
+fert.soclrr.myp_sem2 <- psem(
+  lme(delta.Fertilizer.SOC.LRR ~ Fertilizer,
+      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
+  lme(MYP_percent ~ delta.Fertilizer.SOC.LRR,
+      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
+)
+
+anova(fert.soclrr.myp_sem1, fert.climpc.soclrr.myp_sem)
+summary(fert.soclrr.myp_sem2)
+  # Two models are not significantly different, so we'll favor the parsimony without
+  # climate variables, including partial mediation structure
+  
+fert.spei.9.soclrr.myp_sem1 <- psem(
+  lme(delta.Fertilizer.SOC.LRR ~ Fertilizer,
+      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
+  lme(MYP_percent ~ delta.Fertilizer.SOC.LRR*Mean.SPEI.9 + Fertilizer,
+      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
+)
+
+summary(fert.spei.9.soclrr.myp_sem1)
+
+  ## Final two models for fertilizer ##
+  summary(fert.soclrr.myp_sem1)
+  summary(fert.climpc.soclrr.myp_sem)
+  #####################################
 
 ### With organic amendments and climate variables ##############################
 
-org.climpc.soc.myp_sem <- psem(
-  lme(SOC.g.kg.weighted ~ Org.amend + Mean.clim_PC1 + Mean.clim_PC2 + Org.amend:Mean.clim_PC1 + Org.amend:Mean.clim_PC2,
+
+org.soclrr.myp_sem <- psem(
+  lme(delta.Org.amend.SOC.LRR ~ Org.amend,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ SOC.g.kg.weighted,
+  lme(MYP_percent ~ delta.Org.amend.SOC.LRR,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
 )
+
+    summary(org.soclrr.myp_sem)
+  
+org.clim.soclrr.myp_sem1 <- psem(
+  lme(delta.Org.amend.SOC.LRR ~ Org.amend,
+      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
+  lme(MYP_percent ~ delta.Org.amend.SOC.LRR + Mean.SPEI.9,
+      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
+)
+
+    summary(org.clim.soclrr.myp_sem1)
+
+org.clim.soclrr.myp_sem2 <- psem(
+  lme(delta.Org.amend.SOC.LRR ~ Org.amend,
+      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
+  lme(MYP_percent ~ delta.Org.amend.SOC.LRR*Mean.SPEI.9,
+      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
+)   
+
     
-    summary(org.climpc.soc.myp_sem)
-    ## Org amend significantly predicts absolute SOC levels
-    ## nothing else significant
-
-org.climpc.soclrr.myp_sem <- psem(
-  lme(delta.Org.amend.SOC.LRR ~ Org.amend + Mean.clim_PC1 + Mean.clim_PC2 + Org.amend:Mean.clim_PC1 + Org.amend:Mean.clim_PC2,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ delta.Org.amend.SOC.LRR,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-
-    summary(org.climpc.soclrr.myp_sem)
-    ## Org amend significantly influences SOC LRR and through interaction with clim PC1 (temperature)
-    ## SOC LRR significantly influences MYP 
-    ## Org amend does not significantly and directly influence MYP
-
-org.spei3.soclrr.myp_sem <- psem(
-  lme(delta.Org.amend.SOC.LRR ~ Org.amend + Mean.SPEI.3 + Org.amend:Mean.SPEI.3,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ delta.Org.amend.SOC.LRR,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-
-    summary(org.spei3.soclrr.myp_sem)
-    ## SPEI does not interact with Org amend to influence SOC LRR or MYP
-    ## SPEI more precipitation driven, org amend may be more important for mediating temperature effects
-    ## than precipitation effects
+    anova(org.clim.soclrr.myp_sem1, org.clim.soclrr.myp_sem2)
+    # Models are significantly different
+    # AIC and BIC are lower for the non-interaction models
+    # suggesting that is the better fitting model
+    # Also, both predictor variables become significant for predicting MYP_percent
+    
+    anova(org.soclrr.myp_sem, org.clim.soclrr.myp_sem2)
+    # Now, models don't fit significantly differently, leave climate out in favor
+    # of more parismonious model, i.e. don't reject the null
+    
+    # Final organic amendment model:
+    summary(org.soclrr.myp_sem)
+    ###############################
 
 ### With rotation and climate variables ########################################
-
-rot.soc.myp_sem <- psem(
-  lme(SOC.g.kg.weighted ~ Rotation,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ SOC.g.kg.weighted,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-
-    summary(rot.soc.myp_sem)
-    ## Rotation not significantly influencing SOC or MYP
+# Not enough data, too noisy/messy
     
 # rot.soclrr.myp_sem <- psem(
 #   lme(delta.Rotation.SOC.LRR ~ Rotation,
@@ -232,153 +127,119 @@ rot.soc.myp_sem <- psem(
     ## n Rotation == 1 = 2 only
 
     # summary(rot.soclrr.myp_sem)
-
-### With residue management and climate variables ##############################
-
-res.soc.myp_sem <- psem(
-  lme(SOC.g.kg.weighted ~ Residue.mgmt,
+    
+### With tillage and climate variables #########################################
+    
+till.soclrr.myp_sem <- psem(
+  lme(delta.Tillage.SOC.LRR ~ Tillage,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ SOC.g.kg.weighted,
+  lme(MYP_percent ~ delta.Tillage.SOC.LRR,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
 )
     
-    summary(res.soc.myp_sem)
-    ## Residue management significantly predicts absolute SOC values, but not MYP
-
-res.soclrr.myp_sem <- psem(
-  lme(delta.Residue.mgmt.SOC.LRR ~ Residue.mgmt,
+    summary(till.soclrr.myp_sem)
+    
+till.clim.soclrr.myp_sem <- psem(
+  lme(delta.Tillage.SOC.LRR ~ Tillage,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ delta.Residue.mgmt.SOC.LRR,
+  lme(MYP_percent ~ delta.Tillage.SOC.LRR + Mean.SPEI.3,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
 )
-
-    summary(res.soclrr.myp_sem)
-    ## Residue management significantly influences SOC LRR, but not MYP
-
-res.spei3.soc.myp_sem <- psem(
-  lme(SOC.g.kg.weighted ~ Residue.mgmt + Mean.SPEI.3 + Residue.mgmt:Mean.SPEI.3,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(MYP ~ SOC.g.kg.weighted,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-
-    summary(res.spei3.soc.myp_sem)
-
-# res.spei3.soclrr.myp_sem <- psem(
-#   lme(delta.Residue.mgmt.SOC.LRR ~ Residue.mgmt + Mean.SPEI.3 + Residue.mgmt:Mean.SPEI.3,
-#       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-#   lme(MYP ~ delta.Residue.mgmt.SOC.LRR,
-#       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-# )
-
-    ## Singularity error
+    
+    summary(till.clim.soclrr.myp_sem)
+    
+    anova(till.soclrr.myp_sem, till.clim.soclrr.myp_sem)
+    # Again, climate variables don't improve model fit
+    
+    ## Final tillage model: ###
+    summary(till.soclrr.myp_sem)
+    ###########################
+    
+    
+### No cover crop data for SOC #################################################
 
 ################################################################################
 ## CV ##########################################################################
 ################################################################################
 
-### With tillage and climate variables #########################################
-
-till.climpc.soc.cv_sem <- psem(
-  lme(SOC.g.kg.weighted ~ Tillage + Mean.clim_PC1 + Mean.clim_PC2 + Tillage:Mean.clim_PC1 + Tillage:Mean.clim_PC2,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(CV.yield ~ SOC.g.kg.weighted,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-
-    summary(till.climpc.soc.cv_sem)
-    ## SOC does not significantly influence CV
-
-till.climpc.soclrr.cv_sem <- psem(
-  lme(delta.Tillage.SOC.LRR ~ Tillage + Mean.clim_PC1 + Mean.clim_PC2 + Tillage:Mean.clim_PC1 + Tillage:Mean.clim_PC2,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(CV.yield ~ delta.Tillage.SOC.LRR,
-      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-)
-
-    summary(till.climpc.soclrr.cv_sem)
-    ## Tillage interacts with climate to influence SOC LRR (as above)
-    ## Tillage SOC LRR does not significantly influence yield CV
-
 ### No cover crop data for SOC #################################################
 
 ### With fertilizer and climate variables ######################################
 
-
-fert.climpc.soclrr.cv_sem <- psem(
-  lme(delta.Fertilizer.SOC.LRR ~ Fertilizer + Mean.clim_PC1 + Mean.clim_PC2 + Fertilizer:Mean.clim_PC1 + Fertilizer:Mean.clim_PC2,
+fert.soclrr.cv_sem <- psem(
+  lme(delta.Fertilizer.SOC.LRR ~ Fertilizer,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
   lme(CV.yield ~ delta.Fertilizer.SOC.LRR,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
 )
     
-    summary(fert.climpc.soclrr.cv_sem)
-    ## Fertilizer significantly influences SOC LRR
-    ## Fertilizer SOC LRR significantly influences yield CV
-    ## Fertilizer does not significantly influence yield CV
+    summary(fert.soclrr.cv_sem)
 
-fert.spei3.soclrr.cv_sem <- psem(
-  lme(delta.Fertilizer.SOC.LRR ~ Fertilizer + Mean.SPEI.3 + Fertilizer:Mean.SPEI.3,
+fert.clim.soclrr.cv_sem <- psem(
+  lme(delta.Fertilizer.SOC.LRR ~ Fertilizer*Mean.SPEI.3,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
   lme(CV.yield ~ delta.Fertilizer.SOC.LRR,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
 )
 
-    summary(fert.spei3.soclrr.cv_sem)
-    ## No significant climate interactions with fertilizer
+    summary(fert.clim.soclrr.cv_sem)
+    
+    anova(fert.soclrr.cv_sem, fert.clim.soclrr.cv_sem)
+    # Models are not significantly different in terms of fit, select one without
+    # climate data for parsimony
+    
+    ## Final model: ###########
+    summary(fert.soclrr.cv_sem)
+    ###########################
 
 ### With organic amendments and climate data ###################################
 
-org.climpc.soclrr.cv_sem <- psem(
-  lme(delta.Org.amend.SOC.LRR ~ Org.amend + Mean.clim_PC1 + Mean.clim_PC2 + Org.amend:Mean.clim_PC1 + Org.amend:Mean.clim_PC2,
+org.soclrr.cv_sem <- psem(
+  lme(delta.Org.amend.SOC.LRR ~ Org.amend,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
   lme(CV.yield ~ delta.Org.amend.SOC.LRR,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
 )
 
-    summary(org.climpc.soclrr.cv_sem)
+    summary(org.soclrr.cv_sem)
     ## Org SOC LRR significantly influences yield CV
     ## No significant interactions between org amend and climate PCs
 
-org.spei3.soclrr.cv_sem <- psem(
-  lme(delta.Org.amend.SOC.LRR ~ Org.amend + Mean.SPEI.3 + Org.amend:Mean.SPEI.3,
+org.clim.soclrr.cv_sem1 <- psem(
+  lme(delta.Org.amend.SOC.LRR ~ Org.amend*Mean.clim_PC2,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
   lme(CV.yield ~ delta.Org.amend.SOC.LRR,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
 )
 
-    summary(org.spei3.soclrr.cv_sem)
-    ## Confirmed, no siginificant interactions between climate vars and org amend
+    summary(org.clim.soclrr.cv_sem1)
 
-### With rotation and climate variables ########################################
-
-# rot.climpc.soclrr.cv_sem <- psem(
-#   lme(delta.Rotation.SOC.LRR ~ Rotation + Mean.clim_PC1 + Mean.clim_PC2 + Rotation:Mean.clim_PC1 + Rotation:Mean.clim_PC2,
-#       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-#   lme(CV.yield ~ delta.Rotation.SOC.LRR,
-#       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-# )
-
-    ## singularity again
-    
-rot.spei3.soc.cv_sem <- psem(
-  lme(SOC.g.kg.weighted ~ Rotation + Mean.SPEI.3 + Rotation:Mean.SPEI.3,
+org.clim.soclrr.cv_sem2 <- psem(
+  lme(delta.Org.amend.SOC.LRR ~ Org.amend,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-  lme(CV.yield ~ SOC.g.kg.weighted,
+  lme(CV.yield ~ delta.Org.amend.SOC.LRR + Mean.SPEI.6,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
 )
 
-    summary(rot.spei3.soc.cv_sem)
-    ## nothing significant
+    summary(org.clim.soclrr.cv_sem2)
+    
+    anova(org.soclrr.cv_sem, org.clim.soclrr.cv_sem1)
+    anova(org.soclrr.cv_sem, org.clim.soclrr.cv_sem2)
+    
+    ## Final model: ##########
+    summary(org.soclrr.cv_sem)
+    ##########################
 
-# rot.spei3.soclrr.cv_sem <- psem(
-#   lme(delta.Rotation.SOC.LRR ~ Rotation + Mean.SPEI.3 + Rotation:Mean.SPEI.3,
-#       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
-#   lme(CV.yield ~ delta.Rotation.SOC.LRR,
-#       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
-# )
+### With rotation and climate variables ########################################
 
-    ## Error: overfitted model
+rot.soclrr.cv_sem <- psem(
+  lme(delta.Rotation.SOC.LRR ~ Rotation,
+      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
+  lme(CV.yield ~ delta.Rotation.SOC.LRR,
+      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
+)
+
+    ## singularity again
 
 ### With residue management and climate variables ##############################
 
@@ -392,13 +253,27 @@ res.soclrr.cv_sem <- psem(
     summary(res.soclrr.cv_sem)
     ## Residue management significantly influences SOC LRR (as above)
     ## Residue management & SOC LRR does not siginificantly influence yield CV
+    
+### With tillage and climate variables #########################################
+
+till.soclrr.cv_sem <- psem(
+  lme(delta.Tillage.SOC.LRR ~ Tillage,
+      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
+  lme(CV.yield ~ delta.Tillage.SOC.LRR,
+      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
+)
+
+summary(till.soclrr.cv_sem)
+
+till.clim.soclrr.cv_sem <- psem(
+  lme(delta.Tillage.SOC.LRR ~ Tillage + Mean.clim_PC1 + Mean.clim_PC2,
+      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
+  lme(CV.yield ~ delta.Tillage.SOC.LRR,
+      random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
+)
+
+summary(till.clim.soclrr.cv_sem)
+
+  ## Tillage SOC not significant for yield CV
 
 ################################################################################
-
-
-#######################
-##### Without SOC #####
-#######################
-
-d.yield.stability <- d.yield.stability %>%
-  mutate_at(names(.)[18:24], function(i) mapping[i])
