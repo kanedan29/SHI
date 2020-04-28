@@ -55,7 +55,41 @@ paste.drop.NA <- function(x, sep = ", ") {
 
 d$Trt.combo <- apply(d[,9:15], 1, paste.drop.NA)
 
+unique(d$Crop)
+  # Potato <- Potato (marketable) + Potato tuber
+  # Maize <- Maize (mean yield) + Maize (grain) + Continuous Maize + Rotated Maize + Sole maize + Sole maize (no trees)
+  # Vetch <- Vetch cover crop (aerial biomass) + Vect (aerial) +
+  # Barley (aerial) <- Barley cover crop (aerial biomass)
+  # Spring barley <- Spring barley (grain)
+  # Soybean <- Rotated soybean + Soybean grain
+  # Maize (stover) <- Accumulated maize stover + Maize (dry matter) + Maize stalks and leaves (mean dry matter, 108 days after planting)
+  # Wheat <- Wheat grain
+  # Faba bean <- Faba bean (grain)
+  # Oilseed rape <- Rape + Oil seed rape + Spring oil seed rape
 
+
+d <- d %>%
+  mutate(Crop = str_replace_all(Crop, pattern = 
+                   c("Potato \\(marketable\\)|Potato tuber" = "Potato",
+                   "Maize \\(mean yield\\)|Maize \\(grain\\)|Continuous Maize|Rotated Maize|Sole maize|Sole maize \\(no trees\\)" = "Maize",
+                   "Vetch cover crop \\(aerial biomass\\)|Vetch \\(aerial\\)" = "Vetch",
+                   "Barley cover crop \\(aerial biomass\\)" = "Barley \\(aerial\\)",
+                   "Spring barley \\(grain\\)" = "Spring barley",
+                   "Rotated soybean|Soybean grain" = "Soybean",
+                   "Accumulated maize stover|Maize \\(dry matter\\)|Maize stalks and leaves \\(mean dry matter, 108 days after planting\\)|Maize stover" = "Maize \\(stover\\)",
+                   "Maize \\(total plant biomass\\)" = "Maize biomass",
+                   "Wheat grain" = "Wheat",
+                   "Oats+" = "Oat",
+                   "Maize silage dry matter|Maize silage" = "Maize \\(silage\\)",
+                   "Barley residue|Barley straw" = "Barley \\(residue\\)",
+                   "Wheat straw|Wheat residue" = "Wheat \\(residue\\)",
+                   "Faba bean \\(grain\\)" = "Faba bean",
+                   "Rape|Oil seed rape|Spring oil seed rape" = "Oilseed rape",
+                   " \\(no trees\\)" = "")))
+
+crop.review <- d %>%
+  group_by(Crop) %>%
+  summarize(number = n())
 
 d$`Corresponding soil paper`[grepl(d$`Corresponding soil paper`, pattern = "Table|Figure")] <- 
   d$Paper[grepl(d$`Corresponding soil paper`, pattern = "Table|Figure")]
@@ -79,7 +113,7 @@ d <- d %>%
   select(Paper, DOI, Study_name, Location, lat, lon, `Corresponding soil paper`, 
           Year_started, Year_ended, begin_obs, end_obs, obs_length, 
           Treatment_1, Treatment_2, Treatment_3, Treatment_4, Treatment_5, Treatment_6, Treatment_7, Control, Trt.combo, Trt.code,
-          tmin, tmax, ppt, soil, pet, aet, def, clim_PC1, clim_PC2, PDSI, SPEI.3, SPEI.6, SPEI.9, SPEI.12,
+          tmin, tmax, ppt, soil, pet, aet, def, clim_PC1, clim_PC2, PDSI, SPEI.1.year.min, SPEI.1.SD, SPEI.1, SPEI.3, SPEI.6, SPEI.9, SPEI.12,
           Crop, Yield, Units, Yield.kg.per.hectare)
 
 d.trt.codes <- read.xlsx("data/d.trts.all.papers.xlsx")

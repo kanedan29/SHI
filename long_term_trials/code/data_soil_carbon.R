@@ -32,7 +32,7 @@ d.carbon$Trt.combo <- apply(d.carbon[,7:13], 1, paste.drop.NA)
 ## Merge trt.codes
 
 
-d.carbon.trts <- read.csv("d.carbon.trts.csv")
+d.carbon.trts <- read.csv("data/d.carbon.trts.csv")
 str(d.carbon.trts)
 
 d.carbon %>%
@@ -102,7 +102,9 @@ d.carbon %>%
   group_by(Paper, Trt.combo, `Soil sample depth (cm)`) %>%
   mutate(SOC.g.kg.weighted = Depth.proportion*SOC.g.kg) %>%
   group_by(Paper, Trt.combo) %>%
-  dplyr::summarise(SOC.g.kg.weighted =  sum(SOC.g.kg.weighted)) -> d.carbon.summary
+  dplyr::summarise(SOC.g.kg.weighted =  sum(SOC.g.kg.weighted),
+                   SOC.SD = sd(SOC.g.kg),
+                   SOC.n = n()) -> d.carbon.summary
 
 d.carbon.summary <- (d.carbon.summary[!d.carbon.summary$SOC.g.kg.weighted > 150,])
 

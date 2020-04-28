@@ -5,66 +5,99 @@ source("code/data_prep_for_analysis.R")
 mapping = c("y" = 1, "n" = 0)
 
 d <- d %>%
-  mutate_at(names(.)[24:30], function(i) mapping[i])
+  mutate_at(names(.)[25:31], function(i) mapping[i])
 
 d.yield.stability %>%
   group_by(Paper, Crop, Units) %>%
   mutate(Paper_crop_mean_yield = mean(Mean.yield),
          MYP_percent= MYP/Paper_crop_mean_yield) %>%
-  mutate_at(names(.)[24:30], function(i) mapping[i]) -> d.yield.stability
+  mutate_at(names(.)[25:31], function(i) mapping[i]) -> d.yield.stability
 
-## Models without carbon 
+################################################################################
+### Models without carbon ######################################################
+################################################################################
 
-fert.myp <- lme(MYP_percent ~ Fertilizer, 
+### Using Crop as random effect ################################################
+
+spei <- lme(MYP_percent ~ Fertilizer*Mean.SPEI.1, 
             random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit")
 
-summary(fert.myp)
+spei.tidy <- broom.mixed::tidy(spei)
 
-  # Fertilizer significant for both MYP and MYP percent
+## all results pasted into Google Sheet for easier reading ##
 
-summary(lme(MYP_percent ~ Org.amend,
-            random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
-  # Org amend significant for both MYP and MYP percent
-
-summary(lme(MYP_percent ~ Rotation, 
-            random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
-  # Rotation significant for both MYP and MYP percent
-
-summary(lme(CV.yield ~ Fertilizer, 
-            random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
-  # Fertilizer significant for yield CV (reduces CV)
-
-summary(lme(CV.yield ~ Rotation*Mean.SPEI.12,
-            random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
-  # Rotation significant for yield CV
-
-summary(lme(MYP_percent ~ Mean.SPEI.12,
-            random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
-  # 9- and 12-month SPEI significant predictors of MYP percent, but not MYP
-
-summary(lme(MYP ~ Mean.clim_PC1,
-            random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
-  # Clim PC1 (temperature) significant predictor of MYP but not MYP percent
-
-summary(lme(CV.yield ~ Mean.clim_PC1*Mean.clim_PC2,
-            random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
-summary(lme(CV.yield ~ Mean.clim_PC2,
-            random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
-
-  # Clim PCs 1 & 2 significant predictors of yield CV
-
-summary(lme(CV.yield ~ Mean.SPEI.12,
-            random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
-  # 6-, 9-, and 12-month SPEI are significant predictors of yield CV
-
-### Finding best fit
-myp.fert.1 <- lme(MYP_percent ~ Fertilizer + Mean.clim_PC1, random = ~1|Paper/Crop,
-                  data = d.yield.stability, na.action = "na.omit")
+clipr::write_clip(spei.tidy)
 
 
-###
+ggplot(d.yield.stability, mapping = aes(x = Mean.SPEI.1, y = CV.yield)) +
+  geom_point()
 
-## Models with carbon
+#   # Fertilizer significant for both MYP and MYP percent
+# 
+# summary(lme(MYP_percent ~ Org.amend,
+#             random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
+#   # Org amend significant for both MYP and MYP percent
+# 
+# summary(lme(MYP_percent ~ Rotation, 
+#             random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
+#   # Rotation significant for both MYP and MYP percent
+# 
+# summary(lme(CV.yield ~ Fertilizer, 
+#             random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
+#   # Fertilizer significant for yield CV (reduces CV)
+# 
+# summary(lme(CV.yield ~ Mean.SPEI.1,
+#             random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
+#   # Rotation significant for yield CV
+# 
+# summary(lme(MYP_percent ~ Mean.SPEI.12,
+#             random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
+#   # 9- and 12-month SPEI significant predictors of MYP percent, but not MYP
+# 
+# summary(lme(MYP ~ Mean.clim_PC1,
+#             random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
+#   # Clim PC1 (temperature) significant predictor of MYP but not MYP percent
+# 
+# summary(lme(CV.yield ~ Mean.clim_PC1*Mean.clim_PC2,
+#             random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
+# summary(lme(CV.yield ~ Mean.clim_PC2,
+#             random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
+# 
+#   # Clim PCs 1 & 2 significant predictors of yield CV
+# 
+# summary(lme(CV.yield ~ Mean.SPEI.1,
+#             random = ~1|Paper/Crop, data = d.yield.stability, na.action = "na.omit"))
+#   # 6-, 9-, and 12-month SPEI are significant predictors of yield CV
+# 
+# ### Finding best fit
+# myp.fert.1 <- lme(MYP_percent ~ Fertilizer + Mean.clim_PC1, random = ~1|Paper/Crop,
+#                   data = d.yield.stability, na.action = "na.omit")
+# 
+
+### By-crop analysis ###########################################################
+
+climate_effects_by_crop <- d.yield.stability %>%
+  filter(!is.na(Tillage)) %>%
+  group_by(Crop) %>%
+  filter(length(unique(Paper)) > 1) %>%
+  nest() %>%
+  mutate(model = map(data, function(df) lme(MYP_percent ~ Tillage*Mean.SPEI.1, random = ~1|Paper,
+                                            data = df, na.action = "na.omit")))
+  mutate(resids = map2(data, model, modelr::add_residuals))
+
+climate_tidy <- climate_effects_by_crop %>%
+  mutate(tidy = map(model, broom::tidy)) %>%
+  unnest(tidy)
+
+## all results pasted into Google Sheet for easier reading ##
+
+climate_tidy %>%
+  select(-c(data, model, resids)) %>%
+  clipr::write_clip()
+
+################################################################################
+### Models with carbon #########################################################
+################################################################################
 
 # MYP by SOC
 
@@ -73,10 +106,14 @@ d %>%
          Crop != "Maize biomass",
          Crop != "Cotton lint") %>%
 
-lme(MYP ~ SOC.g.kg.weighted, 
+lme(MYP_percent ~ SOC.g.kg.weighted, 
              random = ~1|Paper/Crop, data = ., na.action = "na.omit") -> m1
 
-m0 <- lme(MYP ~ SOC.g.kg.weighted, random = ~1|Paper/Crop, data = d, na.action = "na.omit")
+m0 <- lme(CV.yield ~ SOC.g.kg.weighted, random = ~1|Paper/Crop, data = d, na.action = "na.omit")
+
+m0.tidy <- broom.mixed::tidy(m0)
+
+clipr::write_clip(m0.tidy)
 
 summary(m0)
 
