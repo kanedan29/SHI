@@ -3,7 +3,7 @@ load("data/d.prepared.RData")
 
 d <- as.data.frame(d)
 
-ggplot(d, mapping = aes(x = SOC.g.kg.weighted, y = MYP, color = Crop)) +
+ggplot(d, mapping = aes(x = Tillage.SOC.LRR, y = MYP, color = Crop)) +
   geom_point()
 
 d <- d %>%

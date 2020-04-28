@@ -49,6 +49,13 @@ d.yield.stability.carbon %>%
 
 d.yield.stability.carbon %>%
   dplyr::group_by(Paper) %>%
+  filter(Residue.mgmt == "n") %>%
+  summarise(Residue.mgmt.SOC.control = mean(SOC.g.kg.weighted),
+            SD.res.control = sd(SOC.g.kg.weighted),
+            N.res.control = n()) -> d.res.soc.control
+
+d.yield.stability.carbon %>%
+  dplyr::group_by(Paper) %>%
   filter(Fertilizer == "n") %>%
   summarise(Fertilizer.SOC.control = mean(SOC.g.kg.weighted),
             SD.fertilizer.control = sd(SOC.g.kg.weighted),
@@ -59,6 +66,7 @@ d.yield.stability.carbon %>%
   left_join(d.cover.soc.control) %>%
   left_join(d.org.amend.soc.control) %>%
   left_join(d.rotation.soc.control) %>%
+  left_join(d.res.soc.control) %>%
   left_join(d.fertilizer.soc.control) %>%
   distinct(.) %>%
   group_by(Paper, Trt.combo) %>%
@@ -75,6 +83,8 @@ d %>%
     var.Org.amend.SOC.LRR = (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) + (SD.org.amend.control^2)/(N.org.amend.control * (Org.amend.SOC.control^2)),
     Rotation.SOC.LRR = log(SOC.g.kg.weighted/Rotation.SOC.control),
     var.Rotation.SOC.LRR = (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) + (SD.rotation.control^2)/(N.rotation.control * (Rotation.SOC.control^2)),
+    Residue.mgmt.SOC.LRR = log(SOC.g.kg.weighted/Residue.mgmt.SOC.control),
+    var.Residue.mgmt.SOC.LRR = (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) + (SD.res.control^2)/(N.res.control * (Residue.mgmt.SOC.control^2)),
     Fertilizer.SOC.LRR = log(SOC.g.kg.weighted/Fertilizer.SOC.control),
     var.Fertilizer.SOC.LRR = (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) + (SD.fertilizer.control^2)/(N.fertilizer.control * (Fertilizer.SOC.control^2))
   ) -> d
@@ -91,6 +101,8 @@ d %>%
     delta.var.Org.amend.SOC.LRR = var.Org.amend.SOC.LRR + 0.5 * ( (SD.treatment^4)/(N.treatment^2 * (SOC.g.kg.weighted^4)) + (SD.org.amend.control^4)/(N.org.amend.control^2 * (Org.amend.SOC.control^4)) ),
     delta.Rotation.SOC.LRR = Rotation.SOC.LRR + 0.5 * ( (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) - (SD.rotation.control^2)/(N.rotation.control * (Rotation.SOC.control^2)) ),
     delta.var.Rotation.SOC.LRR = var.Rotation.SOC.LRR + 0.5 * ( (SD.treatment^4)/(N.treatment^2 * (SOC.g.kg.weighted^4)) + (SD.rotation.control^4)/(N.rotation.control^2 * (Rotation.SOC.control^4)) ),
+    delta.Residue.mgmt.SOC.LRR = Residue.mgmt.SOC.LRR + 0.5 * ( (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) - (SD.res.control^2)/(N.res.control * (Residue.mgmt.SOC.control^2)) ),
+    delta.var.Residue.mgmt.SOC.LRR = var.Residue.mgmt.SOC.LRR + 0.5 * ( (SD.treatment^4)/(N.treatment^2 * (SOC.g.kg.weighted^4)) + (SD.res.control^4)/(N.res.control^2 * (Residue.mgmt.SOC.control^4)) ),
     delta.Fertilizer.SOC.LRR = Fertilizer.SOC.LRR + 0.5 * ( (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) - (SD.fertilizer.control^2)/(N.fertilizer.control * (Fertilizer.SOC.control^2)) ),
     delta.var.Fertilizer.SOC.LRR = var.Fertilizer.SOC.LRR + 0.5 * ( (SD.treatment^4)/(N.treatment^2 * (SOC.g.kg.weighted^4)) + (SD.fertilizer.control^4)/(N.fertilizer.control^2 * (Fertilizer.SOC.control^4)) )
   ) -> d
@@ -107,52 +119,6 @@ d %>%
   group_by(Paper, Crop, Units) %>%
   mutate(Paper_crop_mean_yield = mean(Mean.yield),
          MYP_percent= MYP/Paper_crop_mean_yield) -> d
-
-
-## Climate dimension reduction
-
-# Want to evaluate climate variables for correlation before building LMEs
-clim_vars_carbon <- d[,c(9:11, 13:15)] # excluding soil moisture & PDSI for now
-corr1 <- cor(clim_vars_carbon)
-ggcorrplot::ggcorrplot(corr1, type = "lower", lab = TRUE)
-
-clim_vars_yield <- d.yield.stability[,c(9:11, 13:15)] # excluding soil moisture & PDSI again
-corr2 <- cor(clim_vars_yield)
-ggcorrplot::ggcorrplot(corr2, type = "lower", lab = TRUE)
-
-# Lots of correlation between variables, will conduct PCA to reduce and build new climate predictor variables.
-# Excluding soil moisture for now
-
-climate.pca1 <- prcomp(clim_vars_carbon, center = TRUE, scale. = TRUE)
-summary(climate.pca1)
-factoextra::fviz_eig(climate.pca1)
-# Two principal components may be sufficient for C dataset, fourth doesn't add much to variance explanation
-
-climate.pca2 <- prcomp(clim_vars_yield, center = TRUE, scale. = TRUE)
-summary(climate.pca2)
-factoextra::fviz_eig(climate.pca2)
-# Again, two PCs seems good for yield dataset
-
-# Interpretation of principal components:
-
-climate.pca1$rotation
-climate.pca2$rotation
-
-# PC1: temperature (max & min) and potential evapotranspiration
-# PC2: precipitation and actual evapotranspiration
-
-new_climate_carbon <- as.data.frame(climate.pca1$x[,1:2])
-names(new_climate_carbon) <- c("clim_PC1", "clim_PC2")
-d <- d %>%
-  bind_cols(new_climate_carbon) %>%
-  as.data.frame(.)
-  
-
-new_climate_yield <- as.data.frame(climate.pca2$x[,1:2])
-names(new_climate_yield) <- c("clim_PC1", "clim_PC2")
-d.yield.stability <- d.yield.stability %>%
-  bind_cols(new_climate_yield) %>%
-  as.data.frame(.)
 
 save("d", "d.yield.stability", file = "data/d.prepared.RData")
 

@@ -5,7 +5,7 @@ load(here::here("data", "d.prepared.RData"))
 mapping = c("y" = 1, "n" = 0)
 
 d <- d %>%
- mutate_at(names(.)[24:30], function(i) mapping[i])
+ mutate_at(names(.)[25:31], function(i) mapping[i])
 
 ####################
 ##### With SOC #####
@@ -65,9 +65,8 @@ fert.spei.9.soclrr.myp_sem1 <- psem(
 
 summary(fert.spei.9.soclrr.myp_sem1)
 
-  ## Final two models for fertilizer ##
+  ## Final models for fertilizer ##
   summary(fert.soclrr.myp_sem1)
-  summary(fert.climpc.soclrr.myp_sem)
   #####################################
 
 ### With organic amendments and climate variables ##############################
@@ -109,10 +108,30 @@ org.clim.soclrr.myp_sem2 <- psem(
     # Now, models don't fit significantly differently, leave climate out in favor
     # of more parismonious model, i.e. don't reject the null
     
+    org.soclrr.myp.null_sem <- psem(
+      lme(delta.Org.amend.SOC.LRR ~ Org.amend,
+          random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
+      lme(MYP_percent ~ 1,
+          random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
+    )
+    
+    anova(org.soclrr.myp.null_sem, org.soclrr.myp_sem)
+    
     # Final organic amendment model:
     summary(org.soclrr.myp_sem)
     ###############################
 
+### With fertilizer and org amend interaction ##################################
+
+# fert.org.soclrr.myp_sem <- psem(
+#   lme(delta.Fertilizer.SOC.LRR ~ Fertilizer*Org.amend,
+#       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
+#   lme(delta.Org.amend.SOC.LRR ~ Fertilizer*Org.amend,
+#       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
+#   lme(MYP_percent ~ delta.Fertilizer.SOC.LRR + delta.Org.amend.SOC.LRR,
+#       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")
+# )
+#     
 ### With rotation and climate variables ########################################
 # Not enough data, too noisy/messy
     
@@ -176,7 +195,7 @@ fert.soclrr.cv_sem <- psem(
     summary(fert.soclrr.cv_sem)
 
 fert.clim.soclrr.cv_sem <- psem(
-  lme(delta.Fertilizer.SOC.LRR ~ Fertilizer*Mean.SPEI.3,
+  lme(delta.Fertilizer.SOC.LRR ~ Fertilizer*Mean.SPEI.9,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML"),
   lme(CV.yield ~ delta.Fertilizer.SOC.LRR,
       random = ~1|Paper/Crop, na.action = "na.omit", data = d, method = "ML")

@@ -87,12 +87,13 @@ for (i in 1:nrow(yield.locations)) {
 full_climate <- bind_rows(dfList)
 
 add_spei <- function(df) {
+  SPEI.1 <- spei((df$ppt - df$pet), scale = 1)
   SPEI.3 <- spei((df$ppt - df$pet), scale = 3)
   SPEI.6 <- spei((df$ppt - df$pet), scale = 6)
   SPEI.9 <- spei((df$ppt - df$pet), scale = 9)
   SPEI.12 <- spei((df$ppt - df$pet), scale = 12)
   
-  cbind(df, as.numeric(SPEI.3$fitted), as.numeric(SPEI.6$fitted), 
+  cbind(df, as.numeric(SPEI.1$fitted), as.numeric(SPEI.3$fitted), as.numeric(SPEI.6$fitted), 
         as.numeric(SPEI.9$fitted), as.numeric(SPEI.12$fitted))
 }
 
@@ -103,12 +104,40 @@ intermediate <- lapply(intermediate, add_spei)
 full_climate <- bind_rows(intermediate)
 
 full_climate %>%
-  rename("SPEI.3" = "as.numeric(SPEI.3$fitted)",
+  rename("SPEI.1" = "as.numeric(SPEI.1$fitted)",
+         "SPEI.3" = "as.numeric(SPEI.3$fitted)",
          "SPEI.6" = "as.numeric(SPEI.6$fitted)",
          "SPEI.9" = "as.numeric(SPEI.9$fitted)",
          "SPEI.12" = "as.numeric(SPEI.12$fitted)") -> full_climate
 
-  
+# Climate dimension reduction
+
+  # Want to evaluate climate variables for correlation before building LMEs
+  clim_vars <- full_climate[,c(8:10, 12:14)] # excluding soil moisture & indices for now
+  corr1 <- cor(clim_vars)
+  ggcorrplot::ggcorrplot(corr1, type = "lower", lab = TRUE)
+
+  # Lots of correlation between variables, will conduct PCA to reduce and build new climate predictor variables.
+  # Done in case that we don't want to use climate indices for later model construction
+  # Excluding soil moisture for now
+
+  climate.pca1 <- prcomp(clim_vars, center = TRUE, scale. = TRUE)
+  summary(climate.pca1)
+  factoextra::fviz_eig(climate.pca1)
+  # Two principal components may be sufficient third doesn't add much to variance explanation
+
+  # Interpretation of principal components:
+
+  climate.pca1$rotation
+
+  # PC1: temperature (max & min) and potential evapotranspiration
+  # PC2: precipitation, actual evapotranspiration, and climate water deficit
+
+  new_climate_vars <- as.data.frame(climate.pca1$x[,1:2])
+  names(new_climate_vars) <- c("clim_PC1", "clim_PC2")
+  full_climate <- full_climate %>%
+    bind_cols(new_climate_vars) %>%
+    as.data.frame(.)
   
 
 # Collapse dataset by year
@@ -122,7 +151,12 @@ meanmonthly_climate <- full_climate %>%
 		pet = mean(pet),
 		aet = mean(aet),
 		def = mean(def),
+		clim_PC1 = mean(clim_PC1),
+		clim_PC2 = mean(clim_PC2),
 		PDSI = mean(PDSI),
+		SPEI.1.year.min = min(SPEI.1),
+		SPEI.1.SD = sd(SPEI.1),
+		SPEI.1 = mean(SPEI.1),
 		SPEI.3 = mean(SPEI.3),
 		SPEI.6 = mean(SPEI.6),
 		SPEI.9 = mean(SPEI.9),
