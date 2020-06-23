@@ -13,112 +13,86 @@ str(d.carbon.trts)
 d.carbon.summary %>%
   inner_join(d.carbon.trts[,c(1,10,11)]) -> d.carbon.summary
 
+names(d.carbon.summary)[1] <- "Corresponding soil paper"
+
 d.yield.stability %>%
-  inner_join(d.carbon.summary[,c(1,3:6)]) %>%
-  distinct(.) -> d.yield.stability.carbon
+  inner_join(d.carbon.summary[,c(1:5)]) %>%
+  distinct(.) -> d.yield.stability.carbon.irr
+
+d.yield.stability %>%
+  anti_join(d.carbon.summary[,c(1:5)]) %>%
+  distinct(.) -> dropped
+
+d.yield.stability.carbon.irr %>%
+  filter(Irrigation != "y" | is.na(Irrigation)) -> d.yield.stability.carbon
 
 ## Calculate LRRs
 
 d.yield.stability.carbon %>%
-  dplyr::group_by(Paper) %>%
-  filter(Tillage == "n") %>%
-  summarise(Tillage.SOC.control = mean(SOC.g.kg.weighted),
-            SD.tillage.control = sd(SOC.g.kg.weighted),
-            N.tillage.control = n()) -> d.till.soc.control
+  dplyr::group_by(`Corresponding soil paper`) %>%
+  filter(Control == 1) %>%
+  summarise(SOC.control = mean(SOC.g.kg.weighted),
+            SD.SOC.control = case_when(n() == 1 ~ sum(SOC.SD),
+                                       n() != 1 ~ sum(SOC.SD^2/SOC.n)),
+            N.SOC.control = sum(SOC.n)) -> d.soc.control
+
+
+d.yield.stability.carbon.irr %>%
+  dplyr::group_by(`Corresponding soil paper`) %>%
+  filter(Control == 1) %>%
+  summarise(SOC.control = mean(SOC.g.kg.weighted),
+            SD.SOC.control = case_when(n() == 1 ~ sum(SOC.SD),
+                                       n() != 1 ~ sum(SOC.SD^2/SOC.n)),
+            N.SOC.control = sum(SOC.n)) -> d.soc.control.irr
+
+
 
 d.yield.stability.carbon %>%
-  dplyr::group_by(Paper) %>%
-  filter(Cover == "n") %>%
-  summarise(Cover.SOC.control = mean(SOC.g.kg.weighted),
-            SD.cover.control = sd(SOC.g.kg.weighted),
-            N.cover.control = n()) -> d.cover.soc.control
+  left_join(d.soc.control) %>%
+  distinct(.) -> d.nonirr
 
-d.yield.stability.carbon %>%
-  dplyr::group_by(Paper) %>%
-  filter(Org.amend == "n") %>%
-  summarise(Org.amend.SOC.control = mean(SOC.g.kg.weighted),
-            SD.org.amend.control = sd(SOC.g.kg.weighted),
-            N.org.amend.control = n()) -> d.org.amend.soc.control
+d.yield.stability.carbon.irr %>%
+  left_join(d.soc.control.irr) %>%
+  distinct(.) -> d.irr
 
-d.yield.stability.carbon %>%
-  dplyr::group_by(Paper) %>%
-  filter(Rotation == "n") %>%
-  summarise(Rotation.SOC.control = mean(SOC.g.kg.weighted),
-            SD.rotation.control = sd(SOC.g.kg.weighted),
-            N.rotation.control = n()) -> d.rotation.soc.control
+d.nonirr %>%
+  mutate(SOC.LRR = log(SOC.g.kg.weighted/SOC.control),
+         var.SOC.LRR = (SOC.SD^2)/(SOC.n * (SOC.g.kg.weighted^2)) + (SD.SOC.control^2)/(N.SOC.control * (SOC.control^2))
+  ) -> d.nonirr
 
-d.yield.stability.carbon %>%
-  dplyr::group_by(Paper) %>%
-  filter(Residue.mgmt == "n") %>%
-  summarise(Residue.mgmt.SOC.control = mean(SOC.g.kg.weighted),
-            SD.res.control = sd(SOC.g.kg.weighted),
-            N.res.control = n()) -> d.res.soc.control
-
-d.yield.stability.carbon %>%
-  dplyr::group_by(Paper) %>%
-  filter(Fertilizer == "n") %>%
-  summarise(Fertilizer.SOC.control = mean(SOC.g.kg.weighted),
-            SD.fertilizer.control = sd(SOC.g.kg.weighted),
-            N.fertilizer.control = n()) -> d.fertilizer.soc.control
-
-d.yield.stability.carbon %>%
-  left_join(d.till.soc.control) %>%
-  left_join(d.cover.soc.control) %>%
-  left_join(d.org.amend.soc.control) %>%
-  left_join(d.rotation.soc.control) %>%
-  left_join(d.res.soc.control) %>%
-  left_join(d.fertilizer.soc.control) %>%
-  distinct(.) %>%
-  group_by(Paper, Trt.combo) %>%
-  mutate(SD.treatment = sd(SOC.g.kg.weighted),
-         N.treatment = n()) -> d
-
-d %>%
-  mutate(
-    Tillage.SOC.LRR = log(SOC.g.kg.weighted/Tillage.SOC.control),
-    var.Tillage.SOC.LRR = (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) + (SD.tillage.control^2)/(N.tillage.control * (Tillage.SOC.control^2)),
-    Cover.SOC.LRR = log(SOC.g.kg.weighted/Cover.SOC.control),
-    var.Cover.SOC.LRR = (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) + (SD.cover.control^2)/(N.cover.control * (Cover.SOC.control^2)),
-    Org.amend.SOC.LRR = log(SOC.g.kg.weighted/Org.amend.SOC.control),
-    var.Org.amend.SOC.LRR = (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) + (SD.org.amend.control^2)/(N.org.amend.control * (Org.amend.SOC.control^2)),
-    Rotation.SOC.LRR = log(SOC.g.kg.weighted/Rotation.SOC.control),
-    var.Rotation.SOC.LRR = (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) + (SD.rotation.control^2)/(N.rotation.control * (Rotation.SOC.control^2)),
-    Residue.mgmt.SOC.LRR = log(SOC.g.kg.weighted/Residue.mgmt.SOC.control),
-    var.Residue.mgmt.SOC.LRR = (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) + (SD.res.control^2)/(N.res.control * (Residue.mgmt.SOC.control^2)),
-    Fertilizer.SOC.LRR = log(SOC.g.kg.weighted/Fertilizer.SOC.control),
-    var.Fertilizer.SOC.LRR = (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) + (SD.fertilizer.control^2)/(N.fertilizer.control * (Fertilizer.SOC.control^2))
-  ) -> d
+d.irr %>%
+  mutate(SOC.LRR = log(SOC.g.kg.weighted/SOC.control),
+         var.SOC.LRR = (SOC.SD^2)/(SOC.n * (SOC.g.kg.weighted^2)) + (SD.SOC.control^2)/(N.SOC.control * (SOC.control^2))
+  ) -> d.irr
 
 ## Correct LRRs for bias
 
-d %>%
+d.nonirr %>%
   mutate(
-    delta.Tillage.SOC.LRR = Tillage.SOC.LRR + 0.5 * ( (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) - (SD.tillage.control^2)/(N.tillage.control * (Tillage.SOC.control^2)) ),
-    delta.var.Tillage.SOC.LRR = var.Tillage.SOC.LRR + 0.5 * ( (SD.treatment^4)/(N.treatment^2 * (SOC.g.kg.weighted^4)) + (SD.tillage.control^4)/(N.tillage.control^2 * (Tillage.SOC.control^4)) ),
-    delta.Cover.SOC.LRR = Cover.SOC.LRR + 0.5 * ( (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) - (SD.cover.control^2)/(N.cover.control * (Cover.SOC.control^2)) ),
-    delta.var.Cover.SOC.LRR = var.Cover.SOC.LRR + 0.5 * ( (SD.treatment^4)/(N.treatment^2 * (SOC.g.kg.weighted^4)) + (SD.cover.control^4)/(N.cover.control^2 * (Cover.SOC.control^4)) ),
-    delta.Org.amend.SOC.LRR = Org.amend.SOC.LRR + 0.5 * ( (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) - (SD.org.amend.control^2)/(N.org.amend.control * (Org.amend.SOC.control^2)) ),
-    delta.var.Org.amend.SOC.LRR = var.Org.amend.SOC.LRR + 0.5 * ( (SD.treatment^4)/(N.treatment^2 * (SOC.g.kg.weighted^4)) + (SD.org.amend.control^4)/(N.org.amend.control^2 * (Org.amend.SOC.control^4)) ),
-    delta.Rotation.SOC.LRR = Rotation.SOC.LRR + 0.5 * ( (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) - (SD.rotation.control^2)/(N.rotation.control * (Rotation.SOC.control^2)) ),
-    delta.var.Rotation.SOC.LRR = var.Rotation.SOC.LRR + 0.5 * ( (SD.treatment^4)/(N.treatment^2 * (SOC.g.kg.weighted^4)) + (SD.rotation.control^4)/(N.rotation.control^2 * (Rotation.SOC.control^4)) ),
-    delta.Residue.mgmt.SOC.LRR = Residue.mgmt.SOC.LRR + 0.5 * ( (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) - (SD.res.control^2)/(N.res.control * (Residue.mgmt.SOC.control^2)) ),
-    delta.var.Residue.mgmt.SOC.LRR = var.Residue.mgmt.SOC.LRR + 0.5 * ( (SD.treatment^4)/(N.treatment^2 * (SOC.g.kg.weighted^4)) + (SD.res.control^4)/(N.res.control^2 * (Residue.mgmt.SOC.control^4)) ),
-    delta.Fertilizer.SOC.LRR = Fertilizer.SOC.LRR + 0.5 * ( (SD.treatment^2)/(N.treatment * (SOC.g.kg.weighted^2)) - (SD.fertilizer.control^2)/(N.fertilizer.control * (Fertilizer.SOC.control^2)) ),
-    delta.var.Fertilizer.SOC.LRR = var.Fertilizer.SOC.LRR + 0.5 * ( (SD.treatment^4)/(N.treatment^2 * (SOC.g.kg.weighted^4)) + (SD.fertilizer.control^4)/(N.fertilizer.control^2 * (Fertilizer.SOC.control^4)) )
-  ) -> d
+    delta.SOC.LRR = SOC.LRR + 0.5 * ( (SOC.SD^2)/(SOC.n * (SOC.g.kg.weighted^2)) - (SD.SOC.control^2)/(N.SOC.control * (SOC.control^2)) ),
+    delta.var.SOC.LRR = var.SOC.LRR + 0.5 * ( (SOC.SD^4)/(SOC.n^2 * (SOC.g.kg.weighted^4)) + (SD.SOC.control^4)/(N.SOC.control^2 * (SOC.control^4)) )
+  ) -> d.nonirr
 
-d %>% 
+d.irr %>%
+  mutate(
+    delta.SOC.LRR = SOC.LRR + 0.5 * ( (SOC.SD^2)/(SOC.n * (SOC.g.kg.weighted^2)) - (SD.SOC.control^2)/(N.SOC.control * (SOC.control^2)) ),
+    delta.var.SOC.LRR = var.SOC.LRR + 0.5 * ( (SOC.SD^4)/(SOC.n^2 * (SOC.g.kg.weighted^4)) + (SD.SOC.control^4)/(N.SOC.control^2 * (SOC.control^4)) )
+  ) -> d.irr
+
+d.nonirr %>% 
   group_by(Paper, Trt.combo) %>%
-  mutate(modified.gearys = case_when( (SOC.g.kg.weighted / SD.treatment) * (4 * N.treatment^(3.0 / 2.0) / (1 + 4*N.treatment)) >= 3 ~ TRUE,
-                                      (SOC.g.kg.weighted / SD.treatment) * (4 * N.treatment^(3.0 / 2.0) / (1 + 4*N.treatment)) < 3 ~ FALSE)) -> d
-  
+  mutate(modified.gearys = case_when( (SOC.g.kg.weighted / SOC.SD) * (4 * SOC.n^(3.0 / 2.0) / (1 + 4*SOC.n)) >= 3 ~ TRUE,
+                                      (SOC.g.kg.weighted / SOC.SD) * (4 * SOC.n^(3.0 / 2.0) / (1 + 4*SOC.n)) < 3 ~ FALSE)) -> d.nonirr
 
-d <- d[!is.na(d$MYP),]
+d.irr %>% 
+  group_by(Paper, Trt.combo) %>%
+  mutate(modified.gearys = case_when( (SOC.g.kg.weighted / SOC.SD) * (4 * SOC.n^(3.0 / 2.0) / (1 + 4*SOC.n)) >= 3 ~ TRUE,
+                                      (SOC.g.kg.weighted / SOC.SD) * (4 * SOC.n^(3.0 / 2.0) / (1 + 4*SOC.n)) < 3 ~ FALSE)) -> d.irr  
 
-d %>%
-  group_by(Paper, Crop, Units) %>%
-  mutate(Paper_crop_mean_yield = mean(Mean.yield),
-         MYP_percent= MYP/Paper_crop_mean_yield) -> d
 
-save("d", "d.yield.stability", file = "data/d.prepared.RData")
+d.nonirr <- d.nonirr[!is.na(d.nonirr$MYP),]
+d.irr <- d.irr[!is.na(d.irr$MYP),]
+
+
+save("d.nonirr", "d.irr", "d.yield.stability", file = "data/d.prepared.RData")
 

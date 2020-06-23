@@ -1,27 +1,33 @@
 source("code/libraries.R")
+
+load("data/d.yield.RData")
 load("data/d.prepared.RData")
 
-d <- as.data.frame(d)
+# Non-aggregated yield data
 
-ggplot(d, mapping = aes(x = Tillage.SOC.LRR, y = MYP, color = Crop)) +
-  geom_point()
+## Plotting interaction of treatment with EI by year
 
-d <- d %>%
-  filter(Crop != "Biomass",
-         Crop != "Maize biomass",
-         Crop != "Cotton lint")
+d.yield.nonagg %>%
+  filter(!is.na(Fertilizer)) %>% # Change for each treatment
+  ggplot(mapping = aes(x = EI.by.year.weighted, y = Yield.weighted)) +
+  geom_point() +
+  geom_smooth(method = "lm", formula = y ~ x, mapping = aes(group = Fertilizer, color = Fertilizer))
 
-MYP_SOM <- ggplot(d, mapping = aes(x = SOC.g.kg.weighted, y = MYP, color = Crop)) +
-  geom_point(mapping = aes(size = CV.yield)) + 
-  labs(title = "SOM effects on MYP")
-MYP_PC1 <- ggplot(d, mapping = aes(x = clim_PC1, y = MYP, color = Crop)) +
-  geom_point(mapping = aes(size = CV.yield)) +
-  labs(title = "Temperature effects on MYP")
-MYP_PC2 <- ggplot(d, mapping = aes(x = clim_PC2, y = MYP, color = Crop)) +
-  geom_point(mapping = aes(size = CV.yield)) +
-  labs(title = "Precipitation & actual evapotranspiration effects on MYP")
-MYP_PC3 <- ggplot(d, mapping = aes(x = clim_PC3, y = MYP, color = Crop)) +
-  geom_point(mapping = aes(size = CV.yield)) +
-  labs(title = "Drought severity effects on MYP")
+## Plotting interaction of treatment with SPEI
 
-ggpubr::ggarrange(MYP_SOM, MYP_PC1, MYP_PC2, MYP_PC3, ncol = 2, nrow = 2, common.legend = TRUE)
+d.yield.nonagg %>%
+  filter(!is.na(Rotation)) %>%
+  ggplot(data = ., mapping = aes(x = SPEI.1, y = Yield.weighted)) +
+  geom_point() +
+  geom_smooth(mapping = aes(group = Rotation, color = Rotation))
+
+# Carbon and yield stability metrics
+
+d.nonirr %>%
+  # filter(Paper != "Thierfelder and Wall 2012", # Sensitive papers
+  #        Paper != "Gao et al. 2015") %>%
+  ggplot(mapping = aes(x = delta.SOC.LRR, y = MYP.weighted.percent)) +
+  geom_point(aes(size = CV.yield.weighted), alpha = 1/3) +
+  geom_smooth(method = "lm", formula = y ~ x)
+
+

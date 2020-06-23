@@ -21,7 +21,7 @@ load("data/locations.RData")
 
 # Create month and year labels for data
 
-years <- c(1958:2018)
+years <- c(1958:2019)
 months <- c(1:12)
 timeframe <- expand.grid(years, months)
 timeframe <- timeframe %>%
@@ -30,7 +30,7 @@ timeframe <- timeframe %>%
 
 # Create list of variables to query from database:
 
-vars <- c("tmin", "tmax", "ppt", "soil", "pet", "aet", "def", "PDSI")
+vars <- c("tmin", "tmax", "ppt", "pet")
 
 # "tmin": minimum monthly temperature (C)
 # "tmax": maximum monthly temperature (C)
@@ -42,49 +42,61 @@ vars <- c("tmin", "tmax", "ppt", "soil", "pet", "aet", "def", "PDSI")
 #								evaporated or transpired if it had been present at the forcing temperature)
 # "PDSI": Palmer Drought Severity Index (0 = normal, < 0 = drought, > 0 = wet)
 
-dfList <- list()
+
 
 # Need to manually enter lon index for row 97 (Turley et al. 2003;	ADAS Terrington, Norfolk, England;	Norfolk, England),
 # as either 0 or 2 lon indexes are returned.
 # Used 4344 as manual lon index
 
-for (i in 1:nrow(yield.locations)) {
-  df <- merge(yield.locations[i,], timeframe)
+get_terraclimate_data <- function (locations, vars, timeframe) {
   
-  lat <- yield.locations[[i, 'lat']]
-  lon <- yield.locations[[i, 'lon']]
+  dfList <- list()
   
-  for (var in vars) {
-    pathname <- paste("http://thredds.northwestknowledge.net:8080/thredds/dodsC/agg_terraclimate_", 
-                      var, "_1958_CurrentYear_GLOBE.nc", sep="")
-    nc <- nc_open(pathname)
+  for (i in 1:nrow(locations)) {
+    svMisc::progress(i)
+    df <- merge(locations[i,], timeframe)
     
-    x <- ncvar_get(nc, "lon")
-    y <- ncvar_get(nc, "lat")
-    flat = match(abs(y - lat) < 1/48, 1)
-    latindex = which(flat %in% 1)
-    if (i == 97){
-      	lonindex = 4344
+    lat <- locations[[i, 'lat']]
+    lon <- locations[[i, 'lon']]
+    
+    for (var in vars) {
+      pathname <- paste("http://thredds.northwestknowledge.net:8080/thredds/dodsC/agg_terraclimate_", 
+                        var, "_1958_CurrentYear_GLOBE.nc", sep="")
+      nc <- nc_open(pathname)
+      
+      x <- ncvar_get(nc, "lon")
+      y <- ncvar_get(nc, "lat")
+      flat = match(abs(y - lat) < 1/48, 1)
+      latindex = which(flat %in% 1)
+      if (i == 97){
+        	lonindex = 4344
+      }
+      else {
+      	flon = match(abs(x - lon) < 1/48, 1)
+        	lonindex = which(flon %in% 1)
+      }
+      start <- c(lonindex, latindex, 1)
+      count <- c(1, 1, -1)
+      
+      data <- as.numeric(ncvar_get(nc, varid = var, start = start, count))
+      df <- cbind(df, data)
+      df <- df %>% rename(!!var := "data")
+      
+      nc_close(nc)
     }
-    else {
-    	flon = match(abs(x - lon) < 1/48, 1)
-      	lonindex = which(flon %in% 1)
-    }
-    start <- c(lonindex, latindex, 1)
-    count <- c(1, 1, -1)
     
-    data <- as.numeric(ncvar_get(nc, varid = var, start = start, count))
-    df <- cbind(df, data)
-    df <- df %>% rename(!!var := "data")
-    
-    nc_close(nc)
+    dfList[[i]] <- df
+    if (i == nrow(locations)) cat("Done!\n")
   }
   
-  dfList[[i]] <- df
+  return(dfList)
+
 }
 
+full_climate_unbound <- get_terraclimate_data(yield.locations, vars, timeframe)
+
 # Create one dataset for all monthly variables
-full_climate <- bind_rows(dfList)
+full_climate <- bind_rows(full_climate_unbound)
 
 add_spei <- function(df) {
   SPEI.1 <- spei((df$ppt - df$pet), scale = 1)
@@ -110,51 +122,23 @@ full_climate %>%
          "SPEI.9" = "as.numeric(SPEI.9$fitted)",
          "SPEI.12" = "as.numeric(SPEI.12$fitted)") -> full_climate
 
-# Climate dimension reduction
-
-  # Want to evaluate climate variables for correlation before building LMEs
-  clim_vars <- full_climate[,c(8:10, 12:14)] # excluding soil moisture & indices for now
-  corr1 <- cor(clim_vars)
-  ggcorrplot::ggcorrplot(corr1, type = "lower", lab = TRUE)
-
-  # Lots of correlation between variables, will conduct PCA to reduce and build new climate predictor variables.
-  # Done in case that we don't want to use climate indices for later model construction
-  # Excluding soil moisture for now
-
-  climate.pca1 <- prcomp(clim_vars, center = TRUE, scale. = TRUE)
-  summary(climate.pca1)
-  factoextra::fviz_eig(climate.pca1)
-  # Two principal components may be sufficient third doesn't add much to variance explanation
-
-  # Interpretation of principal components:
-
-  climate.pca1$rotation
-
-  # PC1: temperature (max & min) and potential evapotranspiration
-  # PC2: precipitation, actual evapotranspiration, and climate water deficit
-
-  new_climate_vars <- as.data.frame(climate.pca1$x[,1:2])
-  names(new_climate_vars) <- c("clim_PC1", "clim_PC2")
-  full_climate <- full_climate %>%
-    bind_cols(new_climate_vars) %>%
-    as.data.frame(.)
-  
 
 # Collapse dataset by year
 meanmonthly_climate <- full_climate %>%
-	group_by(Paper, Study_name, Location, lat, lon, year) %>%
+	group_by(Paper, Study_name, Location, lat, lon, AEZ, year) %>%
 	summarise(
 		tmin = mean(tmin),
 		tmax = mean(tmax),
 		ppt = mean(ppt),
-		soil = mean(soil),
+		# soil = mean(soil),
 		pet = mean(pet),
-		aet = mean(aet),
-		def = mean(def),
-		clim_PC1 = mean(clim_PC1),
-		clim_PC2 = mean(clim_PC2),
-		PDSI = mean(PDSI),
+		# aet = mean(aet),
+		# def = mean(def),
+		# clim_PC1 = mean(clim_PC1),
+		# clim_PC2 = mean(clim_PC2),
+		# PDSI = mean(PDSI),
 		SPEI.1.year.min = min(SPEI.1),
+		SPEI.1.year.max = max(SPEI.1),
 		SPEI.1.SD = sd(SPEI.1),
 		SPEI.1 = mean(SPEI.1),
 		SPEI.3 = mean(SPEI.3),
@@ -164,3 +148,6 @@ meanmonthly_climate <- full_climate %>%
 		
 save("full_climate", file = "data/full_climate.RData")
 save("meanmonthly_climate", file = "data/meanmonthly_climate.RData")
+
+
+

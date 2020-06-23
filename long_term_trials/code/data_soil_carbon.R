@@ -2,7 +2,8 @@ source("code/libraries.R")
 gs_ls()
 d.raw <- gs_title("Long_term_yield _data")
 gs_ws_ls(d.raw)
-d.carbon.raw <- gs_read(ss=d.raw, ws = "Carbon")
+d.carbon.raw <- gs_read(ss=d.raw, ws = "Carbon", col_types = "ccccdcccccccccccccd?")
+
 
 d.carbon <- d.carbon.raw[,-20]
 names(d.carbon)[1:5] <- c("Paper",
@@ -34,6 +35,9 @@ d.carbon$Trt.combo <- apply(d.carbon[,7:13], 1, paste.drop.NA)
 
 d.carbon.trts <- read.csv("data/d.carbon.trts.csv")
 str(d.carbon.trts)
+
+test <- d.carbon %>%
+  anti_join(d.carbon.trts[,c(1,10:12)])
 
 d.carbon %>%
   inner_join(d.carbon.trts[,c(1,10,11,12)]) -> d.carbon
@@ -102,10 +106,60 @@ d.carbon %>%
   group_by(Paper, Trt.combo, `Soil sample depth (cm)`) %>%
   mutate(SOC.g.kg.weighted = Depth.proportion*SOC.g.kg) %>%
   group_by(Paper, Trt.combo) %>%
-  dplyr::summarise(SOC.g.kg.weighted =  sum(SOC.g.kg.weighted),
-                   SOC.SD = sd(SOC.g.kg),
-                   SOC.n = n()) -> d.carbon.summary
+  dplyr::summarise(SOC.SD = sd(SOC.g.kg.weighted, na.rm = TRUE),
+                   SOC.n = n(),
+                   SOC.g.kg.weighted = sum(SOC.g.kg.weighted, na.rm = TRUE)) -> d.carbon.summary
 
 d.carbon.summary <- (d.carbon.summary[!d.carbon.summary$SOC.g.kg.weighted > 150,])
+d.carbon.summary <- (d.carbon.summary[!d.carbon.summary$SOC.g.kg.weighted == 0,])
+
+## New carbon data
+
+d.carbon.new <- read.xlsx("data/AgEvidence_Oldfield_selected.xlsx", sheet = "carbon")
+
+d.carbon.new$Trt.combo <- apply(d.carbon.new[,6:12], 1, paste.drop.NA)
+d.carbon.trts <- read.csv("data/d.carbon.trts.csv")
+
+test <- d.carbon.new %>%
+  anti_join(d.carbon.trts[,c(1,10,11,12)])
+
+d.carbon.new %>%
+  inner_join(d.carbon.trts[,c(1,10,11,12)]) -> d.carbon.new
+
+## Summarize within papers
+
+d.carbon.new %>%
+  group_by(Paper, crop) %>%
+  filter(obs.year == max(obs.year)) %>%
+  mutate(Depth.increment = as.numeric(`bottom.measurement.depth.(cm)`) - as.numeric(`top.measurement.depth.(cm)`)) %>%
+  do(mutate(., max.bottom = as.numeric(max(as.numeric(`bottom.measurement.depth.(cm)`))))) %>%
+  mutate(Depth.proportion = as.numeric(Depth.increment)/max.bottom) %>%
+  mutate(Soil.kg.per.hectare = as.numeric(100000*Depth.increment)) -> d.carbon.new
+
+d.carbon.new[is.na(d.carbon.new$Depth.proportion), 'Depth.proportion'] <- 1
+
+d.carbon.new <- d.carbon.new %>%
+  filter(`bottom.measurement.depth.(cm)` < 50 | is.na(`bottom.measurement.depth.(cm)`)) %>%
+  filter(Paper != "Campbell et al. 2007")
+
+d.carbon.new %>%
+  mutate(SOC.g.kg = case_when(
+    soil.carbon.units == '%' ~ soil.carbon.value/.1,
+    soil.carbon.units == 'Mg/ha' ~ soil.carbon.value/Soil.kg.per.hectare*1000000,
+    soil.carbon.units == 'g C/g soil' ~ soil.carbon.value*1000
+  )) -> d.carbon.new
+
+d.carbon.new %>%
+  group_by(Paper, Trt.combo, `top.measurement.depth.(cm)`) %>%
+  mutate(SOC.g.kg.weighted = Depth.proportion*SOC.g.kg) %>%
+  group_by(Paper, Trt.combo) %>%
+  summarize(SOC.SD = sd(SOC.g.kg.weighted, na.rm = TRUE),
+            SOC.n = n(),
+            SOC.g.kg.weighted = sum(SOC.g.kg.weighted, na.rm = TRUE)) -> d.carbon.new_summary
+
+d.carbon.summary %>%
+  rbind(d.carbon.new_summary) -> d.carbon.summary
+
+d.carbon.summary[is.na(d.carbon.summary$SOC.SD), "SOC.SD"] <- 0
 
 save("d.carbon.summary", file = "data/d.carbon.summary.RData")
