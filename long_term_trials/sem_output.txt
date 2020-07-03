@@ -1,0 +1,164 @@
+  |                                                                                                                                      |                                                                                                                              |   0%  |                                                                                                                                      |===============================================================                                                               |  50%  |                                                                                                                                      |==============================================================================================================================| 100%
+
+Structural Equation Model of fert_sem 
+
+Call:
+  delta.SOC.LRR ~ Fertilizer
+  MYP.weighted ~ delta.SOC.LRR + Fertilizer
+  CV.yield.weighted ~ MYP.weighted
+
+    AIC      BIC
+ 36.529   53.241
+
+---
+Tests of directed separation:
+
+                           Independ.Claim Test.Type DF Crit.Value P.Value 
+     CV.yield.weighted ~ Fertilizer + ...      coef 14     1.3434  0.2005 
+  CV.yield.weighted ~ delta.SOC.LRR + ...      coef 13     0.6645  0.5180 
+
+Global goodness-of-fit:
+
+  Fisher's C = 4.529 with P-value = 0.339 and on 4 degrees of freedom
+
+---
+Coefficients:
+
+           Response     Predictor Estimate Std.Error DF Crit.Value P.Value Std.Estimate    
+      delta.SOC.LRR    Fertilizer   0.2594    0.1041 15     2.4924  0.0249       0.3567   *
+       MYP.weighted delta.SOC.LRR   0.3964    0.1269 14     3.1241  0.0075       0.3176  **
+       MYP.weighted    Fertilizer   0.2306    0.0643 14     3.5866  0.0030       0.2540  **
+  CV.yield.weighted  MYP.weighted  -0.4297    0.0560 72    -7.6737  0.0000      -0.9513 ***
+
+  Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05
+
+---
+Individual R-squared:
+
+           Response method Marginal Conditional
+      delta.SOC.LRR   none     0.22        0.39
+       MYP.weighted   none     0.64        0.79
+  CV.yield.weighted   none     0.52        0.83
+  |                                                                                                                                      |                                                                                                                              |   0%  |                                                                                                                                      |==========================================                                                                                    |  33%  |                                                                                                                                      |====================================================================================                                          |  67%  |                                                                                                                                      |==============================================================================================================================| 100%
+
+Structural Equation Model of org.amend_sem 
+
+Call:
+  delta.SOC.LRR ~ Org.amend
+  MYP.weighted ~ delta.SOC.LRR
+  CV.yield.weighted ~ MYP.weighted
+
+    AIC      BIC
+ 33.784   46.282
+
+---
+Tests of directed separation:
+
+                           Independ.Claim Test.Type DF Crit.Value P.Value 
+           MYP.weighted ~ Org.amend + ...      coef 11    -1.2543  0.2357 
+      CV.yield.weighted ~ Org.amend + ...      coef 11    -0.2416  0.8135 
+  CV.yield.weighted ~ delta.SOC.LRR + ...      coef 10    -0.2790  0.7860 
+
+Global goodness-of-fit:
+
+  Fisher's C = 3.784 with P-value = 0.706 and on 6 degrees of freedom
+
+---
+Coefficients:
+
+           Response     Predictor Estimate Std.Error DF Crit.Value P.Value Std.Estimate    
+      delta.SOC.LRR     Org.amend   0.2687    0.1026 12     2.6180  0.0225       0.4169   *
+       MYP.weighted delta.SOC.LRR   0.3123    0.0473 72     6.6066  0.0000       0.2502 ***
+  CV.yield.weighted  MYP.weighted  -0.4297    0.0560 72    -7.6737  0.0000      -0.9513 ***
+
+  Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05
+
+---
+Individual R-squared:
+
+           Response method Marginal Conditional
+      delta.SOC.LRR   none     0.33        0.33
+       MYP.weighted   none     0.07        0.87
+  CV.yield.weighted   none     0.52        0.83
+  |                                                                                                                                      |                                                                                                                              |   0%  |                                                                                                                                      |==========================================                                                                                    |  33%  |                                                                                                                                      |====================================================================================                                          |  67%  |                                                                                                                                      |==============================================================================================================================| 100%
+
+Structural Equation Model of rot_sem 
+
+Call:
+  delta.SOC.LRR ~ Rotation
+  MYP.weighted ~ delta.SOC.LRR
+  CV.yield.weighted ~ MYP.weighted
+
+    AIC      BIC
+ 36.723   41.262
+
+---
+Tests of directed separation:
+
+                           Independ.Claim Test.Type DF Crit.Value P.Value 
+            MYP.weighted ~ Rotation + ...      coef  4     0.6523  0.5498 
+       CV.yield.weighted ~ Rotation + ...      coef  4    -2.4336  0.0717 
+  CV.yield.weighted ~ delta.SOC.LRR + ...      coef  3     0.1648  0.8796 
+
+Global goodness-of-fit:
+
+  Fisher's C = 6.723 with P-value = 0.347 and on 6 degrees of freedom
+
+---
+Coefficients:
+
+           Response     Predictor Estimate Std.Error DF Crit.Value P.Value Std.Estimate    
+      delta.SOC.LRR      Rotation  -0.0281    0.0289  5    -0.9705  0.3764      -0.0457    
+       MYP.weighted delta.SOC.LRR   0.3123    0.0473 72     6.6066  0.0000       0.2502 ***
+  CV.yield.weighted  MYP.weighted  -0.4297    0.0560 72    -7.6737  0.0000      -0.9513 ***
+
+  Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05
+
+---
+Individual R-squared:
+
+           Response method Marginal Conditional
+      delta.SOC.LRR   none     0.05        0.67
+       MYP.weighted   none     0.07        0.87
+  CV.yield.weighted   none     0.52        0.83
+  |                                                                                                                                      |                                                                                                                              |   0%  |                                                                                                                                      |===============================================================                                                               |  50%  |                                                                                                                                      |==============================================================================================================================| 100%
+
+Structural Equation Model of till_sem 
+
+Call:
+  delta.SOC.LRR ~ Tillage
+  MYP.weighted ~ delta.SOC.LRR
+  CV.yield.weighted ~ MYP.weighted + delta.SOC.LRR
+
+    AIC      BIC
+ 39.115   73.905
+
+---
+Tests of directed separation:
+
+                     Independ.Claim Test.Type DF Crit.Value P.Value 
+       MYP.weighted ~ Tillage + ...      coef 43    -1.3309  0.1902 
+  CV.yield.weighted ~ Tillage + ...      coef 42     1.4668  0.1499 
+
+Global goodness-of-fit:
+
+  Fisher's C = 7.115 with P-value = 0.13 and on 4 degrees of freedom
+
+---
+Coefficients:
+
+           Response     Predictor Estimate Std.Error DF Crit.Value P.Value Std.Estimate    
+      delta.SOC.LRR       Tillage   0.1147    0.0847 44     1.3552  0.1823       0.1816    
+       MYP.weighted delta.SOC.LRR   0.3123    0.0473 72     6.6066  0.0000       0.2502 ***
+  CV.yield.weighted  MYP.weighted  -0.3260    0.0609 71    -5.3505  0.0000      -0.7216 ***
+  CV.yield.weighted delta.SOC.LRR  -0.1319    0.0374 71    -3.5261  0.0007      -0.2339 ***
+
+  Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05
+
+---
+Individual R-squared:
+
+           Response method Marginal Conditional
+      delta.SOC.LRR   none     0.03        0.03
+       MYP.weighted   none     0.07        0.87
+  CV.yield.weighted   none     0.46        0.81

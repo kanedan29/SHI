@@ -174,96 +174,96 @@ yield.locations$lon[which(yield.locations$Location=="Cangwu Agri-ecological Stat
 yield.locations$lat <- as.numeric(as.character(yield.locations$lat))
 yield.locations$lon <- as.numeric(as.character(yield.locations$lon))
 
+# new data
+
+d.yield.new <- read.xlsx("data/AgEvidence_Oldfield_selected.xlsx", sheet = "yield")
+
+d.yield.new <- d.yield.new %>%
+  filter(Paper != "Campbell et al. 2007")
+
+new.locations <- d.yield.new %>%
+  select(Paper, lat, lon) %>%
+  unique()
+
+new.locations$Study_name <- NA
+new.locations$Location <- NA
+
+yield.locations <- yield.locations %>%
+  bind_rows(new.locations)
+
+yield.locations %>%
+  group_by(Paper, Study_name, Location, lat, lon) %>%
+  unique() -> yield.locations
+
+
+
+## Agro-ecological zones
+## Data from http://www.fao.org/geonetwork/srv/en/metadata.show?id=30589&currTab=simple
+
+library(rgdal)
+library(data.table)
+
+GDALinfo("data/thcli/thcli/hdr.adf")
+
+aez <- readGDAL("data/thcli/thcli/hdr.adf")
+
+image(aez)
+
+coordinates(aez)[1:5,]
+aez[1:5,]
+ 
+aez.test1 <- as.matrix(aez) 
+which(!is.na(aez@data))
+
+# Code adapted from 
+# https://stackoverflow.com/questions/18073861/r-matching-coordinates-from-one-large-data-frame-into-grid-cells-from-another
+
+  # Match locations to SGDF first by lon/x
+
+grid <- data.table(coordinates(aez))
+grid$grid.id <- row.names(grid)
+grid <- grid[, grid.x := x]
+grid <- grid[, grid.y := y]
+setkey(grid, x)
+
+points <- data.table(yield.locations)
+points <- points[, lat.og := lat]
+points <- points[, lon.og := lon]
+setkey(points, lon)
+
+
+intermediate <- grid[points, roll = Inf][, list(Paper, Study_name, Location, grid.x, lat, lon.og, lat.og)]
+
+  # Then match by lat/y
+
+setkey(intermediate, grid.x, lat)
+setkey(grid, x, y)
+
+grid.id.df <- grid[intermediate, roll = "nearest"][, list(Paper, Study_name, Location, x, grid.y, lon.og, lat.og, grid.id)]
+
+  # Get data for each location based on grid id
+
+grid.id.df$grid.id <- as.numeric(grid.id.df$grid.id)
+grid.id.df %>%
+  mutate(AEZ.no = aez@data$band1[grid.id]) -> grid.id.df
+
+  # Update names of AEZ based on grid number (derived from legend and general deduction from "image(aez)")
+
+grid.id.df %>%
+  mutate(AEZ = case_when(AEZ.no == 1 ~ "Tropics",
+                         AEZ.no == 2 ~ "Subtropics (summer rainfall)",
+                         AEZ.no == 3 ~ "Subtropics (winter rainfall)",
+                         AEZ.no == 4 ~ "Temperate (oceanic)",
+                         AEZ.no == 5 ~ "Temperate (sub-continental)",
+                         AEZ.no == 6 ~ "Temperate (continental)",
+                         Location == "Prince Edward Island" ~ "Temperate (sub-continental)")) -> grid.id.df
+
+  # Clean up locations dataframe
+
+names(grid.id.df)[6:7] <- c("lon", "lat")
+yield.locations <- left_join(yield.locations, grid.id.df, by = c("Paper", "Study_name", "Location", "lat", "lon"))
+yield.locations <- yield.locations[,-c(6:9)]
+
 save(yield.locations, file = "data/locations.RData")
-
-################################################################################
-## The following is moot from the incorporation of TerraClimate data
-################################################################################
-# Climate data
-
-# World Bank Climate Data API
-# River basin ids and polygon mappings from https://github.com/hrbrmstr/basins.git
-
-# load("data/basins.RData")
-# load("data/climate_data.RData")
-
-
-# Convert lat/lon into spatial points
-# library(sp)
-# points <- SpatialPointsDataFrame(cbind(yield.locations$lon, yield.locations$lat),
-#                                 data = yield.locations,
-#                                 proj4string = CRS("+proj=longlat +ellps=WGS84 +towgs84=0,0,0,0,0,0,0 +no_defs"))
-                      
-                     
-
-# With points and basins, need to find which basin each point is in
-# yield.locations$wb_basin <- NA
-
-# library(rgeos)
-
-# for (row in 1:nrow(yield.locations)) {
-#  spot <- points[row,]
-#  b <- which(sapply(1:468, function(i) gContains(basin_list[[i]], spot)))
-#  yield.locations[row, 'wb_basin'] <- b
-#}
-
-
-# save(yield.locations, file = "data/locations.RData")
-
-################################################################################
-## Add lat/lon and basin data back into climate dataframes
-
-# yield.climate <- yield.climate %>%
-#  left_join(yield.locations, by = c("Paper", "Location"))
-
-# carbon.climate <- carbon.climate %>%
-#  left_join(yield.locations, by = "Location") %>%
-#  select(-Paper.y) %>%
-#  rename(Paper = Paper.x)
-
-### Climate data from APIs ###
-## Before 2000: World Bank Climate Data API
-## Date ranges:
-##   1920-1939; 1940-1959; 1960-1979; 1980-1999
-## 2014-2018: Open Land Maps Precipitation
-## 2000-2018: Open Land Maps Temperature
-
-
-# See how data is returned from API
-# prep_test_wb <- fromJSON("http://climatedataapi.worldbank.org/climateweb/rest/v1/basin/annualavg/pr/1980/1999/413")
-# prep_test_olm <- fromJSON("http://landgisapi.opengeohub.org/query/point?lat=7.58033&lon=35.6561&coll=layers1km&regex=clm_precipitation_imerge.(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)_m_1km_s0..0cm_.*_v0.1.tif")
-# response <- prep_test_olm[['response']]
-
-# Load parsing functions
-# source("code/get_climate_functions.R")
-
-# Easier to run function for both datasets than to join due to year mismatches
-
-# yield.climate$precipitation <- NA
-# yield.climate$temperature <- NA
-# carbon.climate$precipitation <- NA
-# carbon.climate$temperature <- NA
-
-# yield.climate <- getPrecipData(yield.climate)
-# yield.climate <- getTempData(yield.climate)
-
-# carbon.climate <- getPrecipData(carbon.climate)
-# carbon.climate <- getTempData(carbon.climate)
-
-
-# save(yield.climate, carbon.climate, file = "data/climate_data.RData")
-
-
-
-
-
-
-  
-
-
-
-
-
-
 
 
