@@ -1,19 +1,16 @@
-sapply(list.files("packrat/lib/x86_64-apple-darwin15.6.0/3.6.1/"), require, character.only = T)
+source("code/0_libraries.R")
 
-gs_ls()
-d.raw <- gs_title("UCS_SOM_Data")
-gs_ws_ls(d.raw)
-d.raw <- gs_read(ss=d.raw, ws = "Sheet1")
+d.raw <- read_excel("data/UCS_SOM_Data.xlsx") %>%
+  mutate(Value = as.numeric(Value))
 
-unique(d.raw$`Data type`)
 
 #write.xlsx(d.raw,"data/UCS_data.xlsx")
 names(d.raw)[1] <- "Paper"
 
 ## Filter and clean SOC data
 
-d.raw %>%
-  filter(grepl("OC|OM",`Data type`)) -> d.soc
+d.soc <- d.raw %>%
+  filter(grepl("OC|OM",`Data type`))
 
 d.soc[d.soc$`Data type` %in% "OM", "Value"] <- d.soc[d.soc$`Data type` %in% "OM", "Value"]*0.58
 
@@ -92,6 +89,6 @@ d %>%
 
 
 write.xlsx(d, "data/data_export.xlsx")
-write.xlsx(d.soc,"soc_papers.xlsx" )
+write_excel_csv(d.soc,"soc_papers.csv" )
 write.xlsx(d.ir,"IR_papers.xlsx" )
 

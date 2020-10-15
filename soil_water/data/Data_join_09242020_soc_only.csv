@@ -1,0 +1,742 @@
+﻿Paper,DOI/ISSN,Year of observation,Year experiment start,Treatment 1,Treatment 2,Treatment 3,Treatment 4,Treatment 5,Treatment 6,Treatment 7,Trt.combo,Method/Site,Units,Data type,Value,Depth
+Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,2002,Cover crop,NA,NA,NA,NA,NA,NA,Cover crop,NA,cm/d,IR,170,NA
+Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,2002,Direct drill,NA,NA,NA,NA,NA,NA,Direct drill,NA,cm/d,IR,156,NA
+Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,2002,Harrowing,NA,NA,NA,NA,NA,NA,Harrowing,NA,cm/d,IR,122,NA
+Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,2002,Moldboard plow,NA,NA,NA,NA,NA,NA,Moldboard plow,NA,cm/d,IR,260,NA
+Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,2002,No cover crop,NA,NA,NA,NA,NA,NA,No cover crop,NA,cm/d,IR,171,NA
+Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,2002,Cover crop,NA,NA,NA,NA,NA,NA,Cover crop,NA,g/kg,OC,21.4,0_10
+Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,2002,Cover crop,NA,NA,NA,NA,NA,NA,Cover crop,NA,g/kg,OC,19.4,10.0_20.0
+Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,2002,Direct drill,NA,NA,NA,NA,NA,NA,Direct drill,NA,g/kg,OC,22,0_10
+Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,2002,Direct drill,NA,NA,NA,NA,NA,NA,Direct drill,NA,g/kg,OC,18.9,10.0_20.0
+Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,2002,Harrowing,NA,NA,NA,NA,NA,NA,Harrowing,NA,g/kg,OC,22.5,0_10
+Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,2002,Harrowing,NA,NA,NA,NA,NA,NA,Harrowing,NA,g/kg,OC,19,10.0_20.0
+Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,2002,Moldboard plow,NA,NA,NA,NA,NA,NA,Moldboard plow,NA,g/kg,OC,21.1,0_10
+Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,2002,Moldboard plow,NA,NA,NA,NA,NA,NA,Moldboard plow,NA,g/kg,OC,21.2,10.0_20.0
+Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,2002,No cover crop,NA,NA,NA,NA,NA,NA,No cover crop,NA,g/kg,OC,22.3,0_10
+Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,2002,No cover crop,NA,NA,NA,NA,NA,NA,No cover crop,NA,g/kg,OC,19.9,10.0_20.0
+Alemu et al. 1997,10.1080/00103629709369772,1994,1982,Continous Sorghum,No Till,NA,NA,NA,NA,NA,"Continous Sorghum, No Till",NA,mm per 1.5h,IR,38.7,NA
+Alemu et al. 1997,10.1080/00103629709369772,1994,1982,Continous Sorghum,Stubble Mulch Till,NA,NA,NA,NA,NA,"Continous Sorghum, Stubble Mulch Till",NA,mm per 1.5h,IR,36.2,NA
+Alemu et al. 1997,10.1080/00103629709369772,1994,1982,Wheat Sorghum Fallow,No Till,NA,NA,NA,NA,NA,"Wheat Sorghum Fallow, No Till",NA,mm per 1.5h,IR,32,NA
+Alemu et al. 1997,10.1080/00103629709369772,1994,1982,Wheat Sorghum Fallow,Stubble Mulch Till,NA,NA,NA,NA,NA,"Wheat Sorghum Fallow, Stubble Mulch Till",NA,mm per 1.5h,IR,30.8,NA
+Alemu et al. 1997,10.1080/00103629709369772,1994,1982,Continous Sorghum,No Till,NA,NA,NA,NA,NA,"Continous Sorghum, No Till",NA,mm,MWD,4,0_10
+Alemu et al. 1997,10.1080/00103629709369772,1994,1982,Continous Sorghum,Stubble Mulch Till,NA,NA,NA,NA,NA,"Continous Sorghum, Stubble Mulch Till",NA,mm,MWD,6.3,0_10
+Alemu et al. 1997,10.1080/00103629709369772,1994,1982,Wheat Sorghum Fallow,No Till,NA,NA,NA,NA,NA,"Wheat Sorghum Fallow, No Till",NA,mm,MWD,4,0_10
+Alemu et al. 1997,10.1080/00103629709369772,1994,1982,Wheat Sorghum Fallow,Stubble Mulch Till,NA,NA,NA,NA,NA,"Wheat Sorghum Fallow, Stubble Mulch Till",NA,mm,MWD,5,0_10
+Alemu et al. 1997,10.1080/00103629709369772,1994,1982,Continous Sorghum,No Till,NA,NA,NA,NA,NA,"Continous Sorghum, No Till",NA,%,OM,1.56,0_10
+Alemu et al. 1997,10.1080/00103629709369772,1994,1982,Continous Sorghum,Stubble Mulch Till,NA,NA,NA,NA,NA,"Continous Sorghum, Stubble Mulch Till",NA,%,OM,1.54,0_10
+Alemu et al. 1997,10.1080/00103629709369772,1994,1982,Wheat Sorghum Fallow,No Till,NA,NA,NA,NA,NA,"Wheat Sorghum Fallow, No Till",NA,%,OM,1.44,0_10
+Alemu et al. 1997,10.1080/00103629709369772,1994,1982,Wheat Sorghum Fallow,Stubble Mulch Till,NA,NA,NA,NA,NA,"Wheat Sorghum Fallow, Stubble Mulch Till",NA,%,OM,1.42,0_10
+Arshad et al. 1999,NO  DOI,1988,1979,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,Sandy Loam,NA,IR,NA,NA
+Arshad et al. 1999,NO  DOI,1988,1979,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,Silt Loam,cm/h,IR,3,NA
+Arshad et al. 1999,NO  DOI,1988,1979,No Till,NA,NA,NA,NA,NA,NA,No Till,Sandy Loam,NA,IR,NA,NA
+Arshad et al. 1999,NO  DOI,1988,1979,No Till,NA,NA,NA,NA,NA,NA,No Till,Silt Loam,cm/h,IR,4.8,NA
+Arshad et al. 1999,NO  DOI,1988,1979,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,Sandy Loam,g/kg,OC,22,0_2.5
+Arshad et al. 1999,NO  DOI,1988,1979,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,Sandy Loam,g/kg,OC,22.2,2.5_5
+Arshad et al. 1999,NO  DOI,1988,1979,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,Sandy Loam,g/kg,OC,20,5_7.5
+Arshad et al. 1999,NO  DOI,1988,1979,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,Sandy Loam,g/kg,OC,20,7.5_10
+Arshad et al. 1999,NO  DOI,1988,1979,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,Silt Loam,g/kg,OC,33.3,0_2.5
+Arshad et al. 1999,NO  DOI,1988,1979,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,Silt Loam,g/kg,OC,31.5,2.5_5
+Arshad et al. 1999,NO  DOI,1988,1979,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,Silt Loam,g/kg,OC,30.2,5_7.5
+Arshad et al. 1999,NO  DOI,1988,1979,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,Silt Loam,g/kg,OC,25,7.5_10
+Arshad et al. 1999,NO  DOI,1988,1979,No Till,NA,NA,NA,NA,NA,NA,No Till,Sandy Loam,g/kg,OC,24.3,0_2.5
+Arshad et al. 1999,NO  DOI,1988,1979,No Till,NA,NA,NA,NA,NA,NA,No Till,Sandy Loam,g/kg,OC,22.5,2.5_5
+Arshad et al. 1999,NO  DOI,1988,1979,No Till,NA,NA,NA,NA,NA,NA,No Till,Sandy Loam,g/kg,OC,19,5_7.5
+Arshad et al. 1999,NO  DOI,1988,1979,No Till,NA,NA,NA,NA,NA,NA,No Till,Sandy Loam,g/kg,OC,19,7.5_10
+Arshad et al. 1999,NO  DOI,1988,1979,No Till,NA,NA,NA,NA,NA,NA,No Till,Silt Loam,g/kg,OC,44.5,0_2.5
+Arshad et al. 1999,NO  DOI,1988,1979,No Till,NA,NA,NA,NA,NA,NA,No Till,Silt Loam,g/kg,OC,36.4,2.5_5
+Arshad et al. 1999,NO  DOI,1988,1979,No Till,NA,NA,NA,NA,NA,NA,No Till,Silt Loam,g/kg,OC,27.3,5_7.5
+Arshad et al. 1999,NO  DOI,1988,1979,No Till,NA,NA,NA,NA,NA,NA,No Till,Silt Loam,g/kg,OC,24,7.5_10
+Astier et al. 2006,10.1016/j.still.2005.05.003,1998,1996,Chisel plow tillage,No cover,NA,NA,NA,NA,NA,"Chisel plow tillage, No cover",Wet combustion,Time for 500 mL (s),IR,43,NA
+Astier et al. 2006,10.1016/j.still.2005.05.003,1998,1996,Chisel plow tillage,Oat cover,NA,NA,NA,NA,NA,"Chisel plow tillage, Oat cover",Wet combustion,Time for 500 mL (s),IR,33,NA
+Astier et al. 2006,10.1016/j.still.2005.05.003,1998,1996,Chisel plow tillage,Vetch cover,NA,NA,NA,NA,NA,"Chisel plow tillage, Vetch cover",Wet combustion,Time for 500 mL (s),IR,40,NA
+Astier et al. 2006,10.1016/j.still.2005.05.003,1998,1996,Zero tillage,Oat cover,NA,NA,NA,NA,NA,"Zero tillage, Oat cover",Wet combustion,Time for 500 mL (s),IR,17,NA
+Astier et al. 2006,10.1016/j.still.2005.05.003,1998,1996,Zero tillage,Vetch cover,NA,NA,NA,NA,NA,"Zero tillage, Vetch cover",Wet combustion,Time for 500 mL (s),IR,27,NA
+Astier et al. 2006,10.1016/j.still.2005.05.003,1998,1996,Chisel plow tillage,No cover,NA,NA,NA,NA,NA,"Chisel plow tillage, No cover",Wet combustion,g/kg,OC,49,0_25
+Astier et al. 2006,10.1016/j.still.2005.05.003,1998,1996,Chisel plow tillage,Oat cover,NA,NA,NA,NA,NA,"Chisel plow tillage, Oat cover",Wet combustion,g/kg,OC,49,0_25
+Astier et al. 2006,10.1016/j.still.2005.05.003,1998,1996,Chisel plow tillage,Vetch cover,NA,NA,NA,NA,NA,"Chisel plow tillage, Vetch cover",Wet combustion,g/kg,OC,46,0_25
+Astier et al. 2006,10.1016/j.still.2005.05.003,1998,1996,Zero tillage,Oat cover,NA,NA,NA,NA,NA,"Zero tillage, Oat cover",Wet combustion,g/kg,OC,50,0_25
+Astier et al. 2006,10.1016/j.still.2005.05.003,1998,1996,Zero tillage,Vetch cover,NA,NA,NA,NA,NA,"Zero tillage, Vetch cover",Wet combustion,g/kg,OC,50,0_25
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Conventional tillage,NA,NA,NA,NA,NA,NA,Conventional tillage,NA,cm/h (equil rate),IR,0.95,NA
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Flexible tillage,NA,NA,NA,NA,NA,NA,Flexible tillage,NA,cm/h (equil rate),IR,0.46,NA
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,No tillage,NA,NA,NA,NA,NA,NA,No tillage,NA,cm/h (equil rate),IR,1.17,NA
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Reduced tillage/chisel plow,NA,NA,NA,NA,NA,NA,Reduced tillage/chisel plow,NA,cm/h (equil rate),IR,0.77,NA
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Conventional tillage,NA,NA,NA,NA,NA,NA,Conventional tillage,NA,g/kg,OM,14,0_5
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Conventional tillage,NA,NA,NA,NA,NA,NA,Conventional tillage,NA,g/kg,OM,14,5_15
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Flexible tillage,NA,NA,NA,NA,NA,NA,Flexible tillage,NA,g/kg,OM,15,0_5
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Flexible tillage,NA,NA,NA,NA,NA,NA,Flexible tillage,NA,g/kg,OM,14,5_15
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,No tillage,NA,NA,NA,NA,NA,NA,No tillage,NA,g/kg,OM,19,0_5
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,No tillage,NA,NA,NA,NA,NA,NA,No tillage,NA,g/kg,OM,16,5_15
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Reduced tillage/chisel plow,NA,NA,NA,NA,NA,NA,Reduced tillage/chisel plow,NA,g/kg,OM,15,0_5
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Reduced tillage/chisel plow,NA,NA,NA,NA,NA,NA,Reduced tillage/chisel plow,NA,g/kg,OM,14,5_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2002,2002,Conventional Sowing,NA,NA,NA,NA,NA,NA,Conventional Sowing,NA,g/m^3,BD,1.29,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2002,2002,Rotavator,NA,NA,NA,NA,NA,NA,Rotavator,NA,g/m^3,BD,1.31,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2002,2002,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,g/m^3,BD,1.39,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2002,2002,Conventional Sowing,NA,NA,NA,NA,NA,NA,Conventional Sowing,NA,mm/h,IR,11.67,NA
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2002,2002,Rotavator,NA,NA,NA,NA,NA,NA,Rotavator,NA,mm/h,IR,11,NA
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2002,2002,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,mm/h,IR,9.33,NA
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2002,2002,Conventional Sowing,NA,NA,NA,NA,NA,NA,Conventional Sowing,NA,%,OC,0.401,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2002,2002,Rotavator,NA,NA,NA,NA,NA,NA,Rotavator,NA,%,OC,0.403,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2002,2002,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,%,OC,0.421,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2002,2002,Conventional Sowing,NA,NA,NA,NA,NA,NA,Conventional Sowing,NA,mm/h,PR,11.67,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2002,2002,Rotavator,NA,NA,NA,NA,NA,NA,Rotavator,NA,mm/h,PR,11,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2002,2002,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,mm/h,PR,9.33,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2003,2002,Conventional Sowing,NA,NA,NA,NA,NA,NA,Conventional Sowing,NA,g/m^3,BD,1.24,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2003,2002,Rotavator,NA,NA,NA,NA,NA,NA,Rotavator,NA,g/m^3,BD,1.27,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2003,2002,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,g/m^3,BD,1.38,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2003,2002,Conventional Sowing,NA,NA,NA,NA,NA,NA,Conventional Sowing,NA,mm/h,IR,11.4,NA
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2003,2002,Rotavator,NA,NA,NA,NA,NA,NA,Rotavator,NA,mm/h,IR,10.84,NA
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2003,2002,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,mm/h,IR,9.58,NA
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2003,2002,Conventional Sowing,NA,NA,NA,NA,NA,NA,Conventional Sowing,NA,%,OC,0.409,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2003,2002,Rotavator,NA,NA,NA,NA,NA,NA,Rotavator,NA,%,OC,0.413,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2003,2002,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,%,OC,0.436,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2003,2002,Conventional Sowing,NA,NA,NA,NA,NA,NA,Conventional Sowing,NA,mm/h,PR,11.4,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2003,2002,Rotavator,NA,NA,NA,NA,NA,NA,Rotavator,NA,mm/h,PR,10.84,0_15
+Bazaya et al. 2009,10.1016/j.still.2009.05.006,2003,2002,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,mm/h,PR,9.58,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Conventional tillage,NA,NA,NA,NA,NA,NA,Conventional tillage,NA,cm/min (steady state),IR,0.031,NA
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing + active tillering,NA,NA,NA,NA,NA,NA,Pre-sowing + active tillering,NA,cm/min (steady state),IR,0.031,NA
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing irrigation,NA,NA,NA,NA,NA,NA,Pre-sowing irrigation,NA,cm/min (steady state),IR,0.028,NA
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation,NA,cm/min (steady state),IR,0.035,NA
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation+grain filling,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation+grain filling,NA,cm/min (steady state),IR,0.038,NA
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,cm/min (steady state),IR,0.036,NA
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Conventional tillage,NA,NA,NA,NA,NA,NA,Conventional tillage,NA,g/kg,OC,6.23,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Conventional tillage,NA,NA,NA,NA,NA,NA,Conventional tillage,NA,g/kg,OC,6.05,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing + active tillering,NA,NA,NA,NA,NA,NA,Pre-sowing + active tillering,NA,g/kg,OC,6.46,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing + active tillering,NA,NA,NA,NA,NA,NA,Pre-sowing + active tillering,NA,g/kg,OC,6.08,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing irrigation,NA,NA,NA,NA,NA,NA,Pre-sowing irrigation,NA,g/kg,OC,6.11,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing irrigation,NA,NA,NA,NA,NA,NA,Pre-sowing irrigation,NA,g/kg,OC,5.72,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation,NA,g/kg,OC,6.6,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation,NA,g/kg,OC,6.16,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation+grain filling,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation+grain filling,NA,g/kg,OC,6.71,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation+grain filling,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation+grain filling,NA,g/kg,OC,6.2,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,g/kg,OC,6.71,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,g/kg,OC,6.03,15_30
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,cm/h,IR,1.42,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,cm/h,IR,1,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,cm/h,IR,1.37,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,g/kg,OC,5,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,g/kg,OC,5.1,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,g/kg,OC,5.1,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,cm/h,IR,1.37,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,cm/h,IR,0.95,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,cm/h,IR,1.28,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,g/kg,OC,5.1,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,g/kg,OC,5.3,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,g/kg,OC,5.2,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,cm/h,IR,1.34,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,cm/h,IR,0.75,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,cm/h,IR,1.25,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,g/kg,OC,5.2,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,g/kg,OC,5.4,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,g/kg,OC,5.3,NA
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2004,AFCST,NA,NA,NA,NA,NA,NA,AFCST,10 year,cm/h,IR,23.83,NA
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,1999,AFCST,NA,NA,NA,NA,NA,NA,AFCST,15 year,cm/h,IR,30.06,NA
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2009,AFCST,NA,NA,NA,NA,NA,NA,AFCST,5 year,cm/h,IR,15.21,NA
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2004,MCVT,NA,NA,NA,NA,NA,NA,MCVT,10 year,cm/h,IR,8.31,NA
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,1999,MCVT,NA,NA,NA,NA,NA,NA,MCVT,15 year,cm/h,IR,7.84,NA
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2009,MCVT,NA,NA,NA,NA,NA,NA,MCVT,5 year,cm/h,IR,11.14,NA
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2004,AFCST,NA,NA,NA,NA,NA,NA,AFCST,10 year,%,OC,1.74,0_20
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,1999,AFCST,NA,NA,NA,NA,NA,NA,AFCST,15 year,%,OC,1.94,0_20
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2009,AFCST,NA,NA,NA,NA,NA,NA,AFCST,5 year,%,OC,1.63,0_20
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2004,MCVT,NA,NA,NA,NA,NA,NA,MCVT,10 year,%,OC,1.14,0_20
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,1999,MCVT,NA,NA,NA,NA,NA,NA,MCVT,15 year,%,OC,1.03,0_20
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2009,MCVT,NA,NA,NA,NA,NA,NA,MCVT,5 year,%,OC,1.4,0_20
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2010,2009,BBF + residue incorporation,NA,NA,NA,NA,NA,NA,BBF + residue incorporation,NA,Mg/m^3,BD,1.09,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,BBF + residue incorporation,NA,NA,NA,NA,NA,NA,BBF + residue incorporation,NA,Mg/m^3,BD,1.09,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2009,2009,BBF + residue incorporation,NA,NA,NA,NA,NA,NA,BBF + residue incorporation,NA,Mg/m^3,BD,1.12,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2010,2009,BBF+residue incorporation + headge leaves incorporation,NA,NA,NA,NA,NA,NA,BBF+residue incorporation + headge leaves incorporation,NA,Mg/m^3,BD,1.12,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,BBF+residue incorporation + headge leaves incorporation,NA,NA,NA,NA,NA,NA,BBF+residue incorporation + headge leaves incorporation,NA,Mg/m^3,BD,1.11,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2009,2009,BBF+residue incorporation + headge leaves incorporation,NA,NA,NA,NA,NA,NA,BBF+residue incorporation + headge leaves incorporation,NA,Mg/m^3,BD,1.1,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2010,2009,BBF+residue incorporation + headge leaves mulching(No Till),NA,NA,NA,NA,NA,NA,BBF+residue incorporation + headge leaves mulching(No Till),NA,Mg/m^3,BD,1.03,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,BBF+residue incorporation + headge leaves mulching(No Till),NA,NA,NA,NA,NA,NA,BBF+residue incorporation + headge leaves mulching(No Till),NA,Mg/m^3,BD,1.04,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2009,2009,BBF+residue incorporation + headge leaves mulching(No Till),NA,NA,NA,NA,NA,NA,BBF+residue incorporation + headge leaves mulching(No Till),NA,Mg/m^3,BD,1.05,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2010,2009,Flat bed + residue removal,NA,NA,NA,NA,NA,NA,Flat bed + residue removal,NA,Mg/m^3,BD,1.04,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,Flat bed + residue removal,NA,NA,NA,NA,NA,NA,Flat bed + residue removal,NA,Mg/m^3,BD,1.06,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2009,2009,Flat bed + residue removal,NA,NA,NA,NA,NA,NA,Flat bed + residue removal,NA,Mg/m^3,BD,1.05,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2010,2009,RB+residue incorporation + headge leaves incorporation,NA,NA,NA,NA,NA,NA,RB+residue incorporation + headge leaves incorporation,NA,Mg/m^3,BD,1.12,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,RB+residue incorporation + headge leaves incorporation,NA,NA,NA,NA,NA,NA,RB+residue incorporation + headge leaves incorporation,NA,Mg/m^3,BD,1.1,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2009,2009,RB+residue incorporation + headge leaves incorporation,NA,NA,NA,NA,NA,NA,RB+residue incorporation + headge leaves incorporation,NA,Mg/m^3,BD,1.09,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2010,2009,RB+residue incorporation + headge leaves mulching(No Till),NA,NA,NA,NA,NA,NA,RB+residue incorporation + headge leaves mulching(No Till),NA,Mg/m^3,BD,1.13,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,RB+residue incorporation + headge leaves mulching(No Till),NA,NA,NA,NA,NA,NA,RB+residue incorporation + headge leaves mulching(No Till),NA,Mg/m^3,BD,1.14,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2009,2009,RB+residue incorporation + headge leaves mulching(No Till),NA,NA,NA,NA,NA,NA,RB+residue incorporation + headge leaves mulching(No Till),NA,Mg/m^3,BD,1.11,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2010,2009,RB+residue incorporation,NA,NA,NA,NA,NA,NA,RB+residue incorporation,NA,Mg/m^3,BD,1.12,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,RB+residue incorporation,NA,NA,NA,NA,NA,NA,RB+residue incorporation,NA,Mg/m^3,BD,1.11,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2009,2009,RB+residue incorporation,NA,NA,NA,NA,NA,NA,RB+residue incorporation,NA,Mg/m^3,BD,1.11,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,BBF + residue incorporation,NA,NA,NA,NA,NA,NA,BBF + residue incorporation,NA,mm/h,IR,8.93,NA
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,BBF+residue incorporation + headge leaves incorporation,NA,NA,NA,NA,NA,NA,BBF+residue incorporation + headge leaves incorporation,NA,mm/h,IR,10.2,NA
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,BBF+residue incorporation + headge leaves mulching(No Till),NA,NA,NA,NA,NA,NA,BBF+residue incorporation + headge leaves mulching(No Till),NA,mm/h,IR,10.9,NA
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,Flat bed + residue removal,NA,NA,NA,NA,NA,NA,Flat bed + residue removal,NA,mm/h,IR,7.65,NA
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,RB+residue incorporation + headge leaves incorporation,NA,NA,NA,NA,NA,NA,RB+residue incorporation + headge leaves incorporation,NA,mm/h,IR,10.8,NA
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,RB+residue incorporation + headge leaves mulching(No Till),NA,NA,NA,NA,NA,NA,RB+residue incorporation + headge leaves mulching(No Till),NA,mm/h,IR,11.2,NA
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,RB+residue incorporation,NA,NA,NA,NA,NA,NA,RB+residue incorporation,NA,mm/h,IR,9.25,NA
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2010,2009,BBF + residue incorporation,NA,NA,NA,NA,NA,NA,BBF + residue incorporation,NA,g/kg,OC,18.2,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,BBF + residue incorporation,NA,NA,NA,NA,NA,NA,BBF + residue incorporation,NA,g/kg,OC,18.1,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2009,2009,BBF + residue incorporation,NA,NA,NA,NA,NA,NA,BBF + residue incorporation,NA,g/kg,OC,17.4,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2010,2009,BBF+residue incorporation + headge leaves incorporation,NA,NA,NA,NA,NA,NA,BBF+residue incorporation + headge leaves incorporation,NA,g/kg,OC,17.9,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,BBF+residue incorporation + headge leaves incorporation,NA,NA,NA,NA,NA,NA,BBF+residue incorporation + headge leaves incorporation,NA,g/kg,OC,17.6,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2009,2009,BBF+residue incorporation + headge leaves incorporation,NA,NA,NA,NA,NA,NA,BBF+residue incorporation + headge leaves incorporation,NA,g/kg,OC,17.3,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2010,2009,BBF+residue incorporation + headge leaves mulching(No Till),NA,NA,NA,NA,NA,NA,BBF+residue incorporation + headge leaves mulching(No Till),NA,g/kg,OC,17.1,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,BBF+residue incorporation + headge leaves mulching(No Till),NA,NA,NA,NA,NA,NA,BBF+residue incorporation + headge leaves mulching(No Till),NA,g/kg,OC,17.5,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2009,2009,BBF+residue incorporation + headge leaves mulching(No Till),NA,NA,NA,NA,NA,NA,BBF+residue incorporation + headge leaves mulching(No Till),NA,g/kg,OC,17.2,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2010,2009,Flat bed + residue removal,NA,NA,NA,NA,NA,NA,Flat bed + residue removal,NA,g/kg,OC,16.4,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,Flat bed + residue removal,NA,NA,NA,NA,NA,NA,Flat bed + residue removal,NA,g/kg,OC,16,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2009,2009,Flat bed + residue removal,NA,NA,NA,NA,NA,NA,Flat bed + residue removal,NA,g/kg,OC,16.6,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2010,2009,RB+residue incorporation + headge leaves incorporation,NA,NA,NA,NA,NA,NA,RB+residue incorporation + headge leaves incorporation,NA,g/kg,OC,18.5,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,RB+residue incorporation + headge leaves incorporation,NA,NA,NA,NA,NA,NA,RB+residue incorporation + headge leaves incorporation,NA,g/kg,OC,18.5,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2009,2009,RB+residue incorporation + headge leaves incorporation,NA,NA,NA,NA,NA,NA,RB+residue incorporation + headge leaves incorporation,NA,g/kg,OC,18.3,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2010,2009,RB+residue incorporation + headge leaves mulching(No Till),NA,NA,NA,NA,NA,NA,RB+residue incorporation + headge leaves mulching(No Till),NA,g/kg,OC,17.9,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,RB+residue incorporation + headge leaves mulching(No Till),NA,NA,NA,NA,NA,NA,RB+residue incorporation + headge leaves mulching(No Till),NA,g/kg,OC,17.8,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2009,2009,RB+residue incorporation + headge leaves mulching(No Till),NA,NA,NA,NA,NA,NA,RB+residue incorporation + headge leaves mulching(No Till),NA,g/kg,OC,16.9,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2010,2009,RB+residue incorporation,NA,NA,NA,NA,NA,NA,RB+residue incorporation,NA,g/kg,OC,18.2,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,RB+residue incorporation,NA,NA,NA,NA,NA,NA,RB+residue incorporation,NA,g/kg,OC,18,0_15
+Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2009,2009,RB+residue incorporation,NA,NA,NA,NA,NA,NA,RB+residue incorporation,NA,g/kg,OC,17.6,0_15
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Brachiaria,NA,NA,NA,NA,NA,NA,Brachiaria,NA,cm/3h,IR,491,NA
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Centrosema,NA,NA,NA,NA,NA,NA,Centrosema,NA,cm/3h,IR,232,NA
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Control,NA,NA,NA,NA,NA,NA,Control,NA,cm/3h,IR,121,NA
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Glycine,NA,NA,NA,NA,NA,NA,Glycine,NA,cm/3h,IR,414,NA
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Melinis,NA,NA,NA,NA,NA,NA,Melinis,NA,cm/3h,IR,291,NA
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Panicum,NA,NA,NA,NA,NA,NA,Panicum,NA,cm/3h,IR,332,NA
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Pueraria,NA,NA,NA,NA,NA,NA,Pueraria,NA,cm/3h,IR,281,NA
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Setaria,NA,NA,NA,NA,NA,NA,Setaria,NA,cm/3h,IR,302,NA
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Stylosanthes,NA,NA,NA,NA,NA,NA,Stylosanthes,NA,cm/3h,IR,393,NA
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Brachiaria,NA,NA,NA,NA,NA,NA,Brachiaria,NA,%,OC,1.2,0_10
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Brachiaria,NA,NA,NA,NA,NA,NA,Brachiaria,NA,%,OC,0.6,10_20
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Centrosema,NA,NA,NA,NA,NA,NA,Centrosema,NA,%,OC,1.2,0_10
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Centrosema,NA,NA,NA,NA,NA,NA,Centrosema,NA,%,OC,0.35,10_20
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Control,NA,NA,NA,NA,NA,NA,Control,NA,%,OC,1.05,0_10
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Control,NA,NA,NA,NA,NA,NA,Control,NA,%,OC,0.3,10_20
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Glycine,NA,NA,NA,NA,NA,NA,Glycine,NA,%,OC,2.1,0_10
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Glycine,NA,NA,NA,NA,NA,NA,Glycine,NA,%,OC,1.2,10_20
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Melinis,NA,NA,NA,NA,NA,NA,Melinis,NA,%,OC,1.75,0_10
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Melinis,NA,NA,NA,NA,NA,NA,Melinis,NA,%,OC,0.8,10_20
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Panicum,NA,NA,NA,NA,NA,NA,Panicum,NA,%,OC,1.04,0_10
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Panicum,NA,NA,NA,NA,NA,NA,Panicum,NA,%,OC,0.7,10_20
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Pueraria,NA,NA,NA,NA,NA,NA,Pueraria,NA,%,OC,1.1,0_10
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Pueraria,NA,NA,NA,NA,NA,NA,Pueraria,NA,%,OC,0.75,10_20
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Setaria,NA,NA,NA,NA,NA,NA,Setaria,NA,%,OC,0.8,0_10
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Setaria,NA,NA,NA,NA,NA,NA,Setaria,NA,%,OC,0.55,10_20
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Stylosanthes,NA,NA,NA,NA,NA,NA,Stylosanthes,NA,%,OC,1.2,0_10
+Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,1972,Stylosanthes,NA,NA,NA,NA,NA,NA,Stylosanthes,NA,%,OC,0.4,10_20
+Liebig et al 2004,10.1016/j.still.2004.02.002,2001,1984,Spring wheat - fallow,Conventional tillage,NA,NA,NA,NA,NA,"Spring wheat - fallow, Conventional tillage",1984 site,Mg/m^3,BD,1.19,0_7.5
+Liebig et al 2004,10.1016/j.still.2004.02.002,2001,1984,Spring wheat - winter wheat - sunflower,No till,NA,NA,NA,NA,NA,"Spring wheat - winter wheat - sunflower, No till",1984 site,Mg/m^3,BD,1.13,0_7.5
+Liebig et al 2004,10.1016/j.still.2004.02.002,2001,1984,Spring wheat - fallow,Conventional tillage,NA,NA,NA,NA,NA,"Spring wheat - fallow, Conventional tillage",1984 site,cm/h,IR,20.3,0_7.5
+Liebig et al 2004,10.1016/j.still.2004.02.002,2001,1984,Spring wheat - winter wheat - sunflower,No till,NA,NA,NA,NA,NA,"Spring wheat - winter wheat - sunflower, No till",1984 site,cm/h,IR,75.9,0_7.5
+Liebig et al 2004,10.1016/j.still.2004.02.002,2001,1984,Spring wheat - fallow,Conventional tillage,NA,NA,NA,NA,NA,"Spring wheat - fallow, Conventional tillage",1984 site,Mg/ha,OC,16.42,0_7.5
+Liebig et al 2004,10.1016/j.still.2004.02.002,2001,1984,Spring wheat - winter wheat - sunflower,No till,NA,NA,NA,NA,NA,"Spring wheat - winter wheat - sunflower, No till",1984 site,Mg/ha,OC,23.7,0_7.5
+Liebig et al 2004,10.1016/j.still.2004.02.002,2001,1984,Spring wheat - fallow,Conventional tillage,NA,NA,NA,NA,NA,"Spring wheat - fallow, Conventional tillage",1984 site,%,Wet aggregate stability,13.9,0_7.5
+Liebig et al 2004,10.1016/j.still.2004.02.002,2001,1984,Spring wheat - winter wheat - sunflower,No till,NA,NA,NA,NA,NA,"Spring wheat - winter wheat - sunflower, No till",1984 site,%,Wet aggregate stability,47.3,0_7.5
+Locke et al 2013,10.2136/sssaj2012.0325,2001,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,7.7,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2001,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,8.2,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2001,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,7.8,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2001,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,8.8,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2001,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,8.7,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2001,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,7.8,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2001,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,7.4,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2001,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,8.4,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2001,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,7.8,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2001,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,8.1,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2001,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,8.4,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2001,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,8.1,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2001,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,7.8,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2001,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,8.5,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2001,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,7.5,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2002,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,9.2,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2002,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,9.3,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2002,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,9.1,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2002,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,12.4,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2002,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,10.3,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2002,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,8.9,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2002,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,9.3,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2002,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,9.4,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2002,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,8.6,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2002,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,11.3,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2002,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,9.5,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2002,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,8.9,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2002,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,9.3,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2002,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,9.8,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2002,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,8.8,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2003,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,11.7,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2003,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,9.2,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2003,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,8.5,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2003,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,15.4,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2003,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,10.2,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2003,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,8.8,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2003,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,11.9,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2003,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,9.8,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2003,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,8.4,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2003,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,13.8,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2003,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,9.5,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2003,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,8.6,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2003,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,12.2,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2003,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,9.9,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2003,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,8.6,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2004,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,13,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2004,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,10.9,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2004,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,7.8,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2004,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,17.1,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2004,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,11.4,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2004,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,8.6,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2004,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,18,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2004,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,10.7,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2004,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,8,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2004,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,19.2,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2004,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,11.2,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2004,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,7.7,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2004,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,12.9,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2004,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,10.8,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2004,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,8.6,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,mm/h,IR,17.6,NA
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,mm/h,IR,86.6,NA
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,mm/h,IR,36.7,NA
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,16.1,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,9.9,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,7.9,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,20.2,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,11.5,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,8.3,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,18.2,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,10.8,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,7.9,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,20.7,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,10.5,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,7.9,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,15.6,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,10.9,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2005,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,8.1,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,mm/h,IR,33.1,NA
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,mm/h,IR,87.1,NA
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,mm/h,IR,45.1,NA
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,mm/h,IR,85.9,NA
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,mm/h,IR,49.3,NA
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,15.2,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,10.6,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,g/kg,OC,7.9,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,19.1,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,12.5,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,g/kg,OC,8.2,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,19,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,12.1,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,g/kg,OC,8.3,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,19.5,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,11,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,g/kg,OC,7.8,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,16,0_2
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,12.4,2_5
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,g/kg,OC,8.4,5_15
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,No till,NA,NA,NA,NA,NA,NA,No till,NA,Mg/m3,BD,1.26,0_15
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,Minimum till,NA,NA,NA,NA,NA,NA,Minimum till,NA,Mg/m3,BD,1.23,0_15
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,No cover,NA,NA,NA,NA,NA,NA,No cover,NA,Mg/m3,BD,1.23,0_15
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,Clover,NA,NA,NA,NA,NA,NA,Clover,NA,Mg/m3,BD,1.24,0_15
+Locke et al 2013,10.2136/sssaj2012.0325,2006,2000,Rye,NA,NA,NA,NA,NA,NA,Rye,NA,Mg/m3,BD,1.26,0_15
+Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,1983,Chickpea,NA,NA,NA,NA,NA,NA,Chickpea,NA,cm/h,IR,16.2,NA
+Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,1983,Fallow,NA,NA,NA,NA,NA,NA,Fallow,NA,cm/h,IR,14.4,NA
+Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,1983,Lentil,NA,NA,NA,NA,NA,NA,Lentil,NA,cm/h,IR,18.5,NA
+Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,1983,Medic,NA,NA,NA,NA,NA,NA,Medic,NA,cm/h,IR,21.8,NA
+Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,1983,Vetch,NA,NA,NA,NA,NA,NA,Vetch,NA,cm/h,IR,19.3,NA
+Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,1983,Watermelon,NA,NA,NA,NA,NA,NA,Watermelon,NA,cm/h,IR,15.1,NA
+Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,1983,Wheat,NA,NA,NA,NA,NA,NA,Wheat,NA,cm/h,IR,13.9,NA
+Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,1983,Chickpea,NA,NA,NA,NA,NA,NA,Chickpea,NA,g/kg,OM,11.7,0_20
+Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,1983,Fallow,NA,NA,NA,NA,NA,NA,Fallow,NA,g/kg,OM,11.4,0_20
+Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,1983,Lentil,NA,NA,NA,NA,NA,NA,Lentil,NA,g/kg,OM,12,0_20
+Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,1983,Medic,NA,NA,NA,NA,NA,NA,Medic,NA,g/kg,OM,13.8,0_20
+Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,1983,Vetch,NA,NA,NA,NA,NA,NA,Vetch,NA,g/kg,OM,11.5,0_20
+Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,1983,Watermelon,NA,NA,NA,NA,NA,NA,Watermelon,NA,g/kg,OM,11,0_20
+Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,1983,Wheat,NA,NA,NA,NA,NA,NA,Wheat,NA,g/kg,OM,10.9,0_20
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Crimson Clover,NA,NA,NA,NA,NA,NA,Crimson Clover,Coastal Plain,mm/h,IR,NA,NA
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Crimson Clover,NA,NA,NA,NA,NA,NA,Crimson Clover,Limestone Valley,mm/h,IR,NA,NA
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Fallow,NA,NA,NA,NA,NA,NA,Fallow,Coastal Plain,mm/h,IR,37.8,NA
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Fallow,NA,NA,NA,NA,NA,NA,Fallow,Limestone Valley,mm/h,IR,23.4,NA
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Hairy Vetch,NA,NA,NA,NA,NA,NA,Hairy Vetch,Coastal Plain,mm/h,IR,58.4,NA
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Hairy Vetch,NA,NA,NA,NA,NA,NA,Hairy Vetch,Limestone Valley,mm/h,IR,38.8,NA
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Wheat,NA,NA,NA,NA,NA,NA,Wheat,Coastal Plain,mm/h,IR,42.3,NA
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Wheat,NA,NA,NA,NA,NA,NA,Wheat,Limestone Valley,mm/h,IR,NA,NA
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Crimson Clover,NA,NA,NA,NA,NA,NA,Crimson Clover,Coastal Plain,g/kg,OC,10.6,0_5
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Crimson Clover,NA,NA,NA,NA,NA,NA,Crimson Clover,Coastal Plain,g/kg,OC,7.7,5_10
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Crimson Clover,NA,NA,NA,NA,NA,NA,Crimson Clover,Coastal Plain,g/kg,OC,7.1,10_20
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Crimson Clover,NA,NA,NA,NA,NA,NA,Crimson Clover,Coastal Plain,g/kg,OC,4.1,20_30
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Crimson Clover,NA,NA,NA,NA,NA,NA,Crimson Clover,Limestone Valley,g/kg,OC,12.8,0_5
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Crimson Clover,NA,NA,NA,NA,NA,NA,Crimson Clover,Limestone Valley,g/kg,OC,10.3,5_10
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Crimson Clover,NA,NA,NA,NA,NA,NA,Crimson Clover,Limestone Valley,g/kg,OC,10.1,10_20
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Crimson Clover,NA,NA,NA,NA,NA,NA,Crimson Clover,Limestone Valley,g/kg,OC,5.7,20_30
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Fallow,NA,NA,NA,NA,NA,NA,Fallow,Coastal Plain,g/kg,OC,8.5,0_5
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Fallow,NA,NA,NA,NA,NA,NA,Fallow,Coastal Plain,g/kg,OC,7.2,5_10
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Fallow,NA,NA,NA,NA,NA,NA,Fallow,Coastal Plain,g/kg,OC,6.8,10_20
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Fallow,NA,NA,NA,NA,NA,NA,Fallow,Coastal Plain,g/kg,OC,4,20_30
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Fallow,NA,NA,NA,NA,NA,NA,Fallow,Limestone Valley,g/kg,OC,10.1,0_5
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Fallow,NA,NA,NA,NA,NA,NA,Fallow,Limestone Valley,g/kg,OC,8.7,5_10
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Fallow,NA,NA,NA,NA,NA,NA,Fallow,Limestone Valley,g/kg,OC,7.9,10_20
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Fallow,NA,NA,NA,NA,NA,NA,Fallow,Limestone Valley,g/kg,OC,4.3,20_30
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Hairy Vetch,NA,NA,NA,NA,NA,NA,Hairy Vetch,Coastal Plain,g/kg,OC,10.2,0_5
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Hairy Vetch,NA,NA,NA,NA,NA,NA,Hairy Vetch,Coastal Plain,g/kg,OC,7.4,5_10
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Hairy Vetch,NA,NA,NA,NA,NA,NA,Hairy Vetch,Coastal Plain,g/kg,OC,6.7,10_20
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Hairy Vetch,NA,NA,NA,NA,NA,NA,Hairy Vetch,Coastal Plain,g/kg,OC,3.7,20_30
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Hairy Vetch,NA,NA,NA,NA,NA,NA,Hairy Vetch,Limestone Valley,g/kg,OC,11.8,0_5
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Hairy Vetch,NA,NA,NA,NA,NA,NA,Hairy Vetch,Limestone Valley,g/kg,OC,9.3,5_10
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Hairy Vetch,NA,NA,NA,NA,NA,NA,Hairy Vetch,Limestone Valley,g/kg,OC,7.9,10_20
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Hairy Vetch,NA,NA,NA,NA,NA,NA,Hairy Vetch,Limestone Valley,g/kg,OC,4.4,20_30
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Wheat,NA,NA,NA,NA,NA,NA,Wheat,Coastal Plain,g/kg,OC,8.9,0_5
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Wheat,NA,NA,NA,NA,NA,NA,Wheat,Coastal Plain,g/kg,OC,7.3,5_10
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Wheat,NA,NA,NA,NA,NA,NA,Wheat,Coastal Plain,g/kg,OC,6.6,10_20
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Wheat,NA,NA,NA,NA,NA,NA,Wheat,Coastal Plain,g/kg,OC,3.7,20_30
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Wheat,NA,NA,NA,NA,NA,NA,Wheat,Limestone Valley,g/kg,OC,11.8,0_5
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Wheat,NA,NA,NA,NA,NA,NA,Wheat,Limestone Valley,g/kg,OC,9.5,5_10
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Wheat,NA,NA,NA,NA,NA,NA,Wheat,Limestone Valley,g/kg,OC,9.3,10_20
+McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,1985,Wheat,NA,NA,NA,NA,NA,NA,Wheat,Limestone Valley,g/kg,OC,5.7,20_30
+Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,No till,Stover harvested,NA,NA,NA,NA,NA,"No till, Stover harvested",NA,ln(cm/h),IR,0.83,NA
+Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,No till,Stover returned,NA,NA,NA,NA,NA,"No till, Stover returned",NA,ln(cm/h),IR,1.58,NA
+Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,Plow till,Stover harvested,NA,NA,NA,NA,NA,"Plow till, Stover harvested",NA,ln(cm/h),IR,1.39,NA
+Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,Plow till,Stover returned,NA,NA,NA,NA,NA,"Plow till, Stover returned",NA,ln(cm/h),IR,1.63,NA
+Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,No till,Stover harvested,NA,NA,NA,NA,NA,"No till, Stover harvested",NA,%,OM,4.99,0_15
+Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,No till,Stover returned,NA,NA,NA,NA,NA,"No till, Stover returned",NA,%,OM,5.39,0_15
+Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,Plow till,Stover harvested,NA,NA,NA,NA,NA,"Plow till, Stover harvested",NA,%,OM,3.71,0_15
+Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,Plow till,Stover returned,NA,NA,NA,NA,NA,"Plow till, Stover returned",NA,%,OM,4.02,0_15
+Nyalemegbe et al. 2011,NA,2011,2010,Mimosa,NA,NA,NA,NA,NA,NA,Mimosa,NA,g/m^3,BD,1.44,0_10
+Nyalemegbe et al. 2011,NA,2011,2010,Mimosa,NA,NA,NA,NA,NA,NA,Mimosa,NA,g/m^3,BD,1.56,10_25
+Nyalemegbe et al. 2011,NA,2011,2010,Mucuna,NA,NA,NA,NA,NA,NA,Mucuna,NA,g/m^3,BD,1.48,0_10
+Nyalemegbe et al. 2011,NA,2011,2010,Mucuna,NA,NA,NA,NA,NA,NA,Mucuna,NA,g/m^3,BD,1.57,10_25
+Nyalemegbe et al. 2011,NA,2011,2010,Natural Fallow,NA,NA,NA,NA,NA,NA,Natural Fallow,NA,g/m^3,BD,1.56,0_10
+Nyalemegbe et al. 2011,NA,2011,2010,Natural Fallow,NA,NA,NA,NA,NA,NA,Natural Fallow,NA,g/m^3,BD,1.53,10_25
+Nyalemegbe et al. 2011,NA,2011,2010,Natural Fallow,NA,NA,NA,NA,NA,NA,Natural Fallow,NA,g/m^3,BD,1.57,0_10
+Nyalemegbe et al. 2011,NA,2011,2010,Natural Fallow,NA,NA,NA,NA,NA,NA,Natural Fallow,NA,g/m^3,BD,1.69,10_25
+Nyalemegbe et al. 2011,NA,2011,2010,Stylosanthes,NA,NA,NA,NA,NA,NA,Stylosanthes,NA,g/m^3,BD,1.48,0_10
+Nyalemegbe et al. 2011,NA,2011,2010,Stylosanthes,NA,NA,NA,NA,NA,NA,Stylosanthes,NA,g/m^3,BD,1.6,10_25
+Nyalemegbe et al. 2011,NA,2011,2010,Mimosa,NA,NA,NA,NA,NA,NA,Mimosa,NA,mm/s,IR,7.5,NA
+Nyalemegbe et al. 2011,NA,2011,2010,Mucuna,NA,NA,NA,NA,NA,NA,Mucuna,NA,mm/s,IR,8.9,NA
+Nyalemegbe et al. 2011,NA,2011,2010,Natural Fallow,NA,NA,NA,NA,NA,NA,Natural Fallow,NA,mm/s,IR,6.3,NA
+Nyalemegbe et al. 2011,NA,2011,2010,Stylosanthes,NA,NA,NA,NA,NA,NA,Stylosanthes,NA,mm/s,IR,8.3,NA
+Nyalemegbe et al. 2011,NA,2011,2010,Mimosa,NA,NA,NA,NA,NA,NA,Mimosa,NA,%,OC,1.35,0_10
+Nyalemegbe et al. 2011,NA,2011,2010,Mimosa,NA,NA,NA,NA,NA,NA,Mimosa,NA,%,OC,0.55,10_25
+Nyalemegbe et al. 2011,NA,2011,2010,Mucuna,NA,NA,NA,NA,NA,NA,Mucuna,NA,%,OC,1.94,0_10
+Nyalemegbe et al. 2011,NA,2011,2010,Mucuna,NA,NA,NA,NA,NA,NA,Mucuna,NA,%,OC,0.69,10_25
+Nyalemegbe et al. 2011,NA,2011,2010,Natural Fallow,NA,NA,NA,NA,NA,NA,Natural Fallow,NA,%,OC,0.69,0_10
+Nyalemegbe et al. 2011,NA,2011,2010,Natural Fallow,NA,NA,NA,NA,NA,NA,Natural Fallow,NA,%,OC,0.42,10_25
+Nyalemegbe et al. 2011,NA,2011,2010,Stylosanthes,NA,NA,NA,NA,NA,NA,Stylosanthes,NA,%,OC,1.24,0_10
+Nyalemegbe et al. 2011,NA,2011,2010,Stylosanthes,NA,NA,NA,NA,NA,NA,Stylosanthes,NA,%,OC,0.96,10_25
+Nyamadzawo et al. 2003,10.1023/B:AGFO.0000005221.67367.fd,2000,1991,Natural fallow,Conventional Till,NA,NA,NA,NA,NA,"Natural fallow, Conventional Till",NA,mm - IR decay rate,IR,35,NA
+Nyamadzawo et al. 2003,10.1023/B:AGFO.0000005221.67367.fd,2000,1991,Sesbania seban,Conventional Till,NA,NA,NA,NA,NA,"Sesbania seban, Conventional Till",NA,g/kg,OC,37,NA
+Nyamadzawo et al. 2003,10.1023/B:AGFO.0000005221.67367.fd,2001,1991,Sesbania seban,NA,NA,NA,NA,NA,NA,Sesbania seban,NA,mm - IR decay rate,IR,25,NA
+Nyamadzawo et al. 2003,10.1023/B:AGFO.0000005221.67367.fd,2001,1991,Continous Maize,Conventional Till,NA,NA,NA,NA,NA,"Continous Maize, Conventional Till",NA,mm - IR decay rate,IR,10,NA
+Nyamadzawo et al. 2003,10.1023/B:AGFO.0000005221.67367.fd,2001,1991,Continous Maize,No Till,NA,NA,NA,NA,NA,"Continous Maize, No Till",NA,mm - IR decay rate,IR,8,NA
+Nyamadzawo et al. 2003,10.1023/B:AGFO.0000005221.67367.fd,2001,1991,Naturial fallow,No Till,NA,NA,NA,NA,NA,"Natural fallow, No Till",NA,mm - IR decay rate,IR,30,NA
+Nyamadzawo et al. 2003,10.1023/B:AGFO.0000005221.67367.fd,2001,1991,Continous Maize,Conventional Till,NA,NA,NA,NA,NA,"Continous Maize, Conventional Till",NA,g/kg,OC,10,NA
+Nyamadzawo et al. 2003,10.1023/B:AGFO.0000005221.67367.fd,2001,1991,Continous Maize,No Till,NA,NA,NA,NA,NA,"Continous Maize, No Till",NA,g/kg,OC,10,NA
+Nyamadzawo et al. 2003,10.1023/B:AGFO.0000005221.67367.fd,2001,1991,Sesbania seban,No Till,NA,NA,NA,NA,NA,"Sesbania seban, No Till",NA,g/kg,OC,35,NA
+Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2008,2008,"0 year, Maize",NA,NA,NA,NA,NA,NA,"0 year, Maize",Ruaca,mg/m^3,BD,1.5,0_20
+Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2008,2007,"1 year, Maize-pigeonpea",NA,NA,NA,NA,NA,NA,"1 year, Maize-pigeonpea",Ruaca,mg/m^3,BD,1.4,0_20
+Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2008,2005,"3 years, Maize-pigeonpea",NA,NA,NA,NA,NA,NA,"3 years, Maize-pigeonpea",Ruaca,mg/m^3,BD,1.4,0_20
+Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2008,2003,"5 years, Maize-pigeonpea",NA,NA,NA,NA,NA,NA,"5 years, Maize-pigeonpea",Ruaca,mg/m^3,BD,1.3,0_20
+Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2010,2008,"0 year, Maize",NA,NA,NA,NA,NA,NA,"0 year, Maize",Ruaca,mm/h,IR,6,NA
+Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2010,2007,"1 year, Maize-pigeonpea",NA,NA,NA,NA,NA,NA,"1 year, Maize-pigeonpea",Ruaca,mm/h,IR,8,NA
+Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2010,2005,"3 years, Maize-pigeonpea",NA,NA,NA,NA,NA,NA,"3 years, Maize-pigeonpea",Ruaca,mm/h,IR,10,NA
+Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2010,2003,"5 years, Maize-pigeonpea",NA,NA,NA,NA,NA,NA,"5 years, Maize-pigeonpea",Ruaca,mm/h,IR,22,NA
+Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2008,2008,"0 year, Maize",NA,NA,NA,NA,NA,NA,"0 year, Maize",Ruaca,%,OC,0.2,0_20
+Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2008,2007,"1 year, Maize-pigeonpea",NA,NA,NA,NA,NA,NA,"1 year, Maize-pigeonpea",Ruaca,%,OC,0.6,0_20
+Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2008,2005,"3 years, Maize-pigeonpea",NA,NA,NA,NA,NA,NA,"3 years, Maize-pigeonpea",Ruaca,%,OC,1.2,0_20
+Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2008,2003,"5 years, Maize-pigeonpea",NA,NA,NA,NA,NA,NA,"5 years, Maize-pigeonpea",Ruaca,%,OC,1.4,0_20
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1979,Chisel Plough,NA,NA,NA,NA,NA,NA,Chisel Plough,Trial 1,cm/h,IR,3,NA
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1979,Zero Till,NA,NA,NA,NA,NA,NA,Zero Till,Trial 1,cm/h,IR,3.1,NA
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1979,Chisel Plough,NA,NA,NA,NA,NA,NA,Chisel Plough,Trial 1,%,OM,3,0_0.05
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1979,Chisel Plough,NA,NA,NA,NA,NA,NA,Chisel Plough,Trial 1,%,OM,2.8,0.10_0.15
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1979,Zero Till,NA,NA,NA,NA,NA,NA,Zero Till,Trial 1,%,OM,4.4,0_0.05
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1979,Zero Till,NA,NA,NA,NA,NA,NA,Zero Till,Trial 1,%,OM,2.7,0.10_0.15
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1986,Chisel Plough,NA,NA,NA,NA,NA,NA,Chisel Plough,Trial 2,cm/h,IR,3,NA
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1986,Zero Till,NA,NA,NA,NA,NA,NA,Zero Till,Trial 2,cm/h,IR,2.5,NA
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1986,Chisel Plough,NA,NA,NA,NA,NA,NA,Chisel Plough,Trial 2,%,OM,3.7,0_0.05
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1986,Chisel Plough,NA,NA,NA,NA,NA,NA,Chisel Plough,Trial 2,%,OM,2.7,0.10_0.15
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1986,Zero Till,NA,NA,NA,NA,NA,NA,Zero Till,Trial 2,%,OM,4.3,0_0.05
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1986,Zero Till,NA,NA,NA,NA,NA,NA,Zero Till,Trial 2,%,OM,2.8,0.10_0.15
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1991,Chisel Plough,NA,NA,NA,NA,NA,NA,Chisel Plough,Trial 3,cm/h,IR,3.2,NA
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1991,Zero Till,NA,NA,NA,NA,NA,NA,Zero Till,Trial 3,cm/h,IR,2.7,NA
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1991,Chisel Plough,NA,NA,NA,NA,NA,NA,Chisel Plough,Trial 3,%,OM,3.1,0_0.05
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1991,Chisel Plough,NA,NA,NA,NA,NA,NA,Chisel Plough,Trial 3,%,OM,2.3,0.10_0.15
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1991,Zero Till,NA,NA,NA,NA,NA,NA,Zero Till,Trial 3,%,OM,3.7,0_0.05
+Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,1991,Zero Till,NA,NA,NA,NA,NA,NA,Zero Till,Trial 3,%,OM,2.5,0.10_0.15
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Control,NA,NA,NA,NA,NA,NA,Control,NA,g/cc,BD,1.44,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Sunnhemp,NA,NA,NA,NA,NA,NA,Sunnhemp,NA,g/cc,BD,1.41,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Leucana,NA,NA,NA,NA,NA,NA,Leucana,NA,g/cc,BD,1.36,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Sunnhemp,Leucana,NA,NA,NA,NA,NA,"Sunnhemp, Leucana",NA,g/cc,BD,1.36,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Maize,N-0,NA,NA,NA,NA,NA,"Maize, N-0",NA,g/cc,BD,1.42,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Maize,N-30,NA,NA,NA,NA,NA,"Maize, N-30",NA,g/cc,BD,1.4,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Maize,N-60,NA,NA,NA,NA,NA,"Maize, N-60",NA,g/cc,BD,1.39,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Maize,N-90,NA,NA,NA,NA,NA,"Maize, N-90",NA,g/cc,BD,1.38,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Wheat,N-0,NA,NA,NA,NA,NA,"Wheat, N-0",NA,g/cc,BD,1.42,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Wheat,N-40,NA,NA,NA,NA,NA,"Wheat, N-40",NA,g/cc,BD,1.39,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Wheat,N-80,NA,NA,NA,NA,NA,"Wheat, N-80",NA,g/cc,BD,1.4,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Control,NA,NA,NA,NA,NA,NA,Control,NA,mm/hr,IR,6.33,NA
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Sunnhemp,NA,NA,NA,NA,NA,NA,Sunnhemp,NA,mm/hr,IR,7.36,NA
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Leucana,NA,NA,NA,NA,NA,NA,Leucana,NA,mm/hr,IR,7.67,NA
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Sunnhemp,Leucana,NA,NA,NA,NA,NA,"Sunnhemp, Leucana",NA,mm/hr,IR,8.34,NA
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Maize,N-0,NA,NA,NA,NA,NA,"Maize, N-0",NA,mm/hr,IR,6.97,NA
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Maize,N-30,NA,NA,NA,NA,NA,"Maize, N-30",NA,mm/hr,IR,7.38,NA
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Maize,N-60,NA,NA,NA,NA,NA,"Maize, N-60",NA,mm/hr,IR,7.55,NA
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Maize,N-90,NA,NA,NA,NA,NA,"Maize, N-90",NA,mm/hr,IR,7.83,NA
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Wheat,N-0,NA,NA,NA,NA,NA,"Wheat, N-0",NA,mm/hr,IR,7.05,NA
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Wheat,N-40,NA,NA,NA,NA,NA,"Wheat, N-40",NA,mm/hr,IR,7.64,NA
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Wheat,N-80,NA,NA,NA,NA,NA,"Wheat, N-80",NA,mm/hr,IR,7.58,NA
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Control,NA,NA,NA,NA,NA,NA,Control,NA,%,OC,0.57,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Sunnhemp,NA,NA,NA,NA,NA,NA,Sunnhemp,NA,%,OC,0.64,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Leucana,NA,NA,NA,NA,NA,NA,Leucana,NA,%,OC,0.66,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Sunnhemp,Leucana,NA,NA,NA,NA,NA,"Sunnhemp, Leucana",NA,%,OC,0.69,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Maize,N-0,NA,NA,NA,NA,NA,"Maize, N-0",NA,%,OC,0.6,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Maize,N-30,NA,NA,NA,NA,NA,"Maize, N-30",NA,%,OC,0.67,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Maize,N-60,NA,NA,NA,NA,NA,"Maize, N-60",NA,%,OC,0.66,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Maize,N-90,NA,NA,NA,NA,NA,"Maize, N-90",NA,%,OC,0.67,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Wheat,N-0,NA,NA,NA,NA,NA,"Wheat, N-0",NA,%,OC,0.59,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Wheat,N-40,NA,NA,NA,NA,NA,"Wheat, N-40",NA,%,OC,0.66,0.0_15.0
+Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,2000,Wheat,N-80,NA,NA,NA,NA,NA,"Wheat, N-80",NA,%,OC,0.66,0.0_15.0
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,NA,NA,NA,NA,NA,NA,Urea,Rice Harvest,mg/m^3,BD,1.72,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,Green Manure,NA,NA,NA,NA,NA,"Urea, Green Manure",Rice Harvest,mg/m^3,BD,1.68,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,Farmyard Manure,NA,NA,NA,NA,NA,"Urea, Farmyard Manure",Rice Harvest,mg/m^3,BD,1.7,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Green Manure,Farmyard Manure,NA,NA,NA,NA,NA,"Green Manure, Farmyard Manure",Rice Harvest,mg/m^3,BD,1.64,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Urea,NA,NA,NA,NA,NA,"Wheat Straw, Urea",Rice Harvest,mg/m^3,BD,1.67,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Green Manure,Urea,NA,NA,NA,NA,"Wheat Straw, Green Manure, Urea",Rice Harvest,mg/m^3,BD,1.62,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Urea,Rice Straw,NA,NA,NA,NA,"Wheat Straw, Urea, Rice Straw",Rice Harvest,mg/m^3,BD,1.65,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Green Manure,Rice Straw,Urea,NA,NA,NA,"Wheat Straw, Green Manure, Rice Straw, Urea",Rice Harvest,mg/m^3,BD,1.58,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,NA,NA,NA,NA,NA,NA,Urea,Rice Harvest,x10^3 cm/min,IR,2.3,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,Green Manure,NA,NA,NA,NA,NA,"Urea, Green Manure",Rice Harvest,x10^3 cm/min,IR,3,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,Farmyard Manure,NA,NA,NA,NA,NA,"Urea, Farmyard Manure",Rice Harvest,x10^3 cm/min,IR,2.75,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Green Manure,Farmyard Manure,NA,NA,NA,NA,NA,"Green Manure, Farmyard Manure",Rice Harvest,x10^3 cm/min,IR,4.64,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Urea,NA,NA,NA,NA,NA,"Wheat Straw, Urea",Rice Harvest,x10^3 cm/min,IR,4.19,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Green Manure,Urea,NA,NA,NA,NA,"Wheat Straw, Green Manure, Urea",Rice Harvest,x10^3 cm/min,IR,3.92,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Urea,Rice Straw,NA,NA,NA,NA,"Wheat Straw, Urea, Rice Straw",Rice Harvest,x10^3 cm/min,IR,3.45,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Green Manure,Rice Straw,Urea,NA,NA,NA,"Wheat Straw, Green Manure, Rice Straw, Urea",Rice Harvest,x10^3 cm/min,IR,7.3,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,NA,NA,NA,NA,NA,NA,Urea,Rice Harvest,%,OC,0.42,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,Green Manure,NA,NA,NA,NA,NA,"Urea, Green Manure",Rice Harvest,%,OC,0.47,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,Farmyard Manure,NA,NA,NA,NA,NA,"Urea, Farmyard Manure",Rice Harvest,%,OC,0.51,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Green Manure,Farmyard Manure,NA,NA,NA,NA,NA,"Green Manure, Farmyard Manure",Rice Harvest,%,OC,0.59,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Urea,NA,NA,NA,NA,NA,"Wheat Straw, Urea",Rice Harvest,%,OC,0.56,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Green Manure,Urea,NA,NA,NA,NA,"Wheat Straw, Green Manure, Urea",Rice Harvest,%,OC,0.6,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Urea,Rice Straw,NA,NA,NA,NA,"Wheat Straw, Urea, Rice Straw",Rice Harvest,%,OC,0.59,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Green Manure,Rice Straw,Urea,NA,NA,NA,"Wheat Straw, Green Manure, Rice Straw, Urea",Rice Harvest,%,OC,0.64,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,NA,NA,NA,NA,NA,NA,Urea,Wheat Harvest,mg/m^3,BD,1.67,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,Green Manure,NA,NA,NA,NA,NA,"Urea, Green Manure",Wheat Harvest,mg/m^3,BD,1.67,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,Farmyard Manure,NA,NA,NA,NA,NA,"Urea, Farmyard Manure",Wheat Harvest,mg/m^3,BD,1.68,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Green Manure,Farmyard Manure,NA,NA,NA,NA,NA,"Green Manure, Farmyard Manure",Wheat Harvest,mg/m^3,BD,1.64,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Urea,NA,NA,NA,NA,NA,"Wheat Straw, Urea",Wheat Harvest,mg/m^3,BD,1.59,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Green Manure,Urea,NA,NA,NA,NA,"Wheat Straw, Green Manure, Urea",Wheat Harvest,mg/m^3,BD,1.64,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Urea,Rice Straw,NA,NA,NA,NA,"Wheat Straw, Urea, Rice Straw",Wheat Harvest,mg/m^3,BD,1.61,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Green Manure,Rice Straw,Urea,NA,NA,NA,"Wheat Straw, Green Manure, Rice Straw, Urea",Wheat Harvest,mg/m^3,BD,1.64,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,NA,NA,NA,NA,NA,NA,Urea,Wheat Harvest,x10^3 cm/min,IR,2.41,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,Green Manure,NA,NA,NA,NA,NA,"Urea, Green Manure",Wheat Harvest,x10^3 cm/min,IR,5.63,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,Farmyard Manure,NA,NA,NA,NA,NA,"Urea, Farmyard Manure",Wheat Harvest,x10^3 cm/min,IR,4.17,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Green Manure,Farmyard Manure,NA,NA,NA,NA,NA,"Green Manure, Farmyard Manure",Wheat Harvest,x10^3 cm/min,IR,6.11,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Urea,NA,NA,NA,NA,NA,"Wheat Straw, Urea",Wheat Harvest,x10^3 cm/min,IR,4.71,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Green Manure,Urea,NA,NA,NA,NA,"Wheat Straw, Green Manure, Urea",Wheat Harvest,x10^3 cm/min,IR,6.78,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Urea,Rice Straw,NA,NA,NA,NA,"Wheat Straw, Urea, Rice Straw",Wheat Harvest,x10^3 cm/min,IR,6.18,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Green Manure,Rice Straw,Urea,NA,NA,NA,"Wheat Straw, Green Manure, Rice Straw, Urea",Wheat Harvest,x10^3 cm/min,IR,10.45,NA
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,NA,NA,NA,NA,NA,NA,Urea,Wheat Harvest,%,OC,0.4,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,Green Manure,NA,NA,NA,NA,NA,"Urea, Green Manure",Wheat Harvest,%,OC,0.44,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Urea,Farmyard Manure,NA,NA,NA,NA,NA,"Urea, Farmyard Manure",Wheat Harvest,%,OC,0.49,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Green Manure,Farmyard Manure,NA,NA,NA,NA,NA,"Green Manure, Farmyard Manure",Wheat Harvest,%,OC,0.56,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Urea,NA,NA,NA,NA,NA,"Wheat Straw, Urea",Wheat Harvest,%,OC,0.53,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Green Manure,Urea,NA,NA,NA,NA,"Wheat Straw, Green Manure, Urea",Wheat Harvest,%,OC,0.56,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Urea,Rice Straw,NA,NA,NA,NA,"Wheat Straw, Urea, Rice Straw",Wheat Harvest,%,OC,0.6,0_15
+Singh et al. 2007,10.1016/j.still.2006.07.020,2001,1988,Wheat Straw,Green Manure,Rice Straw,Urea,NA,NA,NA,"Wheat Straw, Green Manure, Rice Straw, Urea",Wheat Harvest,%,OC,0.62,0_15
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,TPR/CTM,Without residue,NA,NA,NA,NA,NA,"TPR/CTM, Without residue",NA,mg/m^3,BD,1.53,0_15
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,TPR/CTM,With residue,NA,NA,NA,NA,NA,"TPR/CTM, With residue",NA,mg/m^3,BD,1.48,0_15
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,CTDSR/CTM,Without residue,NA,NA,NA,NA,NA,"CTDSR/CTM, Without residue",NA,mg/m^3,BD,1.46,0_15
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,CTDSR/CTM,With residue,NA,NA,NA,NA,NA,"CTDSR/CTM, With residue",NA,mg/m^3,BD,1.43,0_15
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,ZTDSR/ZTM,Without residue,NA,NA,NA,NA,NA,"ZTDSR/ZTM, Without residue",NA,mg/m^3,BD,1.45,0_15
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,ZTDSR/ZTM,With residue,NA,NA,NA,NA,NA,"ZTDSR/ZTM, With residue",NA,mg/m^3,BD,1.42,0_15
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,TPR/CTM,Without residue,NA,NA,NA,NA,NA,"TPR/CTM, Without residue",NA,mg/m^3,BD,1.59,15_30
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,TPR/CTM,With residue,NA,NA,NA,NA,NA,"TPR/CTM, With residue",NA,mg/m^3,BD,1.51,15_30
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,CTDSR/CTM,Without residue,NA,NA,NA,NA,NA,"CTDSR/CTM, Without residue",NA,mg/m^3,BD,1.52,15_30
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,CTDSR/CTM,With residue,NA,NA,NA,NA,NA,"CTDSR/CTM, With residue",NA,mg/m^3,BD,1.49,15_30
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,ZTDSR/ZTM,Without residue,NA,NA,NA,NA,NA,"ZTDSR/ZTM, Without residue",NA,mg/m^3,BD,1.52,15_30
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,ZTDSR/ZTM,With residue,NA,NA,NA,NA,NA,"ZTDSR/ZTM, With residue",NA,mg/m^3,BD,1.47,15_30
+Singh et al. 2016,10.1016/j.still.2015.08.002,2011,2006,TPR/CTM,NA,NA,NA,NA,NA,NA,TPR/CTM,NA,mm/h,IR,4.7,NA
+Singh et al. 2016,10.1016/j.still.2015.08.003,2011,2006,CTDSR/CTM,NA,NA,NA,NA,NA,NA,CTDSR/CTM,NA,mm/h,IR,6.7,NA
+Singh et al. 2016,10.1016/j.still.2015.08.004,2011,2006,ZTDSR/ZTM,NA,NA,NA,NA,NA,NA,ZTDSR/ZTM,NA,mm/h,IR,6.9,NA
+Singh et al. 2016,10.1016/j.still.2015.08.005,2011,2006,Without residue,NA,NA,NA,NA,NA,NA,Without residue,NA,mm/h,IR,5.5,NA
+Singh et al. 2016,10.1016/j.still.2015.08.006,2011,2006,With residue,NA,NA,NA,NA,NA,NA,With residue,NA,mm/h,IR,6.8,NA
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,TPR/CTM,Without residue,NA,NA,NA,NA,NA,"TPR/CTM, Without residue",NA,g/kg,OC,4.3,0_15
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,TPR/CTM,With residue,NA,NA,NA,NA,NA,"TPR/CTM, With residue",NA,g/kg,OC,5.18,0_15
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,CTDSR/CTM,Without residue,NA,NA,NA,NA,NA,"CTDSR/CTM, Without residue",NA,g/kg,OC,5.31,0_15
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,CTDSR/CTM,With residue,NA,NA,NA,NA,NA,"CTDSR/CTM, With residue",NA,g/kg,OC,5.92,0_15
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,ZTDSR/ZTM,Without residue,NA,NA,NA,NA,NA,"ZTDSR/ZTM, Without residue",NA,g/kg,OC,4.49,0_15
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,ZTDSR/ZTM,With residue,NA,NA,NA,NA,NA,"ZTDSR/ZTM, With residue",NA,g/kg,OC,5.47,0_15
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,TPR/CTM,Without residue,NA,NA,NA,NA,NA,"TPR/CTM, Without residue",NA,g/kg,OC,2.84,15_30
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,TPR/CTM,With residue,NA,NA,NA,NA,NA,"TPR/CTM, With residue",NA,g/kg,OC,3.37,15_30
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,CTDSR/CTM,Without residue,NA,NA,NA,NA,NA,"CTDSR/CTM, Without residue",NA,g/kg,OC,2.84,15_30
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,CTDSR/CTM,With residue,NA,NA,NA,NA,NA,"CTDSR/CTM, With residue",NA,g/kg,OC,3.48,15_30
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,ZTDSR/ZTM,Without residue,NA,NA,NA,NA,NA,"ZTDSR/ZTM, Without residue",NA,g/kg,OC,3.02,15_30
+Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,ZTDSR/ZTM,With residue,NA,NA,NA,NA,NA,"ZTDSR/ZTM, With residue",NA,g/kg,OC,3.76,15_30
+So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,mg/m^3,BD,11.4,0_50
+So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,mg/m^4,BD,13.8,0_50
+So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,mg/m^5,BD,13.8,50_150
+So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,mg/m^6,BD,14.5,50_150
+So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,mm/h,IR,25,NA
+So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,mm/h,IR,5,NA
+So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,%,OM,3.37,NA
+So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,%,OM,1.65,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Cereal Cover Crops,NA,NA,NA,NA,NA,NA,Cereal Cover Crops,Coastal plain,mm/s,IR,0.08,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Cereal Cover Crops,NA,NA,NA,NA,NA,NA,Cereal Cover Crops,Coastal plain,mm/s,IR,1.78,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Control,NA,NA,NA,NA,NA,NA,Control,Coastal plain,mm/h,IR,0.023,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Control,NA,NA,NA,NA,NA,NA,Control,Coastal plain,mm/h,IR,0.317,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Cereal Cover Crops,NA,NA,NA,NA,NA,NA,Cereal Cover Crops,Coastal plain,mg/ha,SOC,2.5,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Control,NA,NA,NA,NA,NA,NA,Control,Coastal plain,mg/ha,SOC,3.2,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Cereal Cover Crops,NA,NA,NA,NA,NA,NA,Cereal Cover Crops,Piedmont,mm/h,IR,4.51,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Control,NA,NA,NA,NA,NA,NA,Control,Piedmont,mm/h,IR,2.3,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Cereal Cover Crops,NA,NA,NA,NA,NA,NA,Cereal Cover Crops,Piedmont,mg/ha,SOC,2.5,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Control,NA,NA,NA,NA,NA,NA,Control,Piedmont,mg/ha,SOC,3.2,NA
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2005,2005,Conventional Ploughing,NA,NA,NA,NA,NA,NA,Conventional Ploughing,NA,%,OC,0.67,0_10
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2005,2005,Direct seeding,NA,NA,NA,NA,NA,NA,Direct seeding,NA,%,OC,0.72,0_10
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2005,2005,Direct seeding 2 year rotation,NA,NA,NA,NA,NA,NA,Direct seeding 2 year rotation,NA,%,OC,0.64,0_10
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2005,2005,Direct seeding 3 year rotation,NA,NA,NA,NA,NA,NA,Direct seeding 3 year rotation,NA,%,OC,0.68,0_10
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2005,2005,Conventional Ploughing,NA,NA,NA,NA,NA,NA,Conventional Ploughing,NA,%,OC,0.58,0_30
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2005,2005,Direct seeding,NA,NA,NA,NA,NA,NA,Direct seeding,NA,%,OC,0.69,0_30
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2005,2005,Direct seeding 2 year rotation,NA,NA,NA,NA,NA,NA,Direct seeding 2 year rotation,NA,%,OC,0.61,0_30
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2005,2005,Direct seeding 3 year rotation,NA,NA,NA,NA,NA,NA,Direct seeding 3 year rotation,NA,%,OC,0.63,0_30
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,2005,Conventional Ploughing,NA,NA,NA,NA,NA,NA,Conventional Ploughing,NA,mm/h,IR,9.6,NA
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,2005,Direct seeding,NA,NA,NA,NA,NA,NA,Direct seeding,NA,mm/h,IR,33.5,NA
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,2005,Direct seeding 2 year rotation,NA,NA,NA,NA,NA,NA,Direct seeding 2 year rotation,NA,mm/h,IR,31.1,NA
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,2005,Direct seeding 3 year rotation,NA,NA,NA,NA,NA,NA,Direct seeding 3 year rotation,NA,mm/h,IR,40.7,NA
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,2005,Conventional Ploughing,NA,NA,NA,NA,NA,NA,Conventional Ploughing,NA,%,OC,0.56,0_10
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,2005,Direct seeding,NA,NA,NA,NA,NA,NA,Direct seeding,NA,%,OC,0.76,0_10
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,2005,Direct seeding 2 year rotation,NA,NA,NA,NA,NA,NA,Direct seeding 2 year rotation,NA,%,OC,0.68,0_10
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,2005,Direct seeding 3 year rotation,NA,NA,NA,NA,NA,NA,Direct seeding 3 year rotation,NA,%,OC,0.77,0_10
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,2005,Conventional Ploughing,NA,NA,NA,NA,NA,NA,Conventional Ploughing,NA,%,OC,0.54,0_30
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,2005,Direct seeding,NA,NA,NA,NA,NA,NA,Direct seeding,NA,%,OC,0.75,0_30
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,2005,Direct seeding 2 year rotation,NA,NA,NA,NA,NA,NA,Direct seeding 2 year rotation,NA,%,OC,0.61,0_30
+Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,2005,Direct seeding 3 year rotation,NA,NA,NA,NA,NA,NA,Direct seeding 3 year rotation,NA,%,OC,0.68,0_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,Control,NA,NA,NA,NA,NA,NA,Control,NA,g/cm^3,BD,1.45,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/50 NPK,NA,NA,NA,NA,NA,NA,50/50 NPK,NA,g/cm^3,BD,1.46,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/100 NPK,NA,NA,NA,NA,NA,NA,50/100 NPK,NA,g/cm^3,BD,1.46,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75/75 NPK,NA,NA,NA,NA,NA,NA,75/75 NPK,NA,g/cm^3,BD,1.47,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100/100 NPK,NA,NA,NA,NA,NA,NA,100/100 NPK,NA,g/cm^3,BD,1.46,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50FYM/100NPK,NA,NA,NA,NA,NA,NA,50NPK/50FYM/100NPK,NA,g/cm^3,BD,1.39,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25FYM/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25FYM/75NPK,NA,g/cm^3,BD,1.4,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50straw/100NPK,NA,NA,NA,NA,NA,NA,50NPK/50straw/100NPK,NA,g/cm^3,BD,1.42,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25straw/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25straw/75NPK,NA,g/cm^3,BD,1.43,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50greenmanure/100NPK,NA,NA,NA,NA,NA,NA,50NPK/50greenmanure/100NPK,NA,g/cm^3,BD,1.41,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25greenmanure/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25greenmanure/75NPK,NA,g/cm^3,BD,1.42,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100NPK/50FYM/100NPK,NA,NA,NA,NA,NA,NA,100NPK/50FYM/100NPK,NA,g/cm^3,BD,1.38,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,180:30:50 NPK/150:60:30 NPK,NA,NA,NA,NA,NA,NA,180:30:50 NPK/150:60:30 NPK,NA,g/cm^3,BD,1.47,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100 NPK/Cowpea,NA,NA,NA,NA,NA,NA,100 NPK/Cowpea,NA,g/cm^3,BD,1.46,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,Control,NA,NA,NA,NA,NA,NA,Control,NA,g/cm^3,BD,1.6,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/50 NPK,NA,NA,NA,NA,NA,NA,50/50 NPK,NA,g/cm^3,BD,1.61,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/100 NPK,NA,NA,NA,NA,NA,NA,50/100 NPK,NA,g/cm^3,BD,1.61,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75/75 NPK,NA,NA,NA,NA,NA,NA,75/75 NPK,NA,g/cm^3,BD,1.62,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100/100 NPK,NA,NA,NA,NA,NA,NA,100/100 NPK,NA,g/cm^3,BD,1.62,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50FYM/100NPK,NA,NA,NA,NA,NA,NA,50NPK/50FYM/100NPK,NA,g/cm^3,BD,1.59,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25FYM/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25FYM/75NPK,NA,g/cm^3,BD,1.6,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50straw/100NPK,NA,NA,NA,NA,NA,NA,50NPK/50straw/100NPK,NA,g/cm^3,BD,1.6,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25straw/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25straw/75NPK,NA,g/cm^3,BD,1.6,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50greenmanure/100NPK,NA,NA,NA,NA,NA,NA,50NPK/50greenmanure/100NPK,NA,g/cm^3,BD,1.59,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25greenmanure/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25greenmanure/75NPK,NA,g/cm^3,BD,1.6,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100NPK/50FYM/100NPK,NA,NA,NA,NA,NA,NA,100NPK/50FYM/100NPK,NA,g/cm^3,BD,1.58,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,180:30:50 NPK/150:60:30 NPK,NA,NA,NA,NA,NA,NA,180:30:50 NPK/150:60:30 NPK,NA,g/cm^3,BD,1.62,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100 NPK/Cowpea,NA,NA,NA,NA,NA,NA,101 NPK/Cowpea,NA,g/cm^3,BD,1.61,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,Control,NA,NA,NA,NA,NA,NA,Control,NA,cm/hr,IR,2.72,NA
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/50 NPK,NA,NA,NA,NA,NA,NA,50/50 NPK,NA,cm/hr,IR,2.86,NA
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/100 NPK,NA,NA,NA,NA,NA,NA,50/100 NPK,NA,cm/hr,IR,2.98,NA
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75/75 NPK,NA,NA,NA,NA,NA,NA,75/75 NPK,NA,cm/hr,IR,3,NA
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100/100 NPK,NA,NA,NA,NA,NA,NA,100/100 NPK,NA,cm/hr,IR,3.06,NA
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50FYM/100NPK,NA,NA,NA,NA,NA,NA,50NPK/50FYM/100NPK,NA,cm/hr,IR,4.48,NA
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25FYM/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25FYM/75NPK,NA,cm/hr,IR,4.13,NA
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50straw/100NPK,NA,NA,NA,NA,NA,NA,50NPK/50straw/100NPK,NA,cm/hr,IR,3.24,NA
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25straw/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25straw/75NPK,NA,cm/hr,IR,3.22,NA
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50greenmanure/100NPK,NA,NA,NA,NA,NA,NA,50NPK/50greenmanure/100NPK,NA,cm/hr,IR,4.24,NA
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25greenmanure/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25greenmanure/75NPK,NA,cm/hr,IR,4.08,NA
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100NPK/50FYM/100NPK,NA,NA,NA,NA,NA,NA,100NPK/50FYM/100NPK,NA,cm/hr,IR,4.84,NA
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,180:30:50 NPK/150:60:30 NPK,NA,NA,NA,NA,NA,NA,180:30:50 NPK/150:60:30 NPK,NA,cm/hr,IR,3.14,NA
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100 NPK/Cowpea,NA,NA,NA,NA,NA,NA,102 NPK/Cowpea,NA,cm/hr,IR,3.22,NA
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,Control,NA,NA,NA,NA,NA,NA,Control,NA,%,OC,0.3,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/50 NPK,NA,NA,NA,NA,NA,NA,50/50 NPK,NA,%,OC,0.357,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/100 NPK,NA,NA,NA,NA,NA,NA,50/100 NPK,NA,%,OC,0.358,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75/75 NPK,NA,NA,NA,NA,NA,NA,75/75 NPK,NA,%,OC,0.36,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100/100 NPK,NA,NA,NA,NA,NA,NA,100/100 NPK,NA,%,OC,0.369,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50FYM/100NPK,NA,NA,NA,NA,NA,NA,50NPK/50FYM/100NPK,NA,%,OC,0.51,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25FYM/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25FYM/75NPK,NA,%,OC,0.496,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50straw/100NPK,NA,NA,NA,NA,NA,NA,50NPK/50straw/100NPK,NA,%,OC,0.393,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25straw/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25straw/75NPK,NA,%,OC,0.39,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50greenmanure/100NPK,NA,NA,NA,NA,NA,NA,50NPK/50greenmanure/100NPK,NA,%,OC,0.396,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25greenmanure/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25greenmanure/75NPK,NA,%,OC,0.386,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100NPK/50FYM/100NPK,NA,NA,NA,NA,NA,NA,100NPK/50FYM/100NPK,NA,%,OC,0.543,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,180:30:50 NPK/150:60:30 NPK,NA,NA,NA,NA,NA,NA,180:30:50 NPK/150:60:30 NPK,NA,%,OC,0.39,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100 NPK/Cowpea,NA,NA,NA,NA,NA,NA,103 NPK/Cowpea,NA,%,OC,0.373,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,Control,NA,NA,NA,NA,NA,NA,Control,NA,%,OC,0.23,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/50 NPK,NA,NA,NA,NA,NA,NA,50/50 NPK,NA,%,OC,0.3,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/100 NPK,NA,NA,NA,NA,NA,NA,50/100 NPK,NA,%,OC,0.296,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75/75 NPK,NA,NA,NA,NA,NA,NA,75/75 NPK,NA,%,OC,0.3,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100/100 NPK,NA,NA,NA,NA,NA,NA,100/100 NPK,NA,%,OC,0.313,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50FYM/100NPK,NA,NA,NA,NA,NA,NA,50NPK/50FYM/100NPK,NA,%,OC,0.326,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25FYM/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25FYM/75NPK,NA,%,OC,0.323,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50straw/100NPK,NA,NA,NA,NA,NA,NA,50NPK/50straw/100NPK,NA,%,OC,0.316,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25straw/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25straw/75NPK,NA,%,OC,0.313,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50greenmanure/100NPK,NA,NA,NA,NA,NA,NA,50NPK/50greenmanure/100NPK,NA,%,OC,0.316,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25greenmanure/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25greenmanure/75NPK,NA,%,OC,0.316,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100NPK/50FYM/100NPK,NA,NA,NA,NA,NA,NA,100NPK/50FYM/100NPK,NA,%,OC,0.33,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,180:30:50 NPK/150:60:30 NPK,NA,NA,NA,NA,NA,NA,180:30:50 NPK/150:60:30 NPK,NA,%,OC,0.316,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100 NPK/Cowpea,NA,NA,NA,NA,NA,NA,104 NPK/Cowpea,NA,%,OC,0.313,15_30
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,Control,NA,Conventional Till,NA,NA,NA,NA,"Control, , Conventional Till",NA,g/kg,OC,2.12,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,NA,Conventional Till,NA,NA,NA,NA,"75% NP, , Conventional Till",NA,g/kg,OC,2.2,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,NA,Conventional Till,NA,NA,NA,NA,"100% NP, , Conventional Till",NA,g/kg,OC,2.33,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"75% NP, Gypsum, Conventional Till",NA,g/kg,OC,2.26,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, Conventional Till",NA,g/kg,OC,2.28,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, Conventional Till",NA,g/kg,OC,2.34,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"100% NP, Gypsum, Conventional Till",NA,g/kg,OC,2.89,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, Conventional Till",NA,g/kg,OC,2.95,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, Conventional Till",NA,g/kg,OC,2.89,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,Control,NA,No Till,NA,NA,NA,NA,"Control, , No Till",NA,g/kg,OC,2.3,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,NA,No Till,NA,NA,NA,NA,"75% NP, , No Till",NA,g/kg,OC,2.64,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,NA,No Till,NA,NA,NA,NA,"100% NP, , No Till",NA,g/kg,OC,2.54,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,Gypsum,No Till,NA,NA,NA,NA,"75% NP, Gypsum, No Till",NA,g/kg,OC,2.58,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, No Till",NA,g/kg,OC,2.87,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, No Till",NA,g/kg,OC,3.25,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,Gypsum,No Till,NA,NA,NA,NA,"100% NP, Gypsum, No Till",NA,g/kg,OC,3.15,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, No Till",NA,g/kg,OC,3.33,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, No Till",NA,g/kg,OC,3.38,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,Control,NA,Conventional Till,NA,NA,NA,NA,"Control, , Conventional Till",NA,g/kg,OC,2.1,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,NA,Conventional Till,NA,NA,NA,NA,"75% NP, , Conventional Till",NA,g/kg,OC,2.21,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,NA,Conventional Till,NA,NA,NA,NA,"100% NP, , Conventional Till",NA,g/kg,OC,2.38,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"75% NP, Gypsum, Conventional Till",NA,g/kg,OC,2.39,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, Conventional Till",NA,g/kg,OC,2.51,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, Conventional Till",NA,g/kg,OC,3.1,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"100% NP, Gypsum, Conventional Till",NA,g/kg,OC,2.87,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, Conventional Till",NA,g/kg,OC,3.15,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, Conventional Till",NA,g/kg,OC,3.08,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,Control,NA,No Till,NA,NA,NA,NA,"Control, , No Till",NA,g/kg,OC,2.33,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,NA,No Till,NA,NA,NA,NA,"75% NP, , No Till",NA,g/kg,OC,2.61,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,NA,No Till,NA,NA,NA,NA,"100% NP, , No Till",NA,g/kg,OC,2.72,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,Gypsum,No Till,NA,NA,NA,NA,"75% NP, Gypsum, No Till",NA,g/kg,OC,2.76,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, No Till",NA,g/kg,OC,3.06,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, No Till",NA,g/kg,OC,3.32,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,Gypsum,No Till,NA,NA,NA,NA,"100% NP, Gypsum, No Till",NA,g/kg,OC,3.19,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, No Till",NA,g/kg,OC,3.56,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, No Till",NA,g/kg,OC,3.63,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,Control,NA,Conventional Till,NA,NA,NA,NA,"Control, , Conventional Till",NA,inch/hr,IR,0.62,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,NA,Conventional Till,NA,NA,NA,NA,"75% NP, , Conventional Till",NA,inch/hr,IR,0.55,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,NA,Conventional Till,NA,NA,NA,NA,"100% NP, , Conventional Till",NA,inch/hr,IR,0.43,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"75% NP, Gypsum, Conventional Till",NA,inch/hr,IR,0.70,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, Conventional Till",NA,inch/hr,IR,0.61,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, Conventional Till",NA,inch/hr,IR,0.41,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"100% NP, Gypsum, Conventional Till",NA,inch/hr,IR,0.52,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, Conventional Till",NA,inch/hr,IR,0.34,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, Conventional Till",NA,inch/hr,IR,0.13,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,Control,NA,No Till,NA,NA,NA,NA,"Control, , No Till",NA,inch/hr,IR,0.62,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,NA,No Till,NA,NA,NA,NA,"75% NP, , No Till",NA,inch/hr,IR,0.54,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,NA,No Till,NA,NA,NA,NA,"100% NP, , No Till",NA,inch/hr,IR,0.48,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Gypsum,No Till,NA,NA,NA,NA,"75% NP, Gypsum, No Till",NA,inch/hr,IR,0.88,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, No Till",NA,inch/hr,IR,0.72,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, No Till",NA,inch/hr,IR,0.51,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Gypsum,No Till,NA,NA,NA,NA,"100% NP, Gypsum, No Till",NA,inch/hr,IR,0.63,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, No Till",NA,inch/hr,IR,0.50,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, No Till",NA,inch/hr,IR,0.28,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,Control,NA,Conventional Till,NA,NA,NA,NA,"Control, , Conventional Till",NA,g/kg,OC,2.2,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,NA,Conventional Till,NA,NA,NA,NA,"75% NP, , Conventional Till",NA,g/kg,OC,2.33,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,NA,Conventional Till,NA,NA,NA,NA,"100% NP, , Conventional Till",NA,g/kg,OC,2.37,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"75% NP, Gypsum, Conventional Till",NA,g/kg,OC,2.84,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, Conventional Till",NA,g/kg,OC,3.23,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, Conventional Till",NA,g/kg,OC,2.89,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"100% NP, Gypsum, Conventional Till",NA,g/kg,OC,3.27,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, Conventional Till",NA,g/kg,OC,3.12,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, Conventional Till",NA,g/kg,OC,3.32,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,Control,NA,No Till,NA,NA,NA,NA,"Control, , No Till",NA,g/kg,OC,2.37,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,NA,No Till,NA,NA,NA,NA,"75% NP, , No Till",NA,g/kg,OC,2.71,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,NA,No Till,NA,NA,NA,NA,"100% NP, , No Till",NA,g/kg,OC,2.86,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Gypsum,No Till,NA,NA,NA,NA,"75% NP, Gypsum, No Till",NA,g/kg,OC,2.82,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, No Till",NA,g/kg,OC,3.21,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, No Till",NA,g/kg,OC,3.54,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Gypsum,No Till,NA,NA,NA,NA,"100% NP, Gypsum, No Till",NA,g/kg,OC,3.27,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, No Till",NA,g/kg,OC,3.85,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, No Till",NA,g/kg,OC,3.9,0_15

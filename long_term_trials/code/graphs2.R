@@ -2,6 +2,8 @@ source("code/libraries.R")
 
 load("data/d.yield.RData")
 load("data/d.prepared.RData")
+load(here::here("data", "d.yield.RData"))
+
 
 # Non-aggregated yield data
 
@@ -13,20 +15,26 @@ d.yield.nonagg %>%
   geom_point() +
   geom_smooth(method = "lm", formula = y ~ x, mapping = aes(group = Fertilizer, color = Fertilizer))
 
+d.yield.nonagg %>%
+  filter(!is.na(Rotation)) 
+  
 ## Plotting interaction of treatment with SPEI
 
-d.yield.nonagg %>%
+test <-d.yield.nonagg %>%
   filter(!is.na(Rotation)) %>%
-  ggplot(data = ., mapping = aes(x = SPEI.1, y = Yield.weighted)) +
-  geom_point() +
-  geom_smooth(mapping = aes(group = Rotation, color = Rotation))
+  filter(SPEI.1 != "-Inf") %>%
+  filter(SPEI.1 >= (mean(.$SPEI.1) - 2*sd(.$SPEI.1)) & SPEI.1 < (mean(.$SPEI.1) - sd(.$SPEI.1))) %>%
+  ggplot(data = ., aes(x = Rotation, y = Yield.weighted, fill = Rotation)) +
+  geom_boxplot() + 
+  theme(legend.position = "none")+
+  ylab("Weighted yield")
 
 # Carbon and yield stability metrics
 
 d.nonirr %>%
   # filter(Paper != "Thierfelder and Wall 2012", # Sensitive papers
   #        Paper != "Gao et al. 2015") %>%
-  ggplot(mapping = aes(x = delta.SOC.LRR, y = MYP.weighted.percent)) +
+  ggplot(mapping = aes(x = SOC.g.kg.weighted, y = MYP.weighted.percent)) +
   geom_point(aes(size = CV.yield.weighted), alpha = 1/3) +
   geom_smooth(method = "lm", formula = y ~ x)
 

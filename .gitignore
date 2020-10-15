@@ -10,6 +10,9 @@
 *.httr*
 *.xls
 *.xlsx
+*.Rprofile
+*.bib
+*.RIS
 
 # Ignore Davis_files directory
 /NCSS_database/data/SDA_public_db_Master_query.csv
@@ -24,6 +27,8 @@
 /long_term_trials/outputs
 /long_term_trials/packrat/lib*
 /long_term_trials/packrat/src
+
+/soil_water/data/archive
 
 .Rproj.user
 /misc

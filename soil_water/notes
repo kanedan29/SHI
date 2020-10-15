@@ -7,3 +7,46 @@ Worked on revisiting analysis. Going to use 'Paper' as a random factor in models
 Only big remaining question is if I'm accounting for controls correctly. Right now, I'm parsing controls based on y/n for a particular conservation ag treatment (i.e. tillage or cover). If an observation is n for tillage, say, then it is a control for tillage data. Problem with this is it could be a y for some other conservation ag approach. Maybe I should identify controls as observations with no conservation ag treatments?
 
 Also, need to check if I was counting residue retention as organic amendment in treatment classifications. In retrospect that does not make sense if I was. 
+
+9/22/20. 
+
+Remove Rusinamhodzi et al. 2012 from the analysis. Comparison is actually based on intercropping and how long it's been done. No other similar papers.
+- Marking BAU controls for all papers for the basis of LRRs, etc. 
+
+9/23/20. 
+
+- In deciding to use BAU controls, realizing that some treatments ID'ed as BAUs might be based on a summary of data from combined treatments. For now, I'll ID those papers here and decide whether or not to exclude them at a later point:
+
+Singh et al. 2016 (infiltration reported based on residue/no residue split and tillage splits)
+Sharma et al. 2010 (design was a split plot factorial, main trt was residue additions, split was fertilization, unclear how results are aggregated for infiltration, will ignore fertilizer
+data, may include residue mgmt data)
+Abdollahi and Munkholm 2014 (Data aggregated across tillage and cover splits rather than reported on factorial)
+
+- Other notes:
+For Masri and Ryan 2006, I chose to use the fallow rotation rather than continuous wheat as the BAU scenario.
+
+9.24.2020.
+
+- Reviewed all papers in the original biblio and realized that several candidate papers were missed. Also realized original dataset could use cleaning. 
+
+9.28.2020.
+
+- Locke et al. 2013, infiltration rate data taken at multiple row positions relative to plants. Recording only those data from the within-row position.
+
+9.30.2020.
+
+- Rusinamodzi, 1,3,5 year refers to number of years intercropping has been used. 
+- Sharma et al. is mulching with additions
+
+10.14.2020.
+
+- Steele et al. Using just data from the second off season time point. Those data points represent the system at its most mature point.
+- Thierfelder and wall, using IR data from the latest measurement point
+- When multiple IR metrics are reported, we collect the 'steady state' one or the 'capacity' measurement taken after the longest period of time
+
+
+
+
+
+
+
