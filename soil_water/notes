@@ -44,6 +44,31 @@ For Masri and Ryan 2006, I chose to use the fallow rotation rather than continuo
 - Thierfelder and wall, using IR data from the latest measurement point
 - When multiple IR metrics are reported, we collect the 'steady state' one or the 'capacity' measurement taken after the longest period of time
 
+12.7.2020.
+
+- Attempted to convert all data to the same units. Seems to work to some degree
+
+1.14.2021. 
+
+- To dos: 
+  - Weighting a la Basche
+  - Analysis of changes in SOC due to practices
+  - Confirm that organic amendment papers actually are such
+  - Model based on soil 
+  - Check controls again
+  
+1.15.2021.
+
+- To dos:
+  - Weighting, need to revisit papers and count the number of experimental and control reps, maybe this is in the basche supp dataset
+  - Review data one more time. Caught an error in one paper. 
+  - Check the controls/treatments matrix. 
+  - Re-do SEMs
+  - Evaluate publication bias with histograms
+  - Jacknife sensitivity analysis
+  
+
+
 
 
 

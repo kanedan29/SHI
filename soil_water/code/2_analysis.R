@@ -1,174 +1,137 @@
+
+# Import packages and data ------------------------------------------------
+
+
+
 source("code/0_libraries.R")
 detach("package:plyr")
+library(nlme)
 
-d <- read_excel("data/data_export.xlsx")
-d <- d[,-c(4:10)]
+d.mod <- read_rds("data/d.mod.rds") %>%
+  filter(Paper != "Nyalemegbe et al. 2011") %>% #checked back on this paper, and it's not clear what the units are, so removing
+  filter(IR.units != "Time for 500 mL (s)")
+  
 
-## Summarize carbon data
-d <- d %>%
-  dplyr::group_by(Paper, `Method/Site`) %>%
-  filter(`Year of observation`== max(as.numeric(`Year of observation`))) %>%
-  filter(!is.na(IR)) %>%
-  separate(Depth, into = c("Top.depth", "Bottom.depth"), sep = "-", remove = F) %>%
-  mutate(Depth.increment=as.numeric(Bottom.depth) - as.numeric(Top.depth)) %>%
-  do(mutate(., max.bottom = as.numeric(max(as.numeric((Bottom.depth)))))) %>%
-  mutate(Depth.proportion =as.numeric(Depth.increment)/max.bottom) %>%
-  ungroup(.)
 
-d$Depth.proportion
-d[is.na(d$Depth.proportion), "Depth.proportion"] <- 1
 
-d.soc <- d %>%
-  group_by(Paper, Trt.combo, `Method/Site`, Depth) %>%
-  mutate(SOC.g.kg.weighted = Depth.proportion*SOC) %>%
-  group_by(Paper, Trt.combo, `Method/Site`) %>%
-  dplyr::summarise(SOC.g.kg.weighted =  sum(SOC.g.kg.weighted))
+# Clean data,  normalize IR to cm/h ---------------------------------------
 
-d <- distinct(d[,c(1,2,3,4,5,11,12)]) %>%
-  dplyr::group_by(Paper, `Method/Site`) %>%
+d <- d.mod %>%
   ungroup(.) %>%
-  left_join(d.soc)
-
-d.trts <- read_excel("data/d.trts.xlsx")
-
-d <- d %>%
-  left_join(d.trts) %>%
+  rename(Site=`Method/Site`) %>%
+  mutate(
+    IR.cmh = case_when(
+      IR.units == "inch/hr" ~ IR*2.54,
+      IR.units == "x10^-3 cm/min" ~ (IR/1000)*60,
+      IR.units == "x10^-2 cm/min" ~ (IR/100)*60,
+      IR.units == "mm/h" ~ IR / 10,
+      IR.units == "mm/hr" ~ IR / 10,
+      IR.units == "ln(cm/h)" ~ exp(IR),
+      IR.units == "cm/d" ~ IR / 24,
+      IR.units == "mm per 1.5h" ~ (IR / 1.5) / 10,
+      IR.units == "cm/3h" ~ IR / 3,
+      IR.units == "mm/s" ~ (IR / 10) * 360,
+      IR.units == "cm/min (steady state)" ~ IR * 60,
+      TRUE ~ as.numeric(.$IR)
+    )
+  ) %>%
+  group_by(Paper) %>%
+  mutate(IR.compress = scale(IR)) %>%
   distinct(.)
 
-# fix variables in d
-
-d <- d %>%
-  mutate(IR.units = case_when(IR.units == "None" ~ "cm/h",
-                              IR.units == "cm/hr" ~ "cm/h",
-                              IR.units == "mm/hr" ~ "mm/h",
-                              TRUE ~ .$IR.units),
-         IR = case_when(IR.units == "mm/h" ~ IR/10,
-                        IR.units == "ln(cm/h)" ~ exp(IR),
-                        TRUE ~ as.numeric(.$IR))) %>%
-  mutate(IR.units = case_when(IR.units == "mm/h" ~ "cm/h",
-                       IR.units == "ln(cm/h)" ~ "cm/h",
-                       TRUE ~ .$IR.units)) %>%
-  distinct(.)
-
-
-## Calculate LRR for IR within each treatment
+# Calculate LRR for in IR in each treatment -------------------------------
 
 d.controls <- d %>%
-  dplyr::group_by(Paper, `Method/Site`) %>%
+  dplyr::group_by(Paper, Site) %>%
   filter(Control == "y") %>%
-  dplyr::select(Paper,`Method/Site`, IR, SOC.g.kg.weighted) %>%
+  dplyr::select(Paper, Site, IR, SOC.g.kg.weighted) %>%
   rename(IR.control = IR, SOC.control = SOC.g.kg.weighted)
 
-d.test <- d %>%
+d <- d %>%
   ungroup(.) %>%
   left_join(d.controls) %>%
+  distinct(.) %>%
   mutate(
     IR.LRR = log(IR/IR.control),
     SOC.LRR = log(SOC.g.kg.weighted/SOC.control)
-  )
-
-# d %>%
-#   dplyr::group_by(Paper, `Method/Site`) %>%
-#   filter(Tillage == "n", Control == "y") %>%
-#   summarise(Tillage.IR.control = mean(IR)) -> d.till.control
-#   
-# d %>%
-#   dplyr::group_by(Paper, `Method/Site`) %>%
-#   filter(Cover == "n", Control == "y") %>%
-#   summarise(Cover.IR.control = mean(IR)) -> d.cover.control
-# 
-# d %>%
-#   dplyr::group_by(Paper, `Method/Site`) %>%
-#   filter(Org.amend == "n", Control == "y") %>%
-#   summarise(Org.amend.IR.control = mean(IR)) -> d.org.amend.control
-# 
-# 
-# d %>%
-#   dplyr::group_by(Paper, `Method/Site`) %>%
-#   filter(Tillage == "n", Control == "y") %>%
-#   summarise(Tillage.SOC.control = mean(SOC.g.kg.weighted)) -> d.till.soc.control
-# 
-# d %>%
-#   dplyr::group_by(Paper, `Method/Site`) %>%
-#   filter(Cover == "n", Control == "y") %>%
-#   summarise(Cover.SOC.control = mean(SOC.g.kg.weighted)) -> d.cover.soc.control
-# 
-# d %>%
-#   dplyr::group_by(Paper, `Method/Site`) %>%
-#   filter(Org.amend == "n", Control == "y") %>%
-#   summarise(Org.amend.SOC.control = mean(SOC.g.kg.weighted)) -> d.org.amend.soc.control
-# 
-# 
-# d <- d %>%
-#   ungroup(.) %>%
-#   left_join(d.till.control) %>%
-#   left_join(d.cover.control) %>%
-#   left_join(d.org.amend.control) %>%
-#   left_join(d.till.soc.control) %>%
-#   left_join(d.cover.soc.control) %>%
-#   left_join(d.org.amend.soc.control) %>%
-#   mutate(
-#     Tillage.IR.LRR = log(IR/Tillage.IR.control),
-#     Cover.IR.LRR = log(IR/Cover.IR.control),
-#     Org.amened.IR.LRR = log(IR/Org.amend.IR.control),
-#     Tillage.SOC.LRR = log(SOC.g.kg.weighted/Tillage.SOC.control),
-#     Cover.SOC.LRR = log(SOC.g.kg.weighted/Cover.SOC.control),
-#     Org.amened.SOC.LRR = log(SOC.g.kg.weighted/Org.amend.SOC.control))
-
-# Models
-d <- d.test
-
-summary(lmerTest::lmer(IR.LRR ~ SOC.g.kg.weighted + (1|Paper), data = d))
-
-summary(lme(IR ~ SOC.g.kg.weighted+Tillage+Cover+Org.amend, 
-            random = ~1|Paper, data = d, na.action = "na.omit"))
-
-summary(lme(IR ~ SOC.g.kg.weighted*Cover, 
-            random = ~1|Paper, data = d, na.action = "na.omit"))
-
-summary(lme(IR ~ SOC.g.kg.weighted*Org.amend, 
-            random = ~1|Paper, data = d, na.action = "na.omit"))
-
-View(d %>%
-       filter(!is.na(Org.amend)))
+  ) %>%
+  mutate(SOC.LRR.scaled = scale(SOC.LRR))
 
 
-ggplot(data = d, aes(x=SOC.LRR, y=IR.LRR))+
-  geom_point()
+# IR_LRR ~ SOC_LRR models -------------------------------------------------
 
-##
+m.org.amend <- d %>%
+  filter(!is.na(Org.amend), 
+         is.na(Control)) %>%
+  lme(IR.LRR ~ SOC.LRR, random = ~1|Paper/Site, data = ., na.action = "na.omit", weights = "Length_of_experiment")
 
-summary(gls(Tillage.IR.LRR ~ Tillage.SOC.LRR, data = d[!is.na(d$Tillage),]))
+m.tillage <- d %>%
+  filter(!is.na(Tillage),
+         is.na(Control)) %>%
+  lme(IR.LRR ~ SOC.LRR, random = ~1|Paper/Site, data = ., na.action = "na.omit", weights = "Length_of_experiment")
 
-ggplot(data = d, aes(x=Tillage.SOC.LRR, y=Tillage.IR.LRR))+
-  geom_point()+
-  geom_smooth(method = "lm")+
-  xlab("Relative impact of conservation tillage on SOC")+
-  ylab("Relative impact of\nconservation tillage on IR")+
-  geom_hline(yintercept = 0, color = "grey")+
-  geom_vline(xintercept = 0, color = "grey")
-
-test <- d[!is.na(d$Tillage.SOC.LRR),]
-
-summary(gls(Cover.IR.LRR ~ Cover.SOC.LRR, data = d[!is.na(d$Cover),]))
-
-ggplot(data = d, aes(x=Cover.SOC.LRR, y=Cover.IR.LRR))+
-  geom_point()+
-  geom_hline(yintercept = 0, color = "grey")+
-  geom_vline(xintercept = 0, color = "grey")
-
-summary(gls(Org.amened.IR.LRR ~ Org.amened.SOC.LRR, data = d[!is.na(d$Org.amend),]))
-
-ggplot(data = d, aes(x=Org.amened.SOC.LRR, y=Org.amened.IR.LRR))+
-  geom_point()+
-  geom_hline(yintercept = 0, color = "grey")+
-  geom_vline(xintercept = 0, color = "grey")
+m.cover <- d %>%
+  filter(!is.na(Cover),
+         is.na(Control)) %>%
+  lme(IR.LRR ~ SOC.LRR, random = ~1|Paper/Site, data = ., na.action = "na.omit", weights = "Length_of_experiment")
 
 
+# Generate df of IR_LRR ~ SOC_LRR model terms and create dotplot ----------
 
-unique(d$Paper)
- 
+model.terms <-
+  as.data.frame(intervals(m.org.amend, level = 0.95, which = 'fixed')[[1]]) %>%
+  mutate(Conprac = "Organic amendment", term = row.names(.)) %>%
+  bind_rows(
+    as.data.frame(intervals(m.tillage, level = 0.95, which = 'fixed')[[1]]) %>%
+      mutate(Conprac = "Tillage", term = row.names(.))) %>%
+      bind_rows(
+        as.data.frame(intervals(m.cover, level = 0.95, which = 'fixed')[[1]]) %>%
+          mutate(Conprac = "Cover", term = row.names(.))) %>%
+  mutate(term = case_when(term == "SOC.LRR" ~ "Soil Carbon LRR",
+                          term == "(Intercept)" ~ "Intercept"))
+  
+ggplot(data = model.terms) + 
+  geom_point(aes(x = term, y= est., color = Conprac))+
+  geom_errorbar(aes(x = term, ymin = lower, ymax = upper, color = Conprac), width =0.5)+
+  geom_abline(slope = 0, intercept = 0, color = "grey")+
+  theme(axis.title = element_blank(), 
+        legend.position = "none")+
+  coord_flip() +
+  facet_wrap(facets = "Conprac", nrow = 3, strip.position = "right") 
+  
+
+# IR cm/h ~ SOC + conservation practice models ----------------------------
+
+m.cover <- d %>%
+  filter(!is.na(Cover)) %>%
+  lme(IR.cmh ~ SOC.g.kg.weighted + Cover, random = ~1|Paper/Site, data = ., na.action = "na.omit")
+summary(m.cover)
+
+m.tillage <- d %>%
+  filter(!is.na(Tillage)) %>%
+  lme(IR.cmh ~ SOC.g.kg.weighted + Tillage, random = ~1|Paper/Site, data = ., na.action = "na.omit")
+summary(m.tillage)
+
+m.org <- d %>%
+  filter(!is.na(Org.amend)) %>%
+  lme(IR.cmh ~ SOC.g.kg.weighted + Org.amend, random = ~1|Paper/Site, data = ., na.action = "na.omit")
+summary(m.org)
 
 
+# SOC ~ practice models ---------------------------------------------------
 
+m.cover <- d %>%
+  filter(!is.na(Cover)) %>%
+  lme(SOC.g.kg.weighted ~ Cover, random = ~1|Paper/Site, data = ., na.action = "na.omit")
+summary(m.cover)
+
+m.tillage <- d %>%
+  filter(!is.na(Tillage)) %>%
+  lme(SOC.g.kg.weighted ~ Tillage, random = ~1|Paper/Site, data = ., na.action = "na.omit")
+summary(m.tillage)
+
+m.org <- d %>%
+  filter(!is.na(Org.amend)) %>%
+  lme(SOC.g.kg.weighted ~ Org.amend, random = ~1|Paper/Site, data = ., na.action = "na.omit")
+summary(m.org)
 

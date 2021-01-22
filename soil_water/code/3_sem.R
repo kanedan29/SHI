@@ -1,35 +1,36 @@
 library(piecewiseSEM)
+library(nlme)
 
-d.till <- d %>%
-  filter(!is.na(Tillage)) %>%
-  mutate(Tillage = as.numeric(as.factor(Tillage)))
+d.sem <- d %>%
+  filter(!is.na(Org.amend),
+         Paper != "Moebius-Clune et al. 2008") %>%
+  mutate(conprac = case_when(Control == "y" ~ 0, 
+                             TRUE ~ 1))
 
-test <- psem(
-  lme(Tillage.SOC.LRR ~ Tillage,
-      random = ~1|Paper, na.action = "na.omit", data = d.till, method = "ML"),
-  lme(Tillage.IR.LRR ~ Tillage.SOC.LRR + Tillage,
-      random = ~1|Paper, na.action = "na.omit", data = d.till, method = "ML")
+test2 <- psem(
+  lme(SOC.g.kg.weighted ~ conprac,
+      random = ~1|Paper, na.action = "na.omit", data = d.sem, method = "ML"),
+  lme(IR ~ SOC.g.kg.weighted+conprac,
+      random = ~1|Paper, na.action = "na.omit", data = d.sem, method = "ML")
 )
 
-summary(test)
-print(summary(test))
-
-ggplot(data = d.till, aes(x=Tillage, y=Tillage.SOC.LRR))+
-  geom_boxplot()
+summary(test2)
 
 
 
-till.plot <- plot(test, 
-                      node_attrs = list(
-                        label = c("SOC LRR", 
-                                  "Infiltration rate LRR", "Tillage, y/n"),
-                        fillcolor = "white",
-                        shape = "rectangle", color = "gray",
-                        x = c(3, 5, 1), y = c(2, 1, 1),
-                        fontsize = 8, fixedsize = FALSE,
-                      ),
-                      alpha = 0.05,
-                      add_edge_label_spaces = FALSE
+plot(
+  test2,
+  node_attrs = list(
+    fillcolor = "white",
+    shape = "rectangle",
+    color = "gray",
+    x = c(3, 5, 1),
+    y = c(2, 1, 1),
+    fontsize = 8,
+    fixedsize = FALSE
+  ),
+  alpha = 0.05, 
+  add_edge_label_spaces = FALSE
 )
 
-fert.myp_plot
+
