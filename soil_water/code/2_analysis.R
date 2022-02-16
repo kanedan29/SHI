@@ -4,7 +4,7 @@
 
 
 source("code/0_libraries.R")
-detach("package:plyr")
+detach("package::plyr")
 library(nlme)
 
 d.mod <- read_rds("data/d.mod.rds") %>%

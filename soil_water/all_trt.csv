@@ -1,0 +1,198 @@
+Con_practice,Paper,DOI/ISSN,Year of observation,Trt.combo,Site,yes_no,SOC.g.kg.weighted,IR.cmh
+Reduced tillage,Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,Direct drill,NA,y,10.225,6.5
+Reduced tillage,Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,Harrowing,NA,n,10.375,5.083333333333333
+Reduced tillage,Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,Moldboard plow,NA,n,10.575,10.833333333333334
+Reduced tillage,Alemu et al. 1997,10.1080/00103629709369772,1994,"Continous Sorghum, No Till",NA,y,9.048,2.58
+Reduced tillage,Alemu et al. 1997,10.1080/00103629709369772,1994,"Continous Sorghum, Stubble Mulch Till",NA,n,8.932,2.4133333333333336
+Reduced tillage,Alemu et al. 1997,10.1080/00103629709369772,1994,"Wheat Sorghum Fallow, No Till",NA,y,8.351999999999999,2.1333333333333333
+Reduced tillage,Alemu et al. 1997,10.1080/00103629709369772,1994,"Wheat Sorghum Fallow, Stubble Mulch Till",NA,n,8.235999999999999,2.0533333333333337
+Reduced tillage,Arshad et al. 1999,NO  DOI,1988,Conventional Till,Silt Loam,n,7.5,3
+Reduced tillage,Arshad et al. 1999,NO  DOI,1988,No Till,Silt Loam,y,8.2625,4.8
+Reduced tillage,Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,Conventional tillage,NA,n,4.059999999999999,0.95
+Reduced tillage,Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,Flexible tillage,NA,y,4.156666666666666,0.46
+Reduced tillage,Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,No tillage,NA,y,4.93,1.17
+Reduced tillage,Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,Reduced tillage/chisel plow,NA,y,4.156666666666666,0.77
+Reduced tillage,Bazaya et al. 2009,10.1016/j.still.2009.05.006,2003,Conventional Sowing,NA,n,4.09,1.1400000000000001
+Reduced tillage,Bazaya et al. 2009,10.1016/j.still.2009.05.006,2003,Rotavator,NA,n,4.13,1.084
+Reduced tillage,Bazaya et al. 2009,10.1016/j.still.2009.05.006,2003,Zero tillage,NA,y,4.36,0.958
+Reduced tillage,Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,Conventional tillage,NA,n,3.1174999999999997,1.8599999999999999
+Reduced tillage,Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,Zero tillage,NA,y,3.2175000000000002,2.1599999999999997
+Reduced tillage,Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,Conventional Till,NA,n,NA,1.34
+Reduced tillage,Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,No Till,NA,y,NA,0.75
+Reduced tillage,Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,Reduced Till,NA,y,NA,1.25
+Reduced tillage,Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,AFCST,10 year,y,17.4,23.83
+Reduced tillage,Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,AFCST,15 year,y,19.4,30.06
+Reduced tillage,Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,AFCST,5 year,y,16.299999999999997,15.21
+Reduced tillage,Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,MCVT,10 year,n,11.399999999999999,8.31
+Reduced tillage,Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,MCVT,15 year,n,10.3,7.84
+Reduced tillage,Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,MCVT,5 year,n,14,11.14
+Reduced tillage,Liebig et al 2004,10.1016/j.still.2004.02.002,2001,"Spring wheat - fallow, Conventional tillage",1984 site,n,NA,20.3
+Reduced tillage,Liebig et al 2004,10.1016/j.still.2004.02.002,2001,"Spring wheat - winter wheat - sunflower, No till",1984 site,y,NA,75.9
+Reduced tillage,Locke et al 2013,10.2136/sssaj2012.0325,2006,No till,NA,y,3.333333333333333,3.31
+Reduced tillage,Locke et al 2013,10.2136/sssaj2012.0325,2006,Minimum till,NA,n,3.4044444444444446,8.709999999999999
+Reduced tillage,Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,"No till, Stover harvested",NA,y,28.942,2.2933187402641826
+Reduced tillage,Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,"No till, Stover returned",NA,y,31.261999999999997,4.854955811237434
+Reduced tillage,Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,"Plow till, Stover harvested",NA,n,21.518,4.014850052994201
+Reduced tillage,Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,"Plow till, Stover returned",NA,n,23.315999999999995,5.1038747185367255
+Reduced tillage,Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,Chisel Plough,Trial 1,n,5.606666666666666,3
+Reduced tillage,Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,Zero Till,Trial 1,y,6.863333333333332,3.1
+Reduced tillage,Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,Chisel Plough,Trial 2,n,6.186666666666666,3
+Reduced tillage,Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,Zero Till,Trial 2,y,6.863333333333332,2.5
+Reduced tillage,Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,Chisel Plough,Trial 3,n,5.22,3.2
+Reduced tillage,Sasal et al. 2006,10.1016/j.still.2005.02.025,1999,Zero Till,Trial 3,y,5.993333333333332,2.7
+Reduced tillage,Singh et al. 2016,10.1016/j.still.2015.08.002,2011,TPR/CTM,NA,n,NA,0.47000000000000003
+Reduced tillage,Singh et al. 2016,10.1016/j.still.2015.08.003,2011,CTDSR/CTM,NA,n,NA,0.67
+Reduced tillage,Singh et al. 2016,10.1016/j.still.2015.08.004,2011,ZTDSR/ZTM,NA,y,NA,0.6900000000000001
+Reduced tillage,So et al. 2009,10.1016/j.still.2008.10.017,1995,No Till,NA,y,19.546,2.5
+Reduced tillage,So et al. 2009,10.1016/j.still.2008.10.017,1995,Conventional Till,NA,n,9.569999999999999,0.5
+Reduced tillage,Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,Conventional Ploughing,NA,n,3.6333333333333337,0.96
+Reduced tillage,Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,Direct seeding,NA,y,5.016666666666667,3.35
+Reduced tillage,Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,Direct seeding 2 year rotation,NA,y,4.183333333333334,3.1100000000000003
+Reduced tillage,Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,Direct seeding 3 year rotation,NA,y,4.683333333333334,4.07
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"Control, Conventional Till",NA,n,2.2,0.666
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, Conventional Till",NA,n,2.33,0.752
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, Conventional Till",NA,n,2.37,0.775
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, Gypsum, Conventional Till",NA,n,2.84,1.213
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, Sulphitation Pressmud, Conventional Till",NA,n,3.23,1.266
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, Farmyard Manure, Conventional Till",NA,n,2.89,1.226
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, Gypsum, Conventional Till",NA,n,3.27,1.477
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, Sulphitation Pressmud, Conventional Till",NA,n,3.12,1.455
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, Farmyard Manure, Conventional Till",NA,n,3.32,1.393
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"Control, No Till",NA,y,2.37,0.706
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, No Till",NA,y,2.71,0.775
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, No Till",NA,y,2.86,0.866
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, Gypsum, No Till",NA,y,2.82,1.43
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, Sulphitation Pressmud, No Till",NA,y,3.21,1.419
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, Farmyard Manure, No Till",NA,y,3.54,1.363
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, Gypsum, No Till",NA,y,3.27,1.625
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, Sulphitation Pressmud, No Till",NA,y,3.85,1.66
+Reduced tillage,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, Farmyard Manure, No Till",NA,y,3.9,1.581
+Living cover,Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,Cover crop,NA,y,10.2,7.083333333333333
+Living cover,Abdollahi and Munkholm 2014,10.2136/sssaj2013.07.0301,2012,No cover crop,NA,n,10.55,7.125
+Living cover,Alemu et al. 1997,10.1080/00103629709369772,1994,"Continous Sorghum, No Till",NA,n,9.048,2.58
+Living cover,Alemu et al. 1997,10.1080/00103629709369772,1994,"Continous Sorghum, Stubble Mulch Till",NA,n,8.932,2.4133333333333336
+Living cover,Alemu et al. 1997,10.1080/00103629709369772,1994,"Wheat Sorghum Fallow, No Till",NA,y,8.351999999999999,2.1333333333333333
+Living cover,Alemu et al. 1997,10.1080/00103629709369772,1994,"Wheat Sorghum Fallow, Stubble Mulch Till",NA,y,8.235999999999999,2.0533333333333337
+Living cover,Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,Brachiaria,NA,y,4.5,163.66666666666666
+Living cover,Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,Centrosema,NA,y,3.875,77.33333333333333
+Living cover,Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,Control,NA,n,3.375,40.333333333333336
+Living cover,Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,Glycine,NA,y,8.25,138
+Living cover,Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,Melinis,NA,y,6.375,97
+Living cover,Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,Panicum,NA,y,4.35,110.66666666666667
+Living cover,Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,Pueraria,NA,y,4.625,93.66666666666667
+Living cover,Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,Setaria,NA,y,3.375,100.66666666666667
+Living cover,Lal et al. 1978,10.1016/0378-4290(78)90008-4,1974,Stylosanthes,NA,y,4,131
+Living cover,Liebig et al 2004,10.1016/j.still.2004.02.002,2001,"Spring wheat - fallow, Conventional tillage",1984 site,n,NA,20.3
+Living cover,Liebig et al 2004,10.1016/j.still.2004.02.002,2001,"Spring wheat - fallow, Conventional tillage",1984 site,n,NA,20.3
+Living cover,Liebig et al 2004,10.1016/j.still.2004.02.002,2001,"Spring wheat - winter wheat - sunflower, No till",1984 site,y,NA,75.9
+Living cover,Liebig et al 2004,10.1016/j.still.2004.02.002,2001,"Spring wheat - winter wheat - sunflower, No till",1984 site,y,NA,75.9
+Living cover,Locke et al 2013,10.2136/sssaj2012.0325,2006,No cover,NA,n,3.1377777777777776,4.51
+Living cover,Locke et al 2013,10.2136/sssaj2012.0325,2006,Clover,NA,y,3.5044444444444443,8.59
+Living cover,Locke et al 2013,10.2136/sssaj2012.0325,2006,Rye,NA,y,3.4955555555555553,4.93
+Living cover,Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,Chickpea,NA,n,6.785999999999999,16.2
+Living cover,Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,Chickpea,NA,y,6.785999999999999,16.2
+Living cover,Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,Fallow,NA,n,6.612,14.4
+Living cover,Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,Fallow,NA,y,6.612,14.4
+Living cover,Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,Lentil,NA,n,6.959999999999999,18.5
+Living cover,Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,Lentil,NA,y,6.959999999999999,18.5
+Living cover,Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,Medic,NA,y,8.004,21.8
+Living cover,Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,Medic,NA,y,8.004,21.8
+Living cover,Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,Vetch,NA,y,6.67,19.3
+Living cover,Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,Vetch,NA,y,6.67,19.3
+Living cover,Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,Watermelon,NA,n,6.38,15.1
+Living cover,Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,Watermelon,NA,y,6.38,15.1
+Living cover,Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,Wheat,NA,n,6.322,13.9
+Living cover,Masri and Ryan 2006,10.1016/j.still.2005.03.003,1995,Wheat,NA,n,6.322,13.9
+Living cover,McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,Crimson Clover,Coastal Plain,y,1.695833333333333,NA
+Living cover,McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,Crimson Clover,Limestone Valley,y,2.279166666666667,NA
+Living cover,McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,Fallow,Coastal Plain,n,1.5541666666666667,3.78
+Living cover,McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,Fallow,Limestone Valley,n,1.7999999999999998,2.34
+Living cover,McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,Hairy Vetch,Coastal Plain,y,1.6,5.84
+Living cover,McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,Hairy Vetch,Limestone Valley,y,1.9041666666666668,3.88
+Living cover,McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,Wheat,Coastal Plain,y,1.5333333333333332,4.2299999999999995
+Living cover,McVay et al. 1989,10.2136/sssaj1989.03615995005300060040x,1988,Wheat,Limestone Valley,y,2.1375,NA
+Living cover,Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2010,"0 year, Maize",Ruaca,n,2,0.6
+Living cover,Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2010,"1 year, Maize-pigeonpea",Ruaca,y,6,0.8
+Living cover,Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2010,"3 years, Maize-pigeonpea",Ruaca,y,12,1
+Living cover,Rusinamhodzi et al. 2012,10.1016/j.fcr.2012.07.014,2010,"5 years, Maize-pigeonpea",Ruaca,y,14,2.2
+Living cover,Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,Conventional Ploughing,NA,n,3.6333333333333337,0.96
+Living cover,Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,Direct seeding,NA,n,5.016666666666667,3.35
+Living cover,Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,Direct seeding 2 year rotation,NA,y,4.183333333333334,3.1100000000000003
+Living cover,Thierfelder and Wall 2010,10.1017/S001447971000030X,2008,Direct seeding 3 year rotation,NA,y,4.683333333333334,4.07
+Organic amendments,Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,Residue removed,NA,n,NA,1.32
+Organic amendments,Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,Residue burned,NA,y,NA,1.37
+Organic amendments,Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,Residue incorporated,NA,y,NA,1.2
+Organic amendments,Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,"No till, Stover harvested",NA,n,28.942,2.2933187402641826
+Organic amendments,Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,"No till, Stover returned",NA,y,31.261999999999997,4.854955811237434
+Organic amendments,Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,"Plow till, Stover harvested",NA,n,21.518,4.014850052994201
+Organic amendments,Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,"Plow till, Stover returned",NA,y,23.315999999999995,5.1038747185367255
+Organic amendments,Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,Control,NA,n,5.699999999999999,0.633
+Organic amendments,Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,Sunnhemp,NA,y,6.4,0.736
+Organic amendments,Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,Leucana,NA,y,6.6000000000000005,0.767
+Organic amendments,Sharma et. al 2010,10.1007/s10705-009-9327-y,2004,"Sunnhemp, Leucana",NA,y,6.8999999999999995,0.834
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,Urea,Rice Harvest,n,4.2,0.138
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,Urea,Rice Harvest,n,4.2,0.138
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Urea, Green Manure",Rice Harvest,n,4.699999999999999,0.18
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Urea, Green Manure",Rice Harvest,y,4.699999999999999,0.18
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Urea, Farmyard Manure",Rice Harvest,n,5.1,0.16499999999999998
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Urea, Farmyard Manure",Rice Harvest,y,5.1,0.16499999999999998
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Green Manure, Farmyard Manure",Rice Harvest,n,5.8999999999999995,0.2784
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Green Manure, Farmyard Manure",Rice Harvest,y,5.8999999999999995,0.2784
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Urea",Rice Harvest,y,5.6000000000000005,0.2514
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Urea",Rice Harvest,n,5.6000000000000005,0.2514
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Green Manure, Urea",Rice Harvest,y,6,0.2352
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Green Manure, Urea",Rice Harvest,y,6,0.2352
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Urea, Rice Straw",Rice Harvest,y,5.8999999999999995,0.20700000000000002
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Urea, Rice Straw",Rice Harvest,n,5.8999999999999995,0.20700000000000002
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Green Manure, Rice Straw, Urea",Rice Harvest,y,6.4,0.438
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Green Manure, Rice Straw, Urea",Rice Harvest,y,6.4,0.438
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,Urea,Wheat Harvest,n,4,1.446
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,Urea,Wheat Harvest,n,4,1.446
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Urea, Green Manure",Wheat Harvest,n,4.4,3.3779999999999997
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Urea, Green Manure",Wheat Harvest,y,4.4,3.3779999999999997
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Urea, Farmyard Manure",Wheat Harvest,n,4.9,2.5020000000000002
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Urea, Farmyard Manure",Wheat Harvest,y,4.9,2.5020000000000002
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Green Manure, Farmyard Manure",Wheat Harvest,n,5.6000000000000005,3.666
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Green Manure, Farmyard Manure",Wheat Harvest,y,5.6000000000000005,3.666
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Urea",Wheat Harvest,y,5.300000000000001,2.826
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Urea",Wheat Harvest,n,5.300000000000001,2.826
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Green Manure, Urea",Wheat Harvest,y,5.6000000000000005,4.068
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Green Manure, Urea",Wheat Harvest,y,5.6000000000000005,4.068
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Urea, Rice Straw",Wheat Harvest,y,6,3.7079999999999997
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Urea, Rice Straw",Wheat Harvest,n,6,3.7079999999999997
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Green Manure, Rice Straw, Urea",Wheat Harvest,y,6.2,6.27
+Organic amendments,Singh et al. 2007,10.1016/j.still.2006.07.020,2001,"Wheat Straw, Green Manure, Rice Straw, Urea",Wheat Harvest,y,6.2,6.27
+Organic amendments,Singh et al. 2016,10.1016/j.still.2015.08.005,2011,Without residue,NA,n,NA,0.55
+Organic amendments,Singh et al. 2016,10.1016/j.still.2015.08.006,2011,With residue,NA,y,NA,0.6799999999999999
+Organic amendments,Walia et al. 2010,10.1080/10440046.2010.507519,2006,Control,NA,n,1.3250000000000002,2.72
+Organic amendments,Walia et al. 2010,10.1080/10440046.2010.507519,2006,50/50 NPK,NA,n,1.6425,2.86
+Organic amendments,Walia et al. 2010,10.1080/10440046.2010.507519,2006,50/100 NPK,NA,n,1.635,2.98
+Organic amendments,Walia et al. 2010,10.1080/10440046.2010.507519,2006,75/75 NPK,NA,n,1.65,3
+Organic amendments,Walia et al. 2010,10.1080/10440046.2010.507519,2006,100/100 NPK,NA,n,1.705,3.06
+Organic amendments,Walia et al. 2010,10.1080/10440046.2010.507519,2006,50NPK/50FYM/100NPK,NA,y,2.09,4.48
+Organic amendments,Walia et al. 2010,10.1080/10440046.2010.507519,2006,75NPK/25FYM/75NPK,NA,y,2.0475,4.13
+Organic amendments,Walia et al. 2010,10.1080/10440046.2010.507519,2006,50NPK/50straw/100NPK,NA,y,1.7725,3.24
+Organic amendments,Walia et al. 2010,10.1080/10440046.2010.507519,2006,75NPK/25straw/75NPK,NA,y,1.7575,3.22
+Organic amendments,Walia et al. 2010,10.1080/10440046.2010.507519,2006,50NPK/50greenmanure/100NPK,NA,y,1.78,4.24
+Organic amendments,Walia et al. 2010,10.1080/10440046.2010.507519,2006,75NPK/25greenmanure/75NPK,NA,y,1.7550000000000001,4.08
+Organic amendments,Walia et al. 2010,10.1080/10440046.2010.507519,2006,100NPK/50FYM/100NPK,NA,y,2.1825,4.84
+Organic amendments,Walia et al. 2010,10.1080/10440046.2010.507519,2006,180:30:50 NPK/150:60:30 NPK,NA,n,1.7650000000000001,3.14
+Organic amendments,Walia et al. 2010,10.1080/10440046.2010.507519,2006,100 NPK/Cowpea,NA,y,1.7149999999999999,3.22
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"Control, Conventional Till",NA,n,2.2,0.666
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, Conventional Till",NA,n,2.33,0.752
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, Conventional Till",NA,n,2.37,0.775
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, Gypsum, Conventional Till",NA,n,2.84,1.213
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, Sulphitation Pressmud, Conventional Till",NA,y,3.23,1.266
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, Farmyard Manure, Conventional Till",NA,y,2.89,1.226
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, Gypsum, Conventional Till",NA,n,3.27,1.477
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, Sulphitation Pressmud, Conventional Till",NA,y,3.12,1.455
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, Farmyard Manure, Conventional Till",NA,y,3.32,1.393
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"Control, No Till",NA,n,2.37,0.706
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, No Till",NA,n,2.71,0.775
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, No Till",NA,n,2.86,0.866
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, Gypsum, No Till",NA,n,2.82,1.43
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, Sulphitation Pressmud, No Till",NA,y,3.21,1.419
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"75% NP, Farmyard Manure, No Till",NA,y,3.54,1.363
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, Gypsum, No Till",NA,n,3.27,1.625
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, Sulphitation Pressmud, No Till",NA,y,3.85,1.66
+Organic amendments,Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,"100% NP, Farmyard Manure, No Till",NA,y,3.9,1.581

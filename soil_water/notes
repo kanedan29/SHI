@@ -68,7 +68,49 @@ For Masri and Ryan 2006, I chose to use the fallow rotation rather than continuo
   - Jacknife sensitivity analysis
   
 
+2.18.2021 - 2.19.2021.
 
+To do:
+
+ - Introduce weighting by length of study
+ - Data review
+ - Check treatments matrix
+ - Check that experiment wide control(s) are correctly identified
+ - SEMs
+ - Publication bias
+ - Jacknife analysis
+ - Analyze effect of stacking con ag trt
+ - Calculate LRR based on paired comparisons also
+
+Completed:
+
+ - Data review completed
+ - Treatment matrix checked
+ - Experiment-wide controls confirmed
+  - Gangwar, results summarized across marginal treatments rather than on combinations, experiment-wide control set as conventional till
+  - Locke, same as Gangwar, cover and tillage marginal results shown rather than all combinations. experiment-wide control set as no cover
+ - Calculated LRR based on paired treatment comparisons as well. Also expanded to combine org amend and residue, and rotation/cover together.
+ - Evaluating stacked practices not worth it. Not enough observations
+ - Re-did SEMs
+ 
+ 
+ 2.25.2021.
+ 
+ To-do:
+ 
+ - Sensitivity analysis
+ - Publication bias analysis
+ 
+ Completed:
+ 
+ - Publication bias. Using forest (like) plots to display results across all papers. For all categories, there's definitely a positive publication bias
+ - Sensitivity analysis: Used a jacknife sensitivity analysis approach to rerun all models with one paper removed at a time then plot coefficients. 
+ 
+ 
+
+
+
+ 
 
 
 

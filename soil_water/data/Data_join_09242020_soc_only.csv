@@ -68,6 +68,18 @@ Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,No tillage,NA,NA,NA,NA
 Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,No tillage,NA,NA,NA,NA,NA,NA,No tillage,NA,g/kg,OM,16,5_15
 Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Reduced tillage/chisel plow,NA,NA,NA,NA,NA,NA,Reduced tillage/chisel plow,NA,g/kg,OM,15,0_5
 Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Reduced tillage/chisel plow,NA,NA,NA,NA,NA,NA,Reduced tillage/chisel plow,NA,g/kg,OM,14,5_15
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Conventional tillage,NA,NA,NA,NA,NA,NA,Conventional tillage,NA,Mg/m3,BD,1.41,0_5
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Conventional tillage,NA,NA,NA,NA,NA,NA,Conventional tillage,NA,Mg/m3,BD,1.49,5_10
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Conventional tillage,NA,NA,NA,NA,NA,NA,Conventional tillage,NA,Mg/m3,BD,1.62,10_15
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Reduced tillage/chisel plow,NA,NA,NA,NA,NA,NA,Reduced tillage/chisel plow,NA,Mg/m3,BD,1.46,0_5
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Reduced tillage/chisel plow,NA,NA,NA,NA,NA,NA,Reduced tillage/chisel plow,NA,Mg/m3,BD,1.49,5_10
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Reduced tillage/chisel plow,NA,NA,NA,NA,NA,NA,Reduced tillage/chisel plow,NA,Mg/m3,BD,1.56,10_15
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Flexible tillage,NA,NA,NA,NA,NA,NA,Flexible tillage,NA,Mg/m3,BD,1.47,0_5
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Flexible tillage,NA,NA,NA,NA,NA,NA,Flexible tillage,NA,Mg/m3,BD,1.59,5_10
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,Flexible tillage,NA,NA,NA,NA,NA,NA,Flexible tillage,NA,Mg/m3,BD,1.59,10_15
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,No tillage,NA,NA,NA,NA,NA,NA,No tillage,NA,Mg/m3,BD,1.46,0_5
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,No tillage,NA,NA,NA,NA,NA,NA,No tillage,NA,Mg/m3,BD,1.54,5_10
+Barber et al. 1996,10.1016/0167-1987(96)01012-4,1993,1989,No tillage,NA,NA,NA,NA,NA,NA,No tillage,NA,Mg/m3,BD,1.54,10_15
 Bazaya et al. 2009,10.1016/j.still.2009.05.006,2002,2002,Conventional Sowing,NA,NA,NA,NA,NA,NA,Conventional Sowing,NA,g/m^3,BD,1.29,0_15
 Bazaya et al. 2009,10.1016/j.still.2009.05.006,2002,2002,Rotavator,NA,NA,NA,NA,NA,NA,Rotavator,NA,g/m^3,BD,1.31,0_15
 Bazaya et al. 2009,10.1016/j.still.2009.05.006,2002,2002,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,g/m^3,BD,1.39,0_15
@@ -98,36 +110,84 @@ Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing irrig
 Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation,NA,cm/min (steady state),IR,0.035,NA
 Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation+grain filling,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation+grain filling,NA,cm/min (steady state),IR,0.038,NA
 Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,cm/min (steady state),IR,0.036,NA
-Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Conventional tillage,NA,NA,NA,NA,NA,NA,Conventional tillage,NA,g/kg,OC,6.23,0_15
-Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Conventional tillage,NA,NA,NA,NA,NA,NA,Conventional tillage,NA,g/kg,OC,6.05,15_30
-Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing + active tillering,NA,NA,NA,NA,NA,NA,Pre-sowing + active tillering,NA,g/kg,OC,6.46,0_15
-Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing + active tillering,NA,NA,NA,NA,NA,NA,Pre-sowing + active tillering,NA,g/kg,OC,6.08,15_30
-Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing irrigation,NA,NA,NA,NA,NA,NA,Pre-sowing irrigation,NA,g/kg,OC,6.11,0_15
-Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing irrigation,NA,NA,NA,NA,NA,NA,Pre-sowing irrigation,NA,g/kg,OC,5.72,15_30
-Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation,NA,g/kg,OC,6.6,0_15
-Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation,NA,g/kg,OC,6.16,15_30
-Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation+grain filling,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation+grain filling,NA,g/kg,OC,6.71,0_15
-Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation+grain filling,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation+grain filling,NA,g/kg,OC,6.2,15_30
-Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,g/kg,OC,6.71,0_15
-Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,g/kg,OC,6.03,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Conventional tillage,NA,NA,NA,NA,NA,NA,Conventional tillage,NA,g/kg,OC,6.35,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Conventional tillage,NA,NA,NA,NA,NA,NA,Conventional tillage,NA,g/kg,OC,6.12,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing + active tillering,NA,NA,NA,NA,NA,NA,Pre-sowing + active tillering,NA,g/kg,OC,6.51,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing + active tillering,NA,NA,NA,NA,NA,NA,Pre-sowing + active tillering,NA,g/kg,OC,6.02,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing irrigation,NA,NA,NA,NA,NA,NA,Pre-sowing irrigation,NA,g/kg,OC,6.16,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing irrigation,NA,NA,NA,NA,NA,NA,Pre-sowing irrigation,NA,g/kg,OC,5.68,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation,NA,g/kg,OC,6.7,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation,NA,g/kg,OC,6.29,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation+grain filling,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation+grain filling,NA,g/kg,OC,6.88,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation+grain filling,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation+grain filling,NA,g/kg,OC,6.43,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,g/kg,OC,6.78,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,g/kg,OC,6.09,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Conventional tillage,NA,NA,NA,NA,NA,NA,Conventional tillage,NA,Mg/m3,BD,1.34,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Conventional tillage,NA,NA,NA,NA,NA,NA,Conventional tillage,NA,Mg/m3,BD,1.36,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,Mg/m3,BD,1.36,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Zero tillage,NA,NA,NA,NA,NA,NA,Zero tillage,NA,Mg/m3,BD,1.38,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing irrigation,NA,NA,NA,NA,NA,NA,Pre-sowing irrigation,NA,Mg/m3,BD,1.37,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing irrigation,NA,NA,NA,NA,NA,NA,Pre-sowing irrigation,NA,Mg/m3,BD,1.38,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing + active tillering,NA,NA,NA,NA,NA,NA,Pre-sowing + active tillering,NA,Mg/m3,BD,1.36,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing + active tillering,NA,NA,NA,NA,NA,NA,Pre-sowing + active tillering,NA,Mg/m3,BD,1.37,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation,NA,Mg/m3,BD,1.35,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation,NA,Mg/m3,BD,1.36,15_30
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation+grain filling,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation+grain filling,NA,Mg/m3,BD,1.34,0_15
+Bhattacharyya et al. 2008,10.1016/j.agwat.2008.03.007,2005,2001,Pre-sowing+active tillering+panicle initiation+grain filling,NA,NA,NA,NA,NA,NA,Pre-sowing+active tillering+panicle initiation+grain filling,NA,Mg/m3,BD,1.36,15_30
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,g/kg,OC,5,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,g/kg,OC,5.1,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,g/kg,OC,5.2,NA
 Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,cm/h,IR,1.42,NA
-Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,cm/h,IR,1,NA
-Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,cm/h,IR,1.37,NA
-Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,g/kg,OC,5,0_15
-Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,g/kg,OC,5.1,0_15
-Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,g/kg,OC,5.1,0_15
 Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,cm/h,IR,1.37,NA
-Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,cm/h,IR,0.95,NA
-Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,cm/h,IR,1.28,NA
-Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,g/kg,OC,5.1,0_15
-Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,g/kg,OC,5.3,0_15
-Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,g/kg,OC,5.2,0_15
 Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,cm/h,IR,1.34,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,Mg/m3,BD,1.59,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,Mg/m3,BD,1.6,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,Mg/m3,BD,1.62,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,cm/h,IR,1,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,cm/h,IR,0.95,NA
 Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,cm/h,IR,0.75,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,g/kg,OC,5.1,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,g/kg,OC,5.3,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,g/kg,OC,5.4,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,Mg/m3,BD,1.69,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,Mg/m3,BD,1.68,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,Mg/m3,BD,1.66,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,cm/h,IR,1.37,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,cm/h,IR,1.28,NA
 Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,cm/h,IR,1.25,NA
-Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,g/kg,OC,5.2,0_15
-Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,g/kg,OC,5.4,0_15
-Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,g/kg,OC,5.3,0_15
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,g/kg,OC,5.1,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,g/kg,OC,5.2,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,g/kg,OC,5.3,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,Mg/m3,BD,1.67,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,Mg/m3,BD,1.67,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Reduced Till,NA,NA,NA,NA,NA,NA,Reduced Till,NA,Mg/m3,BD,1.67,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Residue removed,NA,NA,NA,NA,NA,NA,Residue removed,NA,g/kg,OC,5,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Residue removed,NA,NA,NA,NA,NA,NA,Residue removed,NA,g/kg,OC,5,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Residue removed,NA,NA,NA,NA,NA,NA,Residue removed,NA,g/kg,OC,5.1,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Residue removed,NA,NA,NA,NA,NA,NA,Residue removed,NA,cm/h,IR,1.39,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Residue removed,NA,NA,NA,NA,NA,NA,Residue removed,NA,cm/h,IR,1.36,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Residue removed,NA,NA,NA,NA,NA,NA,Residue removed,NA,cm/h,IR,1.32,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Residue removed,NA,NA,NA,NA,NA,NA,Residue removed,NA,Mg/m3,BD,1.61,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Residue removed,NA,NA,NA,NA,NA,NA,Residue removed,NA,Mg/m3,BD,1.62,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Residue removed,NA,NA,NA,NA,NA,NA,Residue removed,NA,Mg/m3,BD,1.63,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Residue burned,NA,NA,NA,NA,NA,NA,Residue burned,NA,cm/h,IR,1.44,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Residue burned,NA,NA,NA,NA,NA,NA,Residue burned,NA,cm/h,IR,1.4,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Residue burned,NA,NA,NA,NA,NA,NA,Residue burned,NA,cm/h,IR,1.37,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Residue burned,NA,NA,NA,NA,NA,NA,Residue burned,NA,g/kg,OC,5.1,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Residue burned,NA,NA,NA,NA,NA,NA,Residue burned,NA,g/kg,OC,5.1,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Residue burned,NA,NA,NA,NA,NA,NA,Residue burned,NA,g/kg,OC,5.2,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Residue burned,NA,NA,NA,NA,NA,NA,Residue burned,NA,Mg/m3,BD,1.6,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Residue burned,NA,NA,NA,NA,NA,NA,Residue burned,NA,Mg/m3,BD,1.61,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Residue burned,NA,NA,NA,NA,NA,NA,Residue burned,NA,Mg/m3,BD,1.62,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Residue incorporated,NA,NA,NA,NA,NA,NA,Residue incorporated,NA,cm/h,IR,1.5,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Residue incorporated,NA,NA,NA,NA,NA,NA,Residue incorporated,NA,cm/h,IR,1.48,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Residue incorporated,NA,NA,NA,NA,NA,NA,Residue incorporated,NA,cm/h,IR,1.2,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Residue incorporated,NA,NA,NA,NA,NA,NA,Residue incorporated,NA,g/kg,OC,5.2,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Residue incorporated,NA,NA,NA,NA,NA,NA,Residue incorporated,NA,g/kg,OC,5.4,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Residue incorporated,NA,NA,NA,NA,NA,NA,Residue incorporated,NA,g/kg,OC,5.5,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,1999,1998,Residue incorporated,NA,NA,NA,NA,NA,NA,Residue incorporated,NA,Mg/m3,BD,1.57,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2000,1998,Residue incorporated,NA,NA,NA,NA,NA,NA,Residue incorporated,NA,Mg/m3,BD,1.59,NA
+Gangwar et al. 2006,10.1016/j.still.2005.06.015,2001,1998,Residue incorporated,NA,NA,NA,NA,NA,NA,Residue incorporated,NA,Mg/m3,BD,1.6,NA
 Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2004,AFCST,NA,NA,NA,NA,NA,NA,AFCST,10 year,cm/h,IR,23.83,NA
 Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,1999,AFCST,NA,NA,NA,NA,NA,NA,AFCST,15 year,cm/h,IR,30.06,NA
 Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2009,AFCST,NA,NA,NA,NA,NA,NA,AFCST,5 year,cm/h,IR,15.21,NA
@@ -140,6 +200,12 @@ Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2009,AFCST,NA,NA,NA,NA,NA
 Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2004,MCVT,NA,NA,NA,NA,NA,NA,MCVT,10 year,%,OC,1.14,0_20
 Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,1999,MCVT,NA,NA,NA,NA,NA,NA,MCVT,15 year,%,OC,1.03,0_20
 Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2009,MCVT,NA,NA,NA,NA,NA,NA,MCVT,5 year,%,OC,1.4,0_20
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2004,AFCST,NA,NA,NA,NA,NA,NA,AFCST,10 year,g/cm3,BD,1.09,0_20
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,1999,AFCST,NA,NA,NA,NA,NA,NA,AFCST,15 year,g/cm3,BD,1.06,0_20
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2009,AFCST,NA,NA,NA,NA,NA,NA,AFCST,5 year,g/cm3,BD,1.13,0_20
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2004,MCVT,NA,NA,NA,NA,NA,NA,MCVT,10 year,g/cm3,BD,1.14,0_20
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,1999,MCVT,NA,NA,NA,NA,NA,NA,MCVT,15 year,g/cm3,BD,1.19,0_20
+Ketema and Yimer 2014,10.1016/j.still.2014.03.011,2014,2009,MCVT,NA,NA,NA,NA,NA,NA,MCVT,5 year,g/cm3,BD,1.09,0_20
 Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2010,2009,BBF + residue incorporation,NA,NA,NA,NA,NA,NA,BBF + residue incorporation,NA,Mg/m^3,BD,1.09,0_15
 Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2011,2009,BBF + residue incorporation,NA,NA,NA,NA,NA,NA,BBF + residue incorporation,NA,Mg/m^3,BD,1.09,0_15
 Kuotsu et al. 2014,10.1016/j.still.2014.04.008,2009,2009,BBF + residue incorporation,NA,NA,NA,NA,NA,NA,BBF + residue incorporation,NA,Mg/m^3,BD,1.12,0_15
@@ -389,6 +455,10 @@ Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,No till,Stover harves
 Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,No till,Stover returned,NA,NA,NA,NA,NA,"No till, Stover returned",NA,%,OM,5.39,0_15
 Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,Plow till,Stover harvested,NA,NA,NA,NA,NA,"Plow till, Stover harvested",NA,%,OM,3.71,0_15
 Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,Plow till,Stover returned,NA,NA,NA,NA,NA,"Plow till, Stover returned",NA,%,OM,4.02,0_15
+Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,No till,Stover harvested,NA,NA,NA,NA,NA,"No till, Stover harvested",NA,Mg/m3,BD,1.33,0_16
+Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,No till,Stover returned,NA,NA,NA,NA,NA,"No till, Stover returned",NA,Mg/m3,BD,1.32,0_17
+Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,Plow till,Stover harvested,NA,NA,NA,NA,NA,"Plow till, Stover harvested",NA,Mg/m3,BD,1.51,0_18
+Moebius-Clune et al. 2008,10.2136/sssaj2007.0248,2004,1973,Plow till,Stover returned,NA,NA,NA,NA,NA,"Plow till, Stover returned",NA,Mg/m3,BD,1.39,0_19
 Nyalemegbe et al. 2011,NA,2011,2010,Mimosa,NA,NA,NA,NA,NA,NA,Mimosa,NA,g/m^3,BD,1.44,0_10
 Nyalemegbe et al. 2011,NA,2011,2010,Mimosa,NA,NA,NA,NA,NA,NA,Mimosa,NA,g/m^3,BD,1.56,10_25
 Nyalemegbe et al. 2011,NA,2011,2010,Mucuna,NA,NA,NA,NA,NA,NA,Mucuna,NA,g/m^3,BD,1.48,0_10
@@ -560,10 +630,10 @@ Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,CTDSR/CTM,Without residu
 Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,CTDSR/CTM,With residue,NA,NA,NA,NA,NA,"CTDSR/CTM, With residue",NA,g/kg,OC,3.48,15_30
 Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,ZTDSR/ZTM,Without residue,NA,NA,NA,NA,NA,"ZTDSR/ZTM, Without residue",NA,g/kg,OC,3.02,15_30
 Singh et al. 2016,10.1016/j.still.2015.08.001,2011,2006,ZTDSR/ZTM,With residue,NA,NA,NA,NA,NA,"ZTDSR/ZTM, With residue",NA,g/kg,OC,3.76,15_30
-So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,mg/m^3,BD,11.4,0_50
-So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,mg/m^4,BD,13.8,0_50
-So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,mg/m^5,BD,13.8,50_150
-So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,mg/m^6,BD,14.5,50_150
+So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,mg/m^3,BD,1.14,0_50
+So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,mg/m^3,BD,1.38,0_50
+So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,mg/m^3,BD,1.38,50_150
+So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,mg/m^3,BD,1.45,50_150
 So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,mm/h,IR,25,NA
 So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,Conventional Till,NA,NA,NA,NA,NA,NA,Conventional Till,NA,mm/h,IR,5,NA
 So et al. 2009,10.1016/j.still.2008.10.017,1995,1981,No Till,NA,NA,NA,NA,NA,NA,No Till,NA,%,OM,3.37,0_10
@@ -577,7 +647,13 @@ Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Control,NA,NA,NA,NA,NA,NA,Co
 Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Cereal Cover Crops,NA,NA,NA,NA,NA,NA,Cereal Cover Crops,Piedmont,mm/h,IR,4.51,NA
 Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Control,NA,NA,NA,NA,NA,NA,Control,Piedmont,mm/h,IR,2.3,NA
 Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Cereal Cover Crops,NA,NA,NA,NA,NA,NA,Cereal Cover Crops,Piedmont,mg/ha,SOC,2.5,NA
-Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Control,NA,NA,NA,NA,NA,NA,Control,Piedmont,mg/ha,SOC,3.2,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Cereal Cover Crops,NA,NA,NA,NA,NA,NA,Control,Piedmont,mg/ha,SOC,3.2,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Cereal Cover Crops,NA,NA,NA,NA,NA,NA,Cereal Cover Crops,Coastal plain,Mg/m3,BD,1.37,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Cereal Cover Crops,NA,NA,NA,NA,NA,NA,Control,Coastal plain,Mg/m3,BD,1.41,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Cereal Cover Crops,NA,NA,NA,NA,NA,NA,Cereal Cover Crops,Coastal plain,Mg/m3,BD,1.26,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Cereal Cover Crops,NA,NA,NA,NA,NA,NA,Control,Coastal plain,Mg/m3,BD,1.4,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Cereal Cover Crops,NA,NA,NA,NA,NA,NA,Cereal Cover Crops,Piedmont,Mg/m3,BD,1.09,NA
+Steele et al. 2012,10.2136/sssaj2012.0008,2007,1994,Cereal Cover Crops,NA,NA,NA,NA,NA,NA,Control,Piedmont,Mg/m3,BD,1.21,NA
 Thierfelder and Wall 2010,10.1017/S001447971000030X,2005,2005,Conventional Ploughing,NA,NA,NA,NA,NA,NA,Conventional Ploughing,NA,%,OC,0.67,0_10
 Thierfelder and Wall 2010,10.1017/S001447971000030X,2005,2005,Direct seeding,NA,NA,NA,NA,NA,NA,Direct seeding,NA,%,OC,0.72,0_10
 Thierfelder and Wall 2010,10.1017/S001447971000030X,2005,2005,Direct seeding 2 year rotation,NA,NA,NA,NA,NA,NA,Direct seeding 2 year rotation,NA,%,OC,0.64,0_10
@@ -625,7 +701,7 @@ Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50greenmanure/100
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25greenmanure/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25greenmanure/75NPK,NA,g/cm^3,BD,1.6,15_30
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100NPK/50FYM/100NPK,NA,NA,NA,NA,NA,NA,100NPK/50FYM/100NPK,NA,g/cm^3,BD,1.58,15_30
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,180:30:50 NPK/150:60:30 NPK,NA,NA,NA,NA,NA,NA,180:30:50 NPK/150:60:30 NPK,NA,g/cm^3,BD,1.62,15_30
-Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100 NPK/Cowpea,NA,NA,NA,NA,NA,NA,101 NPK/Cowpea,NA,g/cm^3,BD,1.61,15_30
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100 NPK/Cowpea,NA,NA,NA,NA,NA,NA,100 NPK/Cowpea,NA,g/cm^3,BD,1.61,15_30
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,Control,NA,NA,NA,NA,NA,NA,Control,NA,cm/hr,IR,2.72,NA
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/50 NPK,NA,NA,NA,NA,NA,NA,50/50 NPK,NA,cm/hr,IR,2.86,NA
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/100 NPK,NA,NA,NA,NA,NA,NA,50/100 NPK,NA,cm/hr,IR,2.98,NA
@@ -639,7 +715,7 @@ Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50greenmanure/100
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25greenmanure/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25greenmanure/75NPK,NA,cm/hr,IR,4.08,NA
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100NPK/50FYM/100NPK,NA,NA,NA,NA,NA,NA,100NPK/50FYM/100NPK,NA,cm/hr,IR,4.84,NA
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,180:30:50 NPK/150:60:30 NPK,NA,NA,NA,NA,NA,NA,180:30:50 NPK/150:60:30 NPK,NA,cm/hr,IR,3.14,NA
-Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100 NPK/Cowpea,NA,NA,NA,NA,NA,NA,102 NPK/Cowpea,NA,cm/hr,IR,3.22,NA
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100 NPK/Cowpea,NA,NA,NA,NA,NA,NA,100 NPK/Cowpea,NA,cm/hr,IR,3.22,NA
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,Control,NA,NA,NA,NA,NA,NA,Control,NA,%,OC,0.3,0_15
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/50 NPK,NA,NA,NA,NA,NA,NA,50/50 NPK,NA,%,OC,0.357,0_15
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/100 NPK,NA,NA,NA,NA,NA,NA,50/100 NPK,NA,%,OC,0.358,0_15
@@ -653,7 +729,7 @@ Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50greenmanure/100
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25greenmanure/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25greenmanure/75NPK,NA,%,OC,0.386,0_15
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100NPK/50FYM/100NPK,NA,NA,NA,NA,NA,NA,100NPK/50FYM/100NPK,NA,%,OC,0.543,0_15
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,180:30:50 NPK/150:60:30 NPK,NA,NA,NA,NA,NA,NA,180:30:50 NPK/150:60:30 NPK,NA,%,OC,0.39,0_15
-Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100 NPK/Cowpea,NA,NA,NA,NA,NA,NA,103 NPK/Cowpea,NA,%,OC,0.373,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100 NPK/Cowpea,NA,NA,NA,NA,NA,NA,100 NPK/Cowpea,NA,%,OC,0.373,0_15
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,Control,NA,NA,NA,NA,NA,NA,Control,NA,%,OC,0.23,15_30
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/50 NPK,NA,NA,NA,NA,NA,NA,50/50 NPK,NA,%,OC,0.3,15_30
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50/100 NPK,NA,NA,NA,NA,NA,NA,50/100 NPK,NA,%,OC,0.296,15_30
@@ -667,73 +743,73 @@ Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,50NPK/50greenmanure/100
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,75NPK/25greenmanure/75NPK,NA,NA,NA,NA,NA,NA,75NPK/25greenmanure/75NPK,NA,%,OC,0.316,15_30
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100NPK/50FYM/100NPK,NA,NA,NA,NA,NA,NA,100NPK/50FYM/100NPK,NA,%,OC,0.33,15_30
 Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,180:30:50 NPK/150:60:30 NPK,NA,NA,NA,NA,NA,NA,180:30:50 NPK/150:60:30 NPK,NA,%,OC,0.316,15_30
-Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100 NPK/Cowpea,NA,NA,NA,NA,NA,NA,104 NPK/Cowpea,NA,%,OC,0.313,15_30
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,Control,NA,Conventional Till,NA,NA,NA,NA,"Control, , Conventional Till",NA,g/kg,OC,2.12,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,NA,Conventional Till,NA,NA,NA,NA,"75% NP, , Conventional Till",NA,g/kg,OC,2.2,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,NA,Conventional Till,NA,NA,NA,NA,"100% NP, , Conventional Till",NA,g/kg,OC,2.33,0_15
+Walia et al. 2010,10.1080/10440046.2010.507519,2006,1983,100 NPK/Cowpea,NA,NA,NA,NA,NA,NA,100 NPK/Cowpea,NA,%,OC,0.313,15_30
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,Control,NA,Conventional Till,NA,NA,NA,NA,"Control, Conventional Till",NA,g/kg,OC,2.12,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,NA,Conventional Till,NA,NA,NA,NA,"75% NP, Conventional Till",NA,g/kg,OC,2.2,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,NA,Conventional Till,NA,NA,NA,NA,"100% NP, Conventional Till",NA,g/kg,OC,2.33,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"75% NP, Gypsum, Conventional Till",NA,g/kg,OC,2.26,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, Conventional Till",NA,g/kg,OC,2.28,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, Conventional Till",NA,g/kg,OC,2.34,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"100% NP, Gypsum, Conventional Till",NA,g/kg,OC,2.89,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, Conventional Till",NA,g/kg,OC,2.95,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, Conventional Till",NA,g/kg,OC,2.89,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,Control,NA,No Till,NA,NA,NA,NA,"Control, , No Till",NA,g/kg,OC,2.3,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,NA,No Till,NA,NA,NA,NA,"75% NP, , No Till",NA,g/kg,OC,2.64,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,NA,No Till,NA,NA,NA,NA,"100% NP, , No Till",NA,g/kg,OC,2.54,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,Control,NA,No Till,NA,NA,NA,NA,"Control, No Till",NA,g/kg,OC,2.3,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,NA,No Till,NA,NA,NA,NA,"75% NP, No Till",NA,g/kg,OC,2.64,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,NA,No Till,NA,NA,NA,NA,"100% NP, No Till",NA,g/kg,OC,2.54,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,Gypsum,No Till,NA,NA,NA,NA,"75% NP, Gypsum, No Till",NA,g/kg,OC,2.58,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, No Till",NA,g/kg,OC,2.87,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,75% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, No Till",NA,g/kg,OC,3.25,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,Gypsum,No Till,NA,NA,NA,NA,"100% NP, Gypsum, No Till",NA,g/kg,OC,3.15,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, No Till",NA,g/kg,OC,3.33,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2002,2001,100% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, No Till",NA,g/kg,OC,3.38,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,Control,NA,Conventional Till,NA,NA,NA,NA,"Control, , Conventional Till",NA,g/kg,OC,2.1,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,NA,Conventional Till,NA,NA,NA,NA,"75% NP, , Conventional Till",NA,g/kg,OC,2.21,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,NA,Conventional Till,NA,NA,NA,NA,"100% NP, , Conventional Till",NA,g/kg,OC,2.38,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,Control,NA,Conventional Till,NA,NA,NA,NA,"Control, Conventional Till",NA,g/kg,OC,2.1,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,NA,Conventional Till,NA,NA,NA,NA,"75% NP, Conventional Till",NA,g/kg,OC,2.21,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,NA,Conventional Till,NA,NA,NA,NA,"100% NP, Conventional Till",NA,g/kg,OC,2.38,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"75% NP, Gypsum, Conventional Till",NA,g/kg,OC,2.39,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, Conventional Till",NA,g/kg,OC,2.51,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, Conventional Till",NA,g/kg,OC,3.1,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"100% NP, Gypsum, Conventional Till",NA,g/kg,OC,2.87,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, Conventional Till",NA,g/kg,OC,3.15,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, Conventional Till",NA,g/kg,OC,3.08,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,Control,NA,No Till,NA,NA,NA,NA,"Control, , No Till",NA,g/kg,OC,2.33,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,NA,No Till,NA,NA,NA,NA,"75% NP, , No Till",NA,g/kg,OC,2.61,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,NA,No Till,NA,NA,NA,NA,"100% NP, , No Till",NA,g/kg,OC,2.72,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,Control,NA,No Till,NA,NA,NA,NA,"Control, No Till",NA,g/kg,OC,2.33,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,NA,No Till,NA,NA,NA,NA,"75% NP, No Till",NA,g/kg,OC,2.61,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,NA,No Till,NA,NA,NA,NA,"100% NP, No Till",NA,g/kg,OC,2.72,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,Gypsum,No Till,NA,NA,NA,NA,"75% NP, Gypsum, No Till",NA,g/kg,OC,2.76,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, No Till",NA,g/kg,OC,3.06,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,75% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, No Till",NA,g/kg,OC,3.32,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,Gypsum,No Till,NA,NA,NA,NA,"100% NP, Gypsum, No Till",NA,g/kg,OC,3.19,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, No Till",NA,g/kg,OC,3.56,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2003,2001,100% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, No Till",NA,g/kg,OC,3.63,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,Control,NA,Conventional Till,NA,NA,NA,NA,"Control, , Conventional Till",NA,inch/hr,IR,0.666,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,NA,Conventional Till,NA,NA,NA,NA,"75% NP, , Conventional Till",NA,inch/hr,IR,0.752,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,NA,Conventional Till,NA,NA,NA,NA,"100% NP, , Conventional Till",NA,inch/hr,IR,0.775,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"75% NP, Gypsum, Conventional Till",NA,inch/hr,IR,1.213,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, Conventional Till",NA,inch/hr,IR,1.266,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, Conventional Till",NA,inch/hr,IR,1.226,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"100% NP, Gypsum, Conventional Till",NA,inch/hr,IR,1.477,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, Conventional Till",NA,inch/hr,IR,1.455,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, Conventional Till",NA,inch/hr,IR,1.393,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,Control,NA,No Till,NA,NA,NA,NA,"Control, , No Till",NA,inch/hr,IR,0.706,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,NA,No Till,NA,NA,NA,NA,"75% NP, , No Till",NA,inch/hr,IR,0.775,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,NA,No Till,NA,NA,NA,NA,"100% NP, , No Till",NA,inch/hr,IR,0.866,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Gypsum,No Till,NA,NA,NA,NA,"75% NP, Gypsum, No Till",NA,inch/hr,IR,1.43,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, No Till",NA,inch/hr,IR,1.419,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, No Till",NA,inch/hr,IR,1.363,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Gypsum,No Till,NA,NA,NA,NA,"100% NP, Gypsum, No Till",NA,inch/hr,IR,1.625,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, No Till",NA,inch/hr,IR,1.66,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, No Till",NA,inch/hr,IR,1.581,NA
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,Control,NA,Conventional Till,NA,NA,NA,NA,"Control, , Conventional Till",NA,g/kg,OC,2.2,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,NA,Conventional Till,NA,NA,NA,NA,"75% NP, , Conventional Till",NA,g/kg,OC,2.33,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,NA,Conventional Till,NA,NA,NA,NA,"100% NP, , Conventional Till",NA,g/kg,OC,2.37,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,Control,NA,Conventional Till,NA,NA,NA,NA,"Control, Conventional Till",NA,cm/h,IR,0.666,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,NA,Conventional Till,NA,NA,NA,NA,"75% NP, Conventional Till",NA,cm/h,IR,0.752,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,NA,Conventional Till,NA,NA,NA,NA,"100% NP, Conventional Till",NA,cm/h,IR,0.775,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"75% NP, Gypsum, Conventional Till",NA,cm/h,IR,1.213,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, Conventional Till",NA,cm/h,IR,1.266,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, Conventional Till",NA,cm/h,IR,1.226,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"100% NP, Gypsum, Conventional Till",NA,cm/h,IR,1.477,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, Conventional Till",NA,cm/h,IR,1.455,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, Conventional Till",NA,cm/h,IR,1.393,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,Control,NA,No Till,NA,NA,NA,NA,"Control, No Till",NA,cm/h,IR,0.706,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,NA,No Till,NA,NA,NA,NA,"75% NP, No Till",NA,cm/h,IR,0.775,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,NA,No Till,NA,NA,NA,NA,"100% NP, No Till",NA,cm/h,IR,0.866,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Gypsum,No Till,NA,NA,NA,NA,"75% NP, Gypsum, No Till",NA,cm/h,IR,1.43,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, No Till",NA,cm/h,IR,1.419,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, No Till",NA,cm/h,IR,1.363,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Gypsum,No Till,NA,NA,NA,NA,"100% NP, Gypsum, No Till",NA,cm/h,IR,1.625,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, No Till",NA,cm/h,IR,1.66,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, No Till",NA,cm/h,IR,1.581,NA
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,Control,NA,Conventional Till,NA,NA,NA,NA,"Control, Conventional Till",NA,g/kg,OC,2.2,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,NA,Conventional Till,NA,NA,NA,NA,"75% NP, Conventional Till",NA,g/kg,OC,2.33,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,NA,Conventional Till,NA,NA,NA,NA,"100% NP, Conventional Till",NA,g/kg,OC,2.37,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"75% NP, Gypsum, Conventional Till",NA,g/kg,OC,2.84,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, Conventional Till",NA,g/kg,OC,3.23,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, Conventional Till",NA,g/kg,OC,2.89,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Gypsum,Conventional Till,NA,NA,NA,NA,"100% NP, Gypsum, Conventional Till",NA,g/kg,OC,3.27,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Sulphitation Pressmud,Conventional Till,NA,NA,NA,NA,"100% NP, Sulphitation Pressmud, Conventional Till",NA,g/kg,OC,3.12,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,Farmyard Manure,Conventional Till,NA,NA,NA,NA,"100% NP, Farmyard Manure, Conventional Till",NA,g/kg,OC,3.32,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,Control,NA,No Till,NA,NA,NA,NA,"Control, , No Till",NA,g/kg,OC,2.37,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,NA,No Till,NA,NA,NA,NA,"75% NP, , No Till",NA,g/kg,OC,2.71,0_15
-Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,NA,No Till,NA,NA,NA,NA,"100% NP, , No Till",NA,g/kg,OC,2.86,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,Control,NA,No Till,NA,NA,NA,NA,"Control, No Till",NA,g/kg,OC,2.37,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,NA,No Till,NA,NA,NA,NA,"75% NP, No Till",NA,g/kg,OC,2.71,0_15
+Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,100% NP,NA,No Till,NA,NA,NA,NA,"100% NP, No Till",NA,g/kg,OC,2.86,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Gypsum,No Till,NA,NA,NA,NA,"75% NP, Gypsum, No Till",NA,g/kg,OC,2.82,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Sulphitation Pressmud,No Till,NA,NA,NA,NA,"75% NP, Sulphitation Pressmud, No Till",NA,g/kg,OC,3.21,0_15
 Yaduvanshi and Sharma 2008,10.1016/j.still.2007.09.010,2004,2001,75% NP,Farmyard Manure,No Till,NA,NA,NA,NA,"75% NP, Farmyard Manure, No Till",NA,g/kg,OC,3.54,0_15
